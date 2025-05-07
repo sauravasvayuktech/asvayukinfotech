@@ -13,7 +13,7 @@ import { FaAngleDown, FaAngleRight, FaRegCircleDot } from "react-icons/fa6";
 import { Accordion, Col, Row, Tab } from "react-bootstrap";
 import { HiOutlineBars3 } from "react-icons/hi2";
 import { IoCall, IoClose } from "react-icons/io5";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -38,8 +38,14 @@ export default function Header() {
   const handleLanguageChange = (lang) => {
     const dir = lang === 'ar' ? 'rtl' : 'ltr';
     document.documentElement.setAttribute('dir', dir);
+    localStorage.setItem('direction', dir);
     console.log("Set dir to:", dir);
   };
+
+  useEffect(() => {
+    const savedDir = localStorage.getItem('direction') || 'ltr';
+    document.documentElement.setAttribute('dir', savedDir);
+  }, []);
 
   return (
     <>
