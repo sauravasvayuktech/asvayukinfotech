@@ -39,12 +39,53 @@ export default function Header() {
     const dir = lang === 'ar' ? 'rtl' : 'ltr';
     document.documentElement.setAttribute('dir', dir);
     localStorage.setItem('direction', dir);
-    console.log("Set dir to:", dir);
+    console.log('Set dir to:', dir);
   };
 
   useEffect(() => {
-    const savedDir = localStorage.getItem('direction') || 'ltr';
-    document.documentElement.setAttribute('dir', savedDir);
+    const addGoogleTranslateScript = () => {
+      if (window.google && window.google.translate) {
+        window.googleTranslateElementInit();
+        return;
+      }
+
+      const script = document.createElement('script');
+      script.src =
+        '//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+      script.async = true;
+      document.body.appendChild(script);
+
+      window.googleTranslateElementInit = () => {
+        new window.google.translate.TranslateElement(
+          {
+            pageLanguage: 'en',
+            includedLanguages: 'en,ar',
+            layout: window.google.translate.TranslateElement.InlineLayout.SIMPLE,
+          },
+          'google_translate_element'
+        );
+      };
+    };
+
+    addGoogleTranslateScript();
+
+    const observer = new MutationObserver(() => {
+      const htmlLang = document.documentElement.lang;
+      if (htmlLang === 'ar') {
+        handleLanguageChange('ar');
+      } else if (htmlLang === 'en') {
+        handleLanguageChange('en');
+      }
+    });
+
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ['lang'],
+    });
+
+    return () => {
+      observer.disconnect();
+    };
   }, []);
 
   return (
@@ -468,7 +509,7 @@ export default function Header() {
                   Contact Us
                 </Nav.Link>
 
-                <DropdownButton
+                {/* <DropdownButton
                   as={ButtonGroup}
                   variant="secondary"
                   title="Language"
@@ -480,7 +521,8 @@ export default function Header() {
                   <Dropdown.Item onClick={() => handleLanguageChange('ar')}>
                     Arabic
                   </Dropdown.Item>
-                </DropdownButton>
+                </DropdownButton> */}
+                <div id="google_translate_element" style={{ zIndex: 1000 }} />
 
               </Nav>
             </Navbar.Collapse>
