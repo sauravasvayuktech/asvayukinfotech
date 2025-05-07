@@ -34,6 +34,13 @@ export default function Header() {
     setIsMenuOpen(!isMenuOpen);
   };
 
+
+  const handleLanguageChange = (lang) => {
+    const dir = lang === 'ar' ? 'rtl' : 'ltr';
+    document.documentElement.setAttribute('dir', dir);
+    console.log("Set dir to:", dir);
+  };
+
   return (
     <>
       <>
@@ -457,15 +464,17 @@ export default function Header() {
 
                 <DropdownButton
                   as={ButtonGroup}
-                  key="secondary"
-                  id={`dropdown-variants-secondary`}
                   variant="secondary"
-                  title={"secondary"}
+                  title="Language"
                   className="h-auto nav-link"
                 >
-                  <Dropdown.Item eventKey="1">English</Dropdown.Item>
-                  <Dropdown.Item eventKey="2">Arabic</Dropdown.Item>
-                  </DropdownButton>
+                  <Dropdown.Item onClick={() => handleLanguageChange('en')}>
+                    English
+                  </Dropdown.Item>
+                  <Dropdown.Item onClick={() => handleLanguageChange('ar')}>
+                    Arabic
+                  </Dropdown.Item>
+                </DropdownButton>
 
               </Nav>
             </Navbar.Collapse>
