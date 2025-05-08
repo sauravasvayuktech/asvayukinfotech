@@ -1644,3 +1644,7 @@ li.resent_post a img {
 .experienceWrapper-Row{
   padding-block: 3rem;
 }
+
+div#goog-gt-tt {
+  display: none !important;
+}
