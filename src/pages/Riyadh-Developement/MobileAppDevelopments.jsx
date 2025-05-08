@@ -1,7 +1,8 @@
+// Imports
 import { Col, Container, Row } from "react-bootstrap";
 import Meta_Component from "../../Components/Meta_Component/Meta_Component";
 import { Link } from "react-router-dom";
-import { FaArrowRight } from "react-icons/fa";
+import { FaArrowRight, FaChevronRight } from "react-icons/fa";
 import { TbShoppingCartSearch } from "react-icons/tb";
 import ServicesCard from "../../Components/ServicesPage/ServicesCard";
 import c11 from "../../Images/c11.webp";
@@ -9,9 +10,104 @@ import c12 from "../../Images/c12.webp";
 import c13 from "../../Images/c13.webp";
 import c14 from "../../Images/c14.webp";
 import c15 from "../../Images/c15.webp";
-import c16 from "../../Images/c16.webp";
 import Group_558 from "../../Images/Group-558.webp";
 import Group_168 from "../../Images/Group-168.webp";
+import ExperienceCard from "../../Components/RiyadhDev/ExperienceCard";
+
+const miniCards = [
+  "AI-Powered App Solutions",
+  "Agile Development for Quick Launch",
+  "Top-Rated App Developers Worldwide",
+];
+
+const trustedStats = [
+  { number: "1", label: "Increase consumer engagement and retention." },
+  { number: "2", label: "Simplify business processes and operations." },
+  { number: "3", label: "Provide convenient on-demand or delivery choices." },
+  {
+    number: "4",
+    label: "Engage a global clientele by employing cross-platform solutions.",
+  },
+];
+
+const services = [
+  {
+    img: c11,
+    alt: "Saudi Arabian Custom Mobile App Development",
+    title: "Saudi Arabian Custom Mobile App Development",
+    desc: "Being one of the leading Riyadh mobile app companies, we create custom mobile apps to meet your unique needs. From a commercial solution to a consumer-focused software, we aim to deliver an interesting and intuitive experience.",
+  },
+  {
+    img: c12,
+    alt: "Android & iOS App Development",
+    title: "Android & iOS App Development",
+    desc: "Our expert Saudi Arabia Android & iOS app developers make sure that your app provides glitch-free performance on every device. From ideation to deployment, we walk you through each process, developing high-performance, feature-packed apps for both platforms.",
+  },
+  {
+    img: c13,
+    alt: "On-Demand Mobile Apps in Riyadh",
+    title: "On-Demand Mobile Apps in Riyadh",
+    desc: "We specialize in crafting on-demand mobile apps in Riyadh that provide access to services at once. Whether ride-hailing applications or food delivery apps, we design apps that are user-centric, stable, and scalable enough to cope with high traffic.",
+  },
+  {
+    img: c14,
+    alt: "Delivery App Development in Riyadh",
+    title: "Delivery App Development in Riyadh",
+    desc: "With our knowledge of **delivery app development in Riyadh**, we create apps where you can track orders, offer real-time status, and guarantee an efficient delivery process. Ideal for restaurants, e-commerce, or logistics firms.",
+  },
+  {
+    img: c15,
+    alt: "Riyadh Cross-Platform Mobile Apps",
+    title: "Riyadh Cross-Platform Mobile Apps",
+    desc: "Our Riyadh cross-platform mobile apps allow you to reach more people by developing apps that are exactly compatible with both Android and iOS. This cost-effective choice ensures that you won't have to compromise on quality or features",
+  },
+  // {
+  //   img: c16,
+  //   alt: "best web developers of chandigarh and mohali",
+  //   title: "Blockchain Integration",
+  //   desc: "Secure, decentralized apps using modern blockchain frameworks.",
+  // },
+];
+
+const experienceData = [
+  {
+    image:
+      "https://d3l9a8mvoa6cl8.cloudfront.net/wp-content/uploads/2024/07/08182801/saudi_solution1.png",
+    title: "Artificial Intelligence",
+    description:
+      "AI can make your app experience much better by offering personalized content, smart predictions, and automated features. With AI integration, our app developer company ensures your app adapts to your users' changing needs, making it more user-friendly and efficient.",
+    features: [
+      "Predictive Analytics",
+      "Smart Predictions",
+      "Automated Features",
+    ],
+  },
+  // Repeat for other cards
+  {
+    image:
+      "https://d3l9a8mvoa6cl8.cloudfront.net/wp-content/uploads/2024/07/08182801/saudi_solution1.png",
+    title: "Artificial Intelligence",
+    description:
+      "AI can make your app experience much better by offering personalized content, smart predictions, and automated features. With AI integration, our app developer company ensures your app adapts to your users' changing needs, making it more user-friendly and efficient.",
+    features: [
+      "Predictive Analytics",
+      "Smart Predictions",
+      "Automated Features",
+    ],
+  },
+  {
+    image:
+      "https://d3l9a8mvoa6cl8.cloudfront.net/wp-content/uploads/2024/07/08182801/saudi_solution1.png",
+    title: "Artificial Intelligence",
+    description:
+      "AI can make your app experience much better by offering personalized content, smart predictions, and automated features. With AI integration, our app developer company ensures your app adapts to your users' changing needs, making it more user-friendly and efficient.",
+    features: [
+      "Predictive Analytics",
+      "Smart Predictions",
+      "Automated Features",
+    ],
+  },
+];
 
 const MobileAppDevelopments = () => {
   return (
@@ -21,20 +117,29 @@ const MobileAppDevelopments = () => {
         description="Asvayuk Technologies, a top Website Development Company in Chandigarh & Mohali, offers custom web development, e-commerce solutions, & responsive designs."
         canonical="https://asvayuktech.com/website-development-company-in-chandigarh-and-mohali"
       />
+
       <main>
-        {/* Banner Section */}
+        {/* Banner */}
         <section className="riyadhBanner-wrapper">
           <Container>
             <div className="riyadhBannerContent-wrapper">
               <div className="riyadhBannerContent">
-                <h1 className="fw-bold riyadhBannerContent-title" data-aos="zoom-in">
-                  <span>Ecommerce</span> Development <br /> Company in Saudi
-                  Arabia
+                <h1
+                  className="fw-bold riyadhBannerContent-title"
+                  data-aos="zoom-in"
+                >
+                  Your Reliable
+                  <span> Mobile App</span> Development <br /> Partner in Riyadh,
+                  Saudi Arabia
                 </h1>
                 <p className="riyadhBannerContent-desc" data-aos="zoom-in">
-                  Asvayuk is the best Ecommerce development company in Saudi
-                  Arabia providing top-notch Android and iOS app development
-                  services to accelerate your business success. Get in Touch!
+                  Asvayuk Technologies is proud to be one of the top mobile app
+                  development companies in Riyadh, Saudi Arabia. We are
+                  dedicated to designing sleek, scalable, and user-friendly
+                  mobile apps for your business requirements. Our experts in
+                  Android & iOS app development in Saudi Arabia are dedicated to
+                  providing top-notch solutions for organizations from diverse
+                  industries.
                 </p>
                 <Link to="/contact-us" className="riyadhBtn" data-aos="zoom-in">
                   <div className="riyadhBtn-icons">
@@ -43,57 +148,25 @@ const MobileAppDevelopments = () => {
                   <div className="riyadhBtn-title">Get In Touch</div>
                 </Link>
               </div>
+
               <Row className="riyadhRowMini-wrapper">
-                <Col lg={4}>
-                  <div
-                    className="riyadhMiniTitle-wrapper"
-                    data-aos="fade-up"
-                    data-aos-anchor-placement="top-bottom"
-                  >
-                    <div className="titleMini-icon">
-                      <TbShoppingCartSearch />
+                {miniCards.map((text, index) => (
+                  <Col lg={4} key={index}>
+                    <div
+                      className={`riyadhMiniTitle-wrapper ${
+                        index === 1 ? "afterBorder" : ""
+                      }`}
+                      data-aos="fade-up"
+                    >
+                      <div className="titleMini-icon">
+                        <TbShoppingCartSearch />
+                      </div>
+                      <div className="titleMini-text">
+                        <small>{text}</small>
+                      </div>
                     </div>
-                    <div className="titleMini-text">
-                      <small>
-                        Advanced AI-Powered <br /> App Solutions
-                      </small>
-                    </div>
-                  </div>
-                </Col>
-                <Col lg={4}>
-                  <div
-                    className="riyadhMiniTitle-wrapper afterBorder"
-                    data-aos="fade-up"
-                    data-aos-anchor-placement="top-bottom"
-                  >
-                    <div className="titleMini-icon">
-                      <TbShoppingCartSearch />
-                    </div>
-                    <div className="titleMini-text">
-                      <small>
-                        Agile Development for
-                        <br /> Quick Launch
-                      </small>
-                    </div>
-                  </div>
-                </Col>
-                <Col lg={4}>
-                  <div
-                    className="riyadhMiniTitle-wrapper"
-                    data-aos="fade-up"
-                    data-aos-anchor-placement="top-bottom"
-                  >
-                    <div className="titleMini-icon">
-                      <TbShoppingCartSearch />
-                    </div>
-                    <div className="titleMini-text">
-                      <small>
-                        Top-Rated App
-                        <br /> Developers Worldwide
-                      </small>
-                    </div>
-                  </div>
-                </Col>
+                  </Col>
+                ))}
               </Row>
             </div>
           </Container>
@@ -104,173 +177,195 @@ const MobileAppDevelopments = () => {
           <Container>
             <div className="trustedContent-wrapper">
               <h2 className="mb-4" data-aos="zoom-in-up">
-                Setting a New Standard in App
-                <br /> Development – Trusted by the Elite <br />
-                of Saudi Arabia!
+                Why Do You Need Mobile Apps
+                <br />
+                for Your Business?
               </h2>
+              <p>
+                A mobile app is now essential for any business that wishes to
+                remain in operation due to the rise in the use of smartphones
+                and other mobile devices. A quality mobile application will be
+                capable of:
+              </p>
               <Row className="trustedContent-Row">
-                <Col lg={3}>
-                  <div className="trustedDiv-wrapper" data-aos="zoom-in-down">
-                    <div className="trustedDiv-first">
-                      <span>11+</span>
+                {trustedStats.map((item, idx) => (
+                  <Col lg={3} key={idx}>
+                    <div className="trustedDiv-wrapper" data-aos="zoom-in-down">
+                      <div className="trustedDiv-first">
+                        <span>{item.number}</span>
+                      </div>
+                      <div className="trustedDiv-second">
+                        <h5>{item.label}</h5>
+                      </div>
                     </div>
-                    <div className="trustedDiv-second">
-                      <h5>Years of Experience</h5>
-                    </div>
-                  </div>
-                </Col>
-                <Col lg={3}>
-                  <div className="trustedDiv-wrapper" data-aos="zoom-in-down">
-                    <div className="trustedDiv-first">
-                      <span>25+</span>
-                    </div>
-                    <div className="trustedDiv-second">
-                      <h5>Countries Served</h5>
-                    </div>
-                  </div>
-                </Col>
-                <Col lg={3}>
-                  <div className="trustedDiv-wrapper" data-aos="zoom-in-down">
-                    <div className="trustedDiv-first">
-                      <span>250+</span>
-                    </div>
-                    <div className="trustedDiv-second">
-                      <h5>Tech Enthusiast</h5>
-                    </div>
-                  </div>
-                </Col>
-                <Col lg={3}>
-                  <div className="trustedDiv-wrapper" data-aos="zoom-in-down">
-                    <div className="trustedDiv-first">
-                      <span>1000+</span>
-                    </div>
-                    <div className="trustedDiv-second">
-                      <h5>Products Delivered</h5>
-                    </div>
-                  </div>
-                </Col>
+                  </Col>
+                ))}
               </Row>
             </div>
           </Container>
         </section>
 
-        <section className="performance_card">
+        <section className="low-code-sec-tool">
           <div className="container">
-            <div className="col-12">
-              <div className="trustedContent-wrapper pb-2 text-center">
-                <h2 className="fw-bold" data-aos="zoom-in-up">
-                  Our Website Development Services in Chandigarh and Mohali
-                </h2>
-                <p className="mt-3" data-aos="zoom-in-up">
-                  At <b>Asvayuk Technologies</b>, we offer a comprehensive range
-                  of website development services in Chandigarh and
-                  Mohali,ensuring customized solutions for diverse business
-                  needs.
-                </p>
-              </div>
-              <div className="performance_card2_inner-sec mt-5">
-                <div className="row">
-                  <div className="col-lg-4 pb-4" data-aos="zoom-in">
-                    <ServicesCard
-                      ServiceCardImg={c11}
-                      altText="Website development services in chandigarh"
-                      cardHeading="Custom Website Development"
-                      cardParaGraph="Our custom web development services are tailored to meet your specific business requirements. Whether you need a portfolio website, a corporate site, or a custom web app, we deliver top-quality solutions."
-                    />
-                  </div>
-                  <div className="col-lg-4 pb-4" data-aos="zoom-in">
-                    <ServicesCard
-                      ServiceCardImg={c12}
-                      altText="website designers chandigarh, mohali"
-                      cardHeading="E-Commerce Website Development"
-                      cardParaGraph="Unlock the power of your online store! With our e-commerce solutions, enjoy secure payments, flawless functionality, and a seamless user experience that will elevate your sales and amplify your brand!"
-                    />
-                  </div>
-                  <div className="col-lg-4 pb-4" data-aos="zoom-in">
-                    <ServicesCard
-                      ServiceCardImg={c13}
-                      altText="website development company mohali"
-                      cardHeading="Responsive Web Design"
-                      cardParaGraph="As a leading web development agency in Chandigarh, we create mobile-friendly, responsive websites with seamless UX/UI, boosting engagement and enhancing your online presence."
-                    />
-                  </div>
-                  <div className="col-lg-4 pb-4" data-aos="zoom-in">
-                    <ServicesCard
-                      ServiceCardImg={c14}
-                      altText="web development agency chandigarh"
-                      cardHeading="WordPress Development"
-                      cardParaGraph="We specialize in WordPress website development, offering customized themes, plugins, and scalable solutions for businesses of all sizes."
-                    />
-                  </div>
-                  <div className="col-lg-4 pb-4" data-aos="zoom-in">
-                    <ServicesCard
-                      ServiceCardImg={c15}
-                      altText="website development provider chandigarh"
-                      cardHeading="Website Redesign & Maintenance"
-                      cardParaGraph="Optimize your web presence for voice search to enhance discoverability and user-friendliness in voice interactions, improving accessibility and user experience."
-                    />
-                  </div>
-                  <div className="col-lg-4 pb-4" data-aos="zoom-in">
-                    <ServicesCard
-                      ServiceCardImg={c16}
-                      altText="best web developers of chandigarh and mohali"
-                      cardHeading="Blockchain Integration"
-                      cardParaGraph="Unlock blockchain security & efficiency! Asvayuk Technologies offers tailored decentralized solutions—secure, scalable, and future-ready."
-                    />
+            <div className="row align-items-start">
+              <div className="col-lg-6 col-sm-12" data-aos="zoom-in-left">
+                <div className="tool-heading">
+                  <h3 className="fw-bold">
+                    Why Asvayuk Technologies is the Best Choice for Mobile App
+                    Development Chandigarh
+                  </h3>
+                  <p>
+                    At Asvayuk Technologies, we recognize that each company is
+                    different and has specific requirements. Our methodology is
+                    tailored to make your mobile application solution
+                    distinctive in the marketplace. Our services are devised to
+                    realize your concepts with precision and specialization
+                  </p>
+                  <div>
+                    <p>
+                      <strong>Professional Mobile App Developers:</strong> Our
+                      Saudi Arabia-based Android & iOS app developers have years
+                      of experience and are both native and cross-platform
+                      mobile app development experts.
+                    </p>
                   </div>
                 </div>
+              </div>
+              <div
+                className="col-lg-6 col-sm-12 text-start"
+                data-aos="zoom-in-right"
+              >
+                <ol>
+                  <li>
+                    <strong>Custom Mobile App Development : </strong> We have
+                    expertise in developing custom mobile apps that are
+                    scalable, secure, and tailored to fulfill your business
+                    objectives
+                  </li>
+                  <li>
+                    <strong>Cross-Platform Mobile Apps : </strong> We have
+                    expertise in developing custom mobile apps that are
+                    scalable, secure, and tailored to fulfill your business
+                    objectives
+                  </li>
+                  <li>
+                    <strong>On-Demand Mobile Apps : </strong> We have expertise
+                    in developing custom mobile apps that are scalable, secure,
+                    and tailored to fulfill your business objectives
+                  </li>
+                  <div className="heroBtn mt-3">
+                    <Link
+                      to="/contact-us"
+                      className="d-flex align-items-center justify-content-between"
+                    >
+                      <div className="btnText px-3 py-3 text-light">
+                        <span>Free Consultation</span>
+                      </div>
+                      <div className="btn_icon px-4 py-2">
+                        <FaChevronRight />
+                      </div>
+                    </Link>
+                  </div>
+                </ol>
               </div>
             </div>
           </div>
         </section>
 
+        {/* Services */}
+        <section className="performance_card pb-5">
+          <Container>
+            <div className="trustedContent-wrapper pb-2 text-center">
+              <h2 className="fw-bold" data-aos="zoom-in-up">
+                Our Development Process
+              </h2>
+              <p className="mt-3" data-aos="zoom-in-up">
+                Whether you require on-demand Riyadh mobile apps, Saudi Arabian
+                custom <b>mobile app development</b>, or even delivery app
+                development Riyadh, we've got you well-covered with amazing
+                service, thorough attention to detail, and great quality.
+              </p>
+            </div>
+            <Row className="performance_card2_inner-sec mt-5 justify-content-center">
+              {services.map((service, i) => (
+                <Col lg={4} className="pb-4" data-aos="zoom-in" key={i}>
+                  <ServicesCard
+                    ServiceCardImg={service.img}
+                    altText={service.alt}
+                    cardHeading={service.title}
+                    cardParaGraph={service.desc}
+                  />
+                </Col>
+              ))}
+            </Row>
+          </Container>
+        </section>
+
+        {/* WooCommerce Highlight */}
         <section className="woocomerce">
           <Container>
             <Row>
               <div className="woocomerce-heading position-relative">
-                <h2 data-aos="zoom-in-up">
-                  <span style={{ color: "#249f81" }}>
-                    {" "}
-                    Leading Website Development Services
-                  </span>
-                  <br />
-                  in Chandigarh and Mohali
-                </h2>
-                <div className="woocomerce-imgs d-flex justify-content-center d-none d-md-block">
+                <h2 data-aos="zoom-in-up">Our Development Process</h2>
+                <div className="woocomerce-imgs d-flex justify-content-center d-none d-md-block my-5">
                   <img
                     src={Group_558}
                     className="position-absolute woocomerce-imgs-left"
-                    alt="Website development services in chandigarh"
+                    alt="..."
                     data-aos="zoom-in"
+                    style={{ filter: "invert(1)" }}
                   />
                   <img
                     src={Group_168}
                     className="position-absolute woocomerce-imgs-right"
-                    alt="website designers chandigarh, mohali"
+                    alt="..."
                     data-aos="zoom-in"
+                    style={{ filter: "invert(1)" }}
                   />
                 </div>
               </div>
-              <div className="woocomerce-buttons d-flex flex-column flex-md-row justify-content-center gap-3 text-center">
-                <Link to="#" data-aos="fade-right">
-                  <span>
-                    Responsiveness <br />
-                    Web Designs
-                  </span>
+              <div className="woocomerce-buttons d-flex flex-column flex-md-row justify-content-center gap-3 text-center pt-4">
+                <Link to="#" data-aos="fade-right" className="riyadhUrl">
+                  <h6>Consultation & Requirement Analysis</h6>
+                  <p className="mb-0 fw-semibold text-white">
+                    We begin by understanding your business and its specific
+                    mobile app needs.
+                  </p>
                 </Link>
-                <Link to="#" data-aos="fade-left">
-                  <span>
-                    Mobile Friendly &amp;
-                    <br />
-                    Optimized
-                  </span>
+                <Link to="#" data-aos="fade-left" className="riyadhUrl">
+                  <h6>Design & Prototyping</h6>
+                  <p className="mb-0 fw-semibold text-white">
+                    We create intuitive, good-looking interfaces that embody
+                    your brand.
+                  </p>
+                </Link>
+                <Link to="#" data-aos="fade-right" className="riyadhUrl">
+                  <h6>Development & Integration</h6>
+                  <p className="mb-0 fw-semibold text-white">
+                    Our programmers deploy the app, integrating it seamlessly
+                    with backend systems and APIs.
+                  </p>
+                </Link>
+                <Link to="#" data-aos="fade-left" className="riyadhUrl">
+                  <h6>Quality Assurance</h6>
+                  <p className="mb-0 fw-semibold text-white">
+                    Before releasing the software, we thoroughly test it for
+                    usability, security, and functioning.
+                  </p>
+                </Link>
+                <Link to="#" data-aos="fade-left" className="riyadhUrl">
+                  <h6>Deployment & Support</h6>
+                  <p className="mb-0 fw-semibold text-white">
+                    Before releasing the software, we thoroughly test it for
+                    usability, security, and functioning.
+                  </p>
                 </Link>
               </div>
             </Row>
           </Container>
         </section>
 
-        {/* Experience Section */}
+        {/* Experience Cards */}
         <section className="experience-wrapper">
           <Container>
             <div className="trustedContent-wrapper pt-5">
@@ -285,242 +380,21 @@ const MobileAppDevelopments = () => {
                 to help you embark on your app development journey.
               </p>
               <Row className="experienceWrapper-Row">
-                <Col lg={4}>
-                  <div className="experienceCard-wrapper" data-aos="zoom-in">
-                    <div className="experienceBanner-Area">
-                      <div className="experienceBanner-Area1">
-                        <div className="experienceBannerArea1-Content">
-                          <div className="smallExperienceImage">
-                            <img
-                              src="https://d3l9a8mvoa6cl8.cloudfront.net/wp-content/uploads/2024/07/08182801/saudi_solution1.png"
-                              alt=""
-                              className="w-50"
-                            />
-                          </div>
-                          <h4>Artificial Intelligence</h4>
-                        </div>
-                      </div>
-                      <div className="experienceBanner-Area2 text-start">
-                        <p>
-                          AI can make your app experience much better by
-                          offering personalized content, smart predictions, and
-                          automated features. With AI integration, our app
-                          developer company ensures your app adapts to your
-                          users' changing needs, making it more user-friendly
-                          and efficient.
-                        </p>
-                        <ul className="ps-4">
-                          <li className="pb-2">
-                            <p className="mb-0">Predictive Analytics</p>
-                          </li>
-                          <li className="pb-2">
-                            <p className="mb-0">Predictive Analytics</p>
-                          </li>
-                          <li className="pb-2">
-                            <p className="mb-0">Predictive Analytics</p>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </Col>
-                <Col lg={4}>
-                  <div className="experienceCard-wrapper" data-aos="zoom-in">
-                    <div className="experienceBanner-Area">
-                      <div className="experienceBanner-Area1">
-                        <div className="experienceBannerArea1-Content">
-                          <div className="smallExperienceImage">
-                            <img
-                              src="https://d3l9a8mvoa6cl8.cloudfront.net/wp-content/uploads/2024/07/08182801/saudi_solution1.png"
-                              alt=""
-                              className="w-50"
-                            />
-                          </div>
-                          <h4>Artificial Intelligence</h4>
-                        </div>
-                      </div>
-                      <div className="experienceBanner-Area2 text-start">
-                        <p>
-                          AI can make your app experience much better by
-                          offering personalized content, smart predictions, and
-                          automated features. With AI integration, our app
-                          developer company ensures your app adapts to your
-                          users' changing needs, making it more user-friendly
-                          and efficient.
-                        </p>
-                        <ul className="ps-4">
-                          <li className="pb-2">
-                            <p className="mb-0">Predictive Analytics</p>
-                          </li>
-                          <li className="pb-2">
-                            <p className="mb-0">Predictive Analytics</p>
-                          </li>
-                          <li className="pb-2">
-                            <p className="mb-0">Predictive Analytics</p>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </Col>
-                <Col lg={4}>
-                  <div className="experienceCard-wrapper" data-aos="zoom-in">
-                    <div className="experienceBanner-Area">
-                      <div className="experienceBanner-Area1">
-                        <div className="experienceBannerArea1-Content">
-                          <div className="smallExperienceImage">
-                            <img
-                              src="https://d3l9a8mvoa6cl8.cloudfront.net/wp-content/uploads/2024/07/08182801/saudi_solution1.png"
-                              alt=""
-                              className="w-50"
-                            />
-                          </div>
-                          <h4>Artificial Intelligence</h4>
-                        </div>
-                      </div>
-                      <div className="experienceBanner-Area2 text-start">
-                        <p>
-                          AI can make your app experience much better by
-                          offering personalized content, smart predictions, and
-                          automated features. With AI integration, our app
-                          developer company ensures your app adapts to your
-                          users' changing needs, making it more user-friendly
-                          and efficient.
-                        </p>
-                        <ul className="ps-4">
-                          <li className="pb-2">
-                            <p className="mb-0">Predictive Analytics</p>
-                          </li>
-                          <li className="pb-2">
-                            <p className="mb-0">Predictive Analytics</p>
-                          </li>
-                          <li className="pb-2">
-                            <p className="mb-0">Predictive Analytics</p>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </Col>
-                <Col lg={4}>
-                  <div className="experienceCard-wrapper" data-aos="zoom-in">
-                    <div className="experienceBanner-Area">
-                      <div className="experienceBanner-Area1">
-                        <div className="experienceBannerArea1-Content">
-                          <div className="smallExperienceImage">
-                            <img
-                              src="https://d3l9a8mvoa6cl8.cloudfront.net/wp-content/uploads/2024/07/08182801/saudi_solution1.png"
-                              alt=""
-                              className="w-50"
-                            />
-                          </div>
-                          <h4>Artificial Intelligence</h4>
-                        </div>
-                      </div>
-                      <div className="experienceBanner-Area2 text-start">
-                        <p>
-                          AI can make your app experience much better by
-                          offering personalized content, smart predictions, and
-                          automated features. With AI integration, our app
-                          developer company ensures your app adapts to your
-                          users' changing needs, making it more user-friendly
-                          and efficient.
-                        </p>
-                        <ul className="ps-4">
-                          <li className="pb-2">
-                            <p className="mb-0">Predictive Analytics</p>
-                          </li>
-                          <li className="pb-2">
-                            <p className="mb-0">Predictive Analytics</p>
-                          </li>
-                          <li className="pb-2">
-                            <p className="mb-0">Predictive Analytics</p>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </Col>
-                <Col lg={4}>
-                  <div className="experienceCard-wrapper" data-aos="zoom-in">
-                    <div className="experienceBanner-Area">
-                      <div className="experienceBanner-Area1">
-                        <div className="experienceBannerArea1-Content">
-                          <div className="smallExperienceImage">
-                            <img
-                              src="https://d3l9a8mvoa6cl8.cloudfront.net/wp-content/uploads/2024/07/08182801/saudi_solution1.png"
-                              alt=""
-                              className="w-50"
-                            />
-                          </div>
-                          <h4>Artificial Intelligence</h4>
-                        </div>
-                      </div>
-                      <div className="experienceBanner-Area2 text-start">
-                        <p>
-                          AI can make your app experience much better by
-                          offering personalized content, smart predictions, and
-                          automated features. With AI integration, our app
-                          developer company ensures your app adapts to your
-                          users' changing needs, making it more user-friendly
-                          and efficient.
-                        </p>
-                        <ul className="ps-4">
-                          <li className="pb-2">
-                            <p className="mb-0">Predictive Analytics</p>
-                          </li>
-                          <li className="pb-2">
-                            <p className="mb-0">Predictive Analytics</p>
-                          </li>
-                          <li className="pb-2">
-                            <p className="mb-0">Predictive Analytics</p>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </Col>
-                <Col lg={4}>
-                  <div className="experienceCard-wrapper" data-aos="zoom-in">
-                    <div className="experienceBanner-Area">
-                      <div className="experienceBanner-Area1">
-                        <div className="experienceBannerArea1-Content">
-                          <div className="smallExperienceImage">
-                            <img
-                              src="https://d3l9a8mvoa6cl8.cloudfront.net/wp-content/uploads/2024/07/08182801/saudi_solution1.png"
-                              alt=""
-                              className="w-50"
-                            />
-                          </div>
-                          <h4>Artificial Intelligence</h4>
-                        </div>
-                      </div>
-                      <div className="experienceBanner-Area2 text-start">
-                        <p>
-                          AI can make your app experience much better by
-                          offering personalized content, smart predictions, and
-                          automated features. With AI integration, our app
-                          developer company ensures your app adapts to your
-                          users' changing needs, making it more user-friendly
-                          and efficient.
-                        </p>
-                        <ul className="ps-4">
-                          <li className="pb-2">
-                            <p className="mb-0">Predictive Analytics</p>
-                          </li>
-                          <li className="pb-2">
-                            <p className="mb-0">Predictive Analytics</p>
-                          </li>
-                          <li className="pb-2">
-                            <p className="mb-0">Predictive Analytics</p>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </Col>
+                {experienceData.map((data, index) => (
+                  <ExperienceCard
+                    key={index}
+                    image={data.image}
+                    title={data.title}
+                    description={data.description}
+                    features={data.features}
+                  />
+                ))}
               </Row>
-              <Link to="/contact-us" className="riyadhBtn text-white" data-aos="zoom-in-up">
+              <Link
+                to="/contact-us"
+                className="riyadhBtn text-white"
+                data-aos="zoom-in-up"
+              >
                 <div className="riyadhBtn-icons">
                   <FaArrowRight />
                 </div>

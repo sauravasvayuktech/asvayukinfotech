@@ -25,7 +25,7 @@ function KeyPointSection({
         <section className="low-code-sec-tool">
             <div className="container">
                 <div className="col-12">
-                    <div className="row">
+                    <div className="row align-items-center">
                         <div className="col-lg-6">
                             <div className="tool-heading">
                                 <h2>{keyHeading}</h2>
