@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
   margin: 0;
@@ -17,8 +17,8 @@ body {
 }
 
 :root {
-  --main: #2CBE9A;
-  --main2: #3C3C3C;
+  --main: #2cbe9a;
+  --main2: #3c3c3c;
   --maindark: #249f81;
   --mainlight: #ecfffa;
   --para: #494949;
@@ -61,7 +61,7 @@ h1 {
 }
 
 /* Breadcrumb */
-.breadcrumb-item+.breadcrumb-item::before {
+.breadcrumb-item + .breadcrumb-item::before {
   content: ">" !important;
   font-weight: 700;
 }
@@ -70,7 +70,6 @@ h1 {
   color: #000 !important;
   font-weight: 600;
 }
-
 
 /* BannerButton */
 .heroBtn {
@@ -110,13 +109,21 @@ h1 {
 }
 
 .bg-section {
-  background: -o-radial-gradient(circle, rgba(36, 159, 129, 1) -300%, rgba(0, 0, 0, 1) 100%);
-  background: radial-gradient(circle, rgba(36, 159, 129, 1) -300%, rgba(0, 0, 0, 1) 100%);
+  background: -o-radial-gradient(
+    circle,
+    rgba(36, 159, 129, 1) -300%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background: radial-gradient(
+    circle,
+    rgba(36, 159, 129, 1) -300%,
+    rgba(0, 0, 0, 1) 100%
+  );
   border-bottom: 1px solid var(--maindark);
 }
 
 .main-bg {
-  color: #FFFFFF;
+  color: #ffffff;
   font-family: "Poppins", Sans-serif;
   font-size: 50px;
   font-weight: 700;
@@ -129,7 +136,7 @@ h1 {
 }
 
 .main-bg .work-para p {
-  color: #FFFFFF;
+  color: #ffffff;
   font-family: "Poppins", Sans-serif;
   font-size: 20px;
   font-weight: 500;
@@ -162,13 +169,11 @@ h1 {
   left: 22px;
 }
 
-
 /* ---------------------------------- */
 /*---------- Responsive Media --------*/
 /* ---------------------------------- */
 
-
-@media(width<=1480px) {
+@media (width<=1480px) {
   .caseStuides .container .container_extraWidth {
     width: 1140px !important;
   }
@@ -198,7 +203,7 @@ h1 {
   }
 }
 
-@media(width<=1024px) {
+@media (width<=1024px) {
   .btnText span {
     font-size: 1rem;
   }
@@ -222,7 +227,7 @@ h1 {
   transition: 0.3s;
 }
 
-@media only screen and (max-width:991px) {
+@media only screen and (max-width: 991px) {
   /* main {
     overflow-x: hidden !important;
   } */
@@ -278,7 +283,7 @@ h1 {
     width: 100% !important;
   }
 
-  .location_info .row .col-lg-4>div img {
+  .location_info .row .col-lg-4 > div img {
     width: 100px;
     height: 100px;
     padding-bottom: 1rem;
@@ -426,8 +431,6 @@ h1 {
   .search-engine_last_row {
     margin-left: 0rem !important;
     margin-top: 5rem;
-
-
   }
 
   .location,
@@ -492,7 +495,7 @@ h1 {
     z-index: 9999 !important;
   }
 
-  .mobile-navbar+main {
+  .mobile-navbar + main {
     padding-top: 69px;
   }
 
@@ -646,7 +649,6 @@ h1 {
     width: 100% !important;
     padding: 0 !important;
     text-align: left !important;
-
   }
 
   .location_info {
@@ -719,7 +721,6 @@ h1 {
 
 .whatsapp-icon-container:hover .chat-text {
   opacity: 1;
-
 }
 
 .chat-text {
@@ -753,7 +754,6 @@ h1 {
   box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
   z-index: 1000;
   overflow: hidden;
-
 }
 
 .contact-form {
@@ -803,8 +803,8 @@ form {
 }
 
 .input-container.focused label,
-.input-container input:focus+label,
-.input-container textarea:focus+label {
+.input-container input:focus + label,
+.input-container textarea:focus + label {
   top: 0;
   left: 10px;
   font-size: 12px;
@@ -977,7 +977,7 @@ textarea.input {
 }
 
 .information svg {
-  color: #1ABC9C;
+  color: #1abc9c;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1028,7 +1028,6 @@ textarea.input {
   filter: invert(1) !important;
   --bs-btn-close-opacity: 1.5 !important;
 }
-
 
 .development_links li {
   border-bottom: 1px solid #ccc;
@@ -1115,8 +1114,14 @@ textarea.input {
   width: 30px;
   border-radius: 50%;
   background-color: #249f81;
-  background-image: -o-radial-gradient(hsl(165.37deg 63.08% 38.24%), hsl(165.37deg 63.08% 38.24%));
-  background-image: radial-gradient(hsl(165.37deg 63.08% 38.24%), hsl(165.37deg 63.08% 38.24%));
+  background-image: -o-radial-gradient(
+    hsl(165.37deg 63.08% 38.24%),
+    hsl(165.37deg 63.08% 38.24%)
+  );
+  background-image: radial-gradient(
+    hsl(165.37deg 63.08% 38.24%),
+    hsl(165.37deg 63.08% 38.24%)
+  );
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1134,7 +1139,7 @@ textarea.input {
 
 .pulse::before,
 .pulse::after {
-  content: '';
+  content: "";
   position: absolute;
   width: calc(100%);
   height: calc(100%);
@@ -1145,8 +1150,8 @@ textarea.input {
 }
 
 .pulse::after {
-  -webkit-animation: calling 2s ease-in-out .35s infinite;
-  animation: calling 2s ease-in-out .35s infinite;
+  -webkit-animation: calling 2s ease-in-out 0.35s infinite;
+  animation: calling 2s ease-in-out 0.35s infinite;
 }
 
 @-webkit-keyframes calling {
@@ -1177,7 +1182,6 @@ textarea.input {
   }
 }
 
-
 .tab_menu_top a:hover {
   color: var(--main) !important;
 }
@@ -1193,8 +1197,6 @@ textarea.input {
   -o-object-fit: cover;
   object-fit: cover;
 }
-
-
 
 .wrapper {
   position: absolute;
@@ -1356,7 +1358,6 @@ textarea.input {
   transition: 0.5s;
 }
 
-
 .strategycard {
   background: #fff;
   height: 100%;
@@ -1387,8 +1388,7 @@ textarea.input {
   scale: 1;
 }
 
-
-@media(width < 768px) {
+@media (width < 768px) {
   section.blog_banner_content {
     padding: 1rem 0rem !important;
   }
@@ -1427,4 +1427,220 @@ textarea.input {
 li.resent_post a img {
   width: 100%;
   height: 100%;
+}
+
+/* Riyadh Developement */
+.riyadhBanner-wrapper {
+  min-height: 100vh;
+  background: url("https://img.freepik.com/premium-photo/aerial-photography-ningbo-city-architecture-landscape-skyline_1417-9946.jpg?w=826");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.riyadhBanner-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000c05d3;
+}
+
+.riyadhBannerContent {
+  color: var(--light);
+  z-index: 9;
+  position: relative;
+  text-align: center;
+}
+
+.riyadhBannerContent-wrapper {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+}
+
+.riyadhMiniTitle-wrapper {
+  text-align: center;
+  color: var(--light);
+  z-index: 9;
+  position: relative;
+}
+
+.riyadhBannerContent-title {
+  font-size: 3.5rem;
+}
+
+.riyadhBannerContent-title span {
+  color: var(--main);
+  margin-bottom: 0;
+}
+
+.riyadhBannerContent-desc {
+  color: var(--mainlight);
+  margin: auto;
+  padding-block: 1rem 2rem;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.riyadhBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--maindark);
+  padding: 0.7rem 1rem;
+  border-radius: 4rem;
+  font-weight: 600;
+}
+
+.riyadhBtn-icons {
+  background-color: var(--main);
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.riyadhRowMini-wrapper {
+  padding-block: 5.5rem;
+  position: relative;
+}
+
+.riyadhMiniTitle-wrapper.afterBorder::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 2px;
+  background-color: #ffffff56;
+  height: 100%;
+}
+
+.riyadhMiniTitle-wrapper.afterBorder::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 2px;
+  background-color: #ffffff56;
+  height: 100%;
+}
+
+.titleMini-icon {
+  background-color: var(--mainlight);
+  color: var(--dark);
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  color: var(--dark);
+  font-size: 18px;
+}
+
+.trustedContent-wrapper {
+  text-align: center;
+  padding-block: 50px;
+}
+
+.trustedContent-wrapper h2 {
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.trustedContent-Row {
+  padding-block: 7rem;
+  background: url(../src/Images/mapDev.jpg);
+  background-repeat: no-repeat;
+  background-size: 60% 130%;
+  background-position: center;
+}
+
+.trustedDiv-wrapper {
+  border: 1px solid #dedede;
+  padding: 2rem 1rem;
+  border-radius: 2rem;
+  box-shadow: 0px 8px 15px #00000013;
+  background-color: var(--light);
+}
+
+.trustedDiv-first span {
+  font-size: 45px;
+  font-weight: 600;
+  color: var(--main);
+}
+
+.trustedDiv-second h5 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.experienceCard-wrapper {
+  /* min-height: 450px; */
+  border-radius: 2rem;
+  background-color: var(--main2);
+  color: var(--light);
+  background: url('https://img.freepik.com/free-photo/ai-nuclear-energy-future-innovation-disruptive-technology_53876-129784.jpg?t=st=1746620492~exp=1746624092~hmac=d5658c97e6d9264cfade27bd0cb54cfc3832bcb01fb62346ddb5da5ddb110ea3&w=740');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.experienceCard-wrapper::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000057;
+}
+
+.experienceBanner-Area{
+  position: relative;
+  z-index: 9;
+}
+
+.experienceCard-wrapper:hover .experienceBanner-Area2{
+  transform: translateY(0%);
+}
+
+.experienceBanner-Area2 p{
+  color: var(--light);
+}
+
+.experienceBanner-Area2{
+  background-color: var(--maindark);
+  transition: 0.5s ;
+  transform: translateY(120%);
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+.experienceBannerArea1-Content {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translate(-50%,0);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  justify-content: center;
+}
+
+.experienceWrapper-Row{
+  padding-block: 3rem;
 }

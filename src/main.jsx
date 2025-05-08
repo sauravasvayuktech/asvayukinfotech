@@ -84,6 +84,7 @@ import CRMSoftware from "./Components/BlogPage/CRMSoftware.jsx";
 import SecureBlockchainSoftware from "./Components/BlogPage/SecureBlockchainSoftware.jsx";
 import ECommerceWebDevelopment from "./Components/BlogPage/ECommerceWebDevelopment.jsx";
 import CustomWebDesign from "./Components/BlogPage/CustomWebDesign.jsx";
+import MobileAppDevelopments from "./pages/Riyadh-Developement/MobileAppDevelopments.jsx";
 
 const router = createBrowserRouter([
   {
@@ -302,6 +303,10 @@ const router = createBrowserRouter([
       {
         path: "/best-smart-contract-developer-chandigarh",
         element: <SmartContract />,
+      },
+      {
+        path: "mobile-app-development-company-riyadh-saudi-arabia",
+        element: <MobileAppDevelopments /> 
       },
       // 404 Page
       { path: "*", element: <Page404 /> },
