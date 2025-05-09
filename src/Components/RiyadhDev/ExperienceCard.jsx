@@ -9,9 +9,9 @@ const ExperienceCard = ({ image, title, description, features }) => {
             <div className="experienceBanner-Area1">
               <div className="experienceBannerArea1-Content">
                 <div className="smallExperienceImage">
-                  <img src={image} alt={title} className="w-50" />
+                  <img src={image}  className="w-50" />
                 </div>
-                <h4>{title}</h4>
+                <h5>{title}</h5>
               </div>
             </div>
             <div className="experienceBanner-Area2 text-start">

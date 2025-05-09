@@ -85,6 +85,10 @@ import SecureBlockchainSoftware from "./Components/BlogPage/SecureBlockchainSoft
 import ECommerceWebDevelopment from "./Components/BlogPage/ECommerceWebDevelopment.jsx";
 import CustomWebDesign from "./Components/BlogPage/CustomWebDesign.jsx";
 import MobileAppDevelopments from "./pages/Riyadh-Developement/MobileAppDevelopments.jsx";
+import MernStackDevelopments from "./pages/Riyadh-Developement/MernStackDevelopments.jsx";
+import EcommerceDevelopments from "./pages/Riyadh-Developement/EcommerceDevelopments.jsx";
+import ShopifyDevelopments from "./pages/Riyadh-Developement/ShopifyDevelopments.jsx";
+import DeliveryAppDevelopment from "./pages/Riyadh-Developement/DeliveryAppDevelopment.jsx";
 
 const router = createBrowserRouter([
   {
@@ -95,24 +99,69 @@ const router = createBrowserRouter([
       // About Page
       { path: "/about-us", element: <About /> },
       // Our Services
-      { path: "/web-portal-development-chandigarh", element: <EnterprisePortalDevelopment /> },
-      { path: "/mobile-app-development-chandigarh", element: <MobileAppDevelopment /> },
-      { path: "/website-development-company-in-chandigarh-and-mohali", element: <Website_Development /> },
-      { path: "/digital-marketing-services-in-chandigarh", element: <Performance /> },
+      {
+        path: "/web-portal-development-chandigarh",
+        element: <EnterprisePortalDevelopment />,
+      },
+      {
+        path: "/mobile-app-development-chandigarh",
+        element: <MobileAppDevelopment />,
+      },
+      {
+        path: "/website-development-company-in-chandigarh-and-mohali",
+        element: <Website_Development />,
+      },
+      {
+        path: "/digital-marketing-services-in-chandigarh",
+        element: <Performance />,
+      },
       { path: "/lowcode-nocode-app", element: <LowCode_NoCode /> },
-      { path: "/woocommerce-development-services-in-chandigarh", element: <Woocomerce /> },
-      { path: "/ecommerce-website-designing-company-chandigarh", element: <Ecommerce /> },
-      { path: "/blockchain-web-development-chandigarh", element: <BlockChain /> },
-      { path: "/best-magento-developers-in-chandigarh", element: <Magento_Dev /> },
-      { path: "/react-native-developers-chandigarh", element: <React_Native /> },
-      { path: "/saas-app-development-company-in-chandigarh", element: <Saas_Dev /> },
+      {
+        path: "/woocommerce-development-services-in-chandigarh",
+        element: <Woocomerce />,
+      },
+      {
+        path: "/ecommerce-website-designing-company-chandigarh",
+        element: <Ecommerce />,
+      },
+      {
+        path: "/blockchain-web-development-chandigarh",
+        element: <BlockChain />,
+      },
+      {
+        path: "/best-magento-developers-in-chandigarh",
+        element: <Magento_Dev />,
+      },
+      {
+        path: "/react-native-developers-chandigarh",
+        element: <React_Native />,
+      },
+      {
+        path: "/saas-app-development-company-in-chandigarh",
+        element: <Saas_Dev />,
+      },
       { path: "/shopify-development", element: <Shopify_Dev /> },
-      { path: "/software-development-company-in-chandigarh", element: <Software_Dev /> },
-      { path: "/laravel-development-company-in-chandigarh", element: <Laravel_Dev /> },
+      {
+        path: "/software-development-company-in-chandigarh",
+        element: <Software_Dev />,
+      },
+      {
+        path: "/laravel-development-company-in-chandigarh",
+        element: <Laravel_Dev />,
+      },
       { path: "/ar-vr-development", element: <Ar_Vr_Dev /> },
-      { path: "/social-media-marketing-agency-in-chandigarh", element: <Social_Media_Marketing /> },
-      { path: "/best-seo-services-in-chandigarh", element: <Search_Engine_Opti /> },
-      { path: "/best-ui-ux-designers-in-chandigarh", element: <UI_UX_Design /> },
+      {
+        path: "/social-media-marketing-agency-in-chandigarh",
+        element: <Social_Media_Marketing />,
+      },
+      {
+        path: "/best-seo-services-in-chandigarh",
+        element: <Search_Engine_Opti />,
+      },
+      {
+        path: "/best-ui-ux-designers-in-chandigarh",
+        element: <UI_UX_Design />,
+      },
       { path: "/mlm-software-chandigarh-panchkula", element: <MLM_Software /> },
       { path: "/ai-chatbot-chandigarh-panchkula", element: <AI_chatBot /> },
       { path: "/crm-erp", element: <CRM_ERP /> },
@@ -306,7 +355,23 @@ const router = createBrowserRouter([
       },
       {
         path: "mobile-app-development-company-riyadh-saudi-arabia",
-        element: <MobileAppDevelopments /> 
+        element: <MobileAppDevelopments />,
+      },
+      {
+        path: "mern-stack-development-company-riyadh-saudi-arabia",
+        element: <MernStackDevelopments />,
+      },
+      {
+        path: "e-commerce-development-company-riyadh-saudi-arabia",
+        element: <EcommerceDevelopments />,
+      },
+      {
+        path: "shopify-development-company-riyadh-saudi-arabia",
+        element: <ShopifyDevelopments />,
+      },
+      {
+        path: "delivery-app-development-company-riyadh-saudi-arabia",
+        element: <DeliveryAppDevelopment />,
       },
       // 404 Page
       { path: "*", element: <Page404 /> },

@@ -1391,7 +1391,7 @@ textarea.input {
 @media (width < 768px) {
   .trustedContent-wrapper h2 {
     font-size: 20px;
-}
+  }
   .riyadhBanner-wrapper {
     padding-top: 4rem !important;
   }
