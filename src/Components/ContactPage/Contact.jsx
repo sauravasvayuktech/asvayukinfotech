@@ -1,6 +1,6 @@
 import { Breadcrumb, Container, Nav, Row, Tab } from "react-bootstrap"
 import { Form, Link } from "react-router-dom"
-import './Contact.css'
+// import './Contact.css'
 import amritsar from '../../Images/amritsar.webp';
 import dubai from '../../Images/dubai.webp';
 import canada from '../../Images/canadaimg.webp';
@@ -80,7 +80,7 @@ function Contact() {
                                         <div className="info mt-3">
                                             <a href="mailto:mumbai@asvayuktech.com">mumbai@asvayuktech.com</a><br />
                                             {/* <a href="tel:+91-90410-65990">+91-90410-65990</a><br /> &nbsp; */}
-                                            <a href="tel:+91 90410 65990">+91-90410 65990</a><br /> &nbsp;
+                                            <a href="tel:+91 09876475990">+91-09876475990</a><br /> &nbsp;
                                         </div>
                                         <Link to={"https://maps.app.goo.gl/tSpBT45db7BvRm2f7"} target='_blank'>
                                             <button className="btn_loc">View Location</button>

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import bannerImg from '../../Images/home2.webp'
-import './Home.css'
+// import './Home.css'
 import ISO from '../../Images/ISO.webp';
 import Odoo from '../../Images/Odoo.webp';
 import life from '../../Images/life.webp';
@@ -62,7 +62,9 @@ import w4 from '../../Images/w4.webp';
 import w5 from '../../Images/w5.webp';
 import w6 from '../../Images/w1.webp';
 import w7 from '../../Images/w-7.webp';
-import w8 from '../../Images/w2.webp';
+import w8 from '../../Images/w2.webp';    
+
+     
 import 'swiper/css';
 import { Navigation, Scrollbar, Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -72,10 +74,11 @@ import BannerButton from '../BannerBtn/BannerButton';
 import Experience from './Experience';
 import Meta_Component from '../Meta_Component/Meta_Component';
 import { MdNavigateNext } from 'react-icons/md';
+import { useLanguage } from '../../LanguageContext';
 
 
 function Home() {
-
+    const { direction } = useLanguage();
     return (
         <>
             <Meta_Component
@@ -114,6 +117,8 @@ function Home() {
                             </div>
                             <div className="col-lg-9 ">
                                 <Swiper
+                                 key={direction} 
+                                dir={direction}
                                     spaceBetween={50}
                                     slidesPerView={5}
                                     navigation={true}
@@ -121,7 +126,6 @@ function Home() {
                                     autoplay={{
                                         delay: 2400,
                                         disableOnInteraction: false,
-
                                     }}
                                     loop={true}
                                     modules={[Navigation, Scrollbar, Autoplay]}
@@ -340,6 +344,8 @@ function Home() {
                             <Row>
                                 <div className="col-lg-12 projectCase">
                                     <Swiper
+                                    key={direction}
+                                    dir={direction}
                                         modules={[Navigation, Scrollbar, Autoplay]}
                                         spaceBetween={30}
                                         slidesPerView={4.3}
@@ -644,6 +650,8 @@ function Home() {
                 <section className="fullCaseStudy">
                     <div className="conianer-fluid">
                         <Swiper
+                        key={direction}
+                        dir={direction}
                             modules={[Navigation, Scrollbar, Autoplay]}
                             spaceBetween={0}
                             slidesPerView={1}
@@ -954,6 +962,8 @@ function Home() {
                     </div>
                     <div className="py-4">
                         <Swiper
+                        key={direction}
+                        dir={direction}
                             modules={[Navigation, Scrollbar, Autoplay]}
                             spaceBetween={30}
                             slidesPerView={3}

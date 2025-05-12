@@ -70,8 +70,8 @@ const AutoPopupModal = () => {
                                         </div>
                                         <div className="information">
                                             <FaPhone />
-                                            <a href="tel:+91 90410 65990">
-                                                <p>+91 90410 65990</p>
+                                            <a href="tel:+91 09876475990">
+                                                <p>+91 09876475990</p>
                                             </a>
                                         </div>
                                     </div>

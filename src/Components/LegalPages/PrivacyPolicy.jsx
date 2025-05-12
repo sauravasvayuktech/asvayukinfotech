@@ -192,7 +192,7 @@ function PrivacyPolicy() {
                                 <p>By email: <a className='text-primary' href="mailto:info@asvayuktech.com">info@asvayuktech.com</a></p>
                             </li>
                             <li>
-                                <p>By phone number: <a className='text-primary' href="tel:+91 90410 65990">+91 90410 65990</a></p>
+                                <p>By phone number: <a className='text-primary' href="tel:+91 09876475990">+91 09876475990</a></p>
                             </li>
                         </ul>
                     </div>

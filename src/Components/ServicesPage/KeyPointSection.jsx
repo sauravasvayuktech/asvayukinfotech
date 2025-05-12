@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import "./Service.css";
+// import "./Service.css";
 import "../../App.css";
 import check from "../../Images/check.webp";
 import { FaChevronRight } from "react-icons/fa";
@@ -55,11 +55,11 @@ function KeyPointSection({
                             </div>
 
                             <div className="heroBtn">
-                                <Link to={url} className="d-flex align-items-center justify-content-between">
+                                <Link to={url} className="d-flex  justify-content-between">
                                     <div className="btnText px-3 py-3 text-light">
                                         <span>{btnTitle}</span>
                                     </div>
-                                    <div className="btn_icon px-4 py-2">
+                                    <div className="btn_icon px-4 py-2 align-content-center">
                                         <FaChevronRight />
                                     </div>
                                 </Link>

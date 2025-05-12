@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './PortolioItem.css'
+// import './PortolioItem.css'
 import { IoCloseCircleOutline } from 'react-icons/io5';
 
 const PortfolioItem = ({ workImage, projectTitle, projectCategory, projectLink,altText }) => {

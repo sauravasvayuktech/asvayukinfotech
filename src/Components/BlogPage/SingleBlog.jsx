@@ -1,4 +1,4 @@
-import './SingleBlog.css'
+// import './SingleBlog.css'
 import { Col, Container, Row } from 'react-bootstrap'
 import c1 from "../../Images/1.webp";
 import author_thumb from '../../Images/vipasha2.jpg'

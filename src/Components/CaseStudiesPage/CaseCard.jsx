@@ -23,11 +23,11 @@ function CaseCard({ caseLogo, caseTitle, tools1, tools2, tools3, countryName, ur
                         <h4 className="pt-2">{countryName}</h4>
                     </div>
                     <div className="heroBtn">
-                        <Link to={url} className="d-flex align-items-center justify-content-between">
+                        <Link to={url} className="d-flex  justify-content-between">
                             <div className="btnText px-3 py-3 text-light">
                                 <span>{btnTitle}</span>
                             </div>
-                            <div className="btn_icon px-4 py-2">
+                            <div className="btn_icon px-4 py-2 align-content-center">
                                 <FaChevronRight />
                             </div>
                         </Link>

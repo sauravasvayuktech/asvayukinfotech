@@ -1,5 +1,5 @@
 import BannerButton from "../BannerBtn/BannerButton";
-import "./Service.css";
+// import "./Service.css";
 import { Breadcrumb, Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import banners_14 from "../../Images/banners-14.webp";

@@ -67,7 +67,7 @@ function SmartContractDeveloperNew() {
                                         <p>Ready to revolutionize your business with smart contracts? Asvayuk Technologies is here to bring your blockchain ideas to life.</p>
 
                                         <p>
-                                            <b>📞 Contact:</b> <a href="tel: +91 90410 65990">+91-90410 65990</a><br />
+                                            <b>📞 Contact:</b> <a href="tel: +91 09876475990">+91-09876475990</a><br />
                                             <b>📧 Email:</b> <a href="mailto:info@asvayuktech.com">info@asvayuktech.com</a><br />
                                             <b>🌐 Website:</b> <a href="https://www.asvayuktech.com">www.asvayuktech.com</a>
                                         </p>

@@ -1,4 +1,4 @@
-import "./Header.css";
+// import "./Header.css";
 import { Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
@@ -14,6 +14,7 @@ import { Accordion, Col, Row, Tab } from "react-bootstrap";
 import { HiOutlineBars3 } from "react-icons/hi2";
 import { IoCall, IoClose } from "react-icons/io5";
 import { useEffect, useState } from "react";
+import { useLanguage } from "../../LanguageContext";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -43,18 +44,20 @@ export default function Header() {
   };
 
   useEffect(() => {
+    
+  
     const addGoogleTranslateScript = () => {
       if (window.google && window.google.translate) {
         window.googleTranslateElementInit();
         return;
       }
-
+  
       const script = document.createElement('script');
       script.src =
         '//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
       script.async = true;
       document.body.appendChild(script);
-
+  
       window.googleTranslateElementInit = () => {
         new window.google.translate.TranslateElement(
           {
@@ -66,28 +69,37 @@ export default function Header() {
         );
       };
     };
-
+  
     addGoogleTranslateScript();
-
+  
     const observer = new MutationObserver(() => {
       const htmlLang = document.documentElement.lang;
-      if (htmlLang === 'ar') {
-        handleLanguageChange('ar');
-      } else if (htmlLang === 'en') {
-        handleLanguageChange('en');
-      }
+      changeLanguage(htmlLang);
     });
-
+  
     observer.observe(document.documentElement, {
       attributes: true,
       attributeFilter: ['lang'],
     });
-
+  
     return () => {
       observer.disconnect();
     };
   }, []);
 
+  const { changeLanguage } = useLanguage(); // use inside the component
+  const { direction } = useLanguage();
+
+  useEffect(() => {
+    if (direction === "rtl") {
+      import("../../App.css");
+    } else {
+      import("../../AppRTL.css");
+    }
+
+    // Optionally set <html dir="">
+    document.documentElement.setAttribute("dir", direction);
+  }, [direction]);
   return (
     <>
       <>
@@ -134,7 +146,7 @@ export default function Header() {
                                   <div className="tabIcons d-flex w-100 justify-content-between align-items-center">
                                     <span>Marketing</span>
                                     <FaAngleRight />
-                                  </div>
+                                  </div>  
                                 </Nav.Link>
                               </Nav.Item>
                               <Nav.Item>
@@ -537,7 +549,7 @@ export default function Header() {
               </Navbar.Brand>
               <div className="d-flex gap-2 align-items-center">
                 <a
-                  href="tel:+91 90410 65990"
+                  href="tel:+91 09876475990"
                   aria-label="Call Now for Consultation"
                 >
                   <div className="content">

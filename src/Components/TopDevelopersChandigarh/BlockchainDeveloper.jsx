@@ -9,7 +9,7 @@ import wshopify from '../../Images/blockImg.png'
 import work1 from '../../Images/work1.png'
 import work2 from '../../Images/blockchainwork1.png'
 import work3 from '../../Images/work3.png'
-import './TopDeveloper.css'
+// import './TopDeveloper.css'
 import { BsFiletypePsd } from 'react-icons/bs';
 import { MdIntegrationInstructions, MdMiscellaneousServices } from 'react-icons/md';
 import { FaComputer } from 'react-icons/fa6';

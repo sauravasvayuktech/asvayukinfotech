@@ -1,4 +1,4 @@
-import './Footer.css'
+// import './Footer.css'
 import CHD from '../../Images/CHD.webp'
 import Canada from '../../Images/canada_footer_img.webp'
 import Mumbai from '../../Images/mumbai_footer_img.webp'
@@ -85,7 +85,7 @@ function Footer() {
                                             </div>
                                             <div className="information">
                                                 <FaPhone />
-                                                <p>+91 90410 65990</p>
+                                                <p>+91 09876475990</p>
                                             </div>
                                         </div>
                                         <div className="social-media">
@@ -345,7 +345,7 @@ function Footer() {
                                                 <span to="#" className="d-flex gap-3 align-items-center">
                                                     <FaPhoneAlt />
                                                     <p className="text-white mb-0">
-                                                        <Link to="tel:+91 90410 65990">+91 90410 65990</Link>
+                                                        <Link to="tel:+91 09876475990">+91 09876475990</Link>
 
                                                     </p>
                                                 </span>
@@ -375,7 +375,7 @@ function Footer() {
                 </section>
 
                 <section className='call-icons call2'>
-                    <a href="tel:+91 90410 65990" aria-label="Call Now for Consultation">
+                    <a href="tel:+91 09876475990" aria-label="Call Now for Consultation">
                         <div className="content">
                             <div className="pulse pulse2">
                                 <IoCall />
