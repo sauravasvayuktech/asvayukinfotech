@@ -464,7 +464,7 @@ function Home() {
                                 <div className="bg_empowering rounded-4 p-4">
                                     <div className="row align-items-center">
                                         <div className="col-8">
-                                            <div className="Empowering_content text-white">
+                                            <div className="Empowering_content text-white servicetype">
                                                 <Link to="/best-ui-ux-designers-in-chandigarh"><h5>UI/UX Design<MdNavigateNext /></h5></Link>
                                                 <p className="text-white py-1">We at Asvayuk Technologies design seamless interfaces and captivating user experiences with meticulous attention to detail, enhancing your digital presence and user engagement.</p>
                                             </div>
@@ -482,7 +482,7 @@ function Home() {
                                     <div className="row align-items-center">
 
                                         <div className="col-8">
-                                            <div className="Empowering_content text-white">
+                                            <div className="Empowering_content text-white servicetype">
                                                 <Link to="/website-development-company-in-chandigarh-and-mohali"> <h5>Web Development <MdNavigateNext /></h5></Link>
                                                 <p className="text-white py-1">Our meticulous web development suite, from responsive
                                                     design to secure eCommerce and cutting-edge PWAs, empowers your brand with
@@ -504,7 +504,7 @@ function Home() {
                                 <div className="bg_empowering rounded-4 p-4">
                                     <div className="row align-items-center">
                                         <div className="col-8">
-                                            <div className="Empowering_content text-white">
+                                            <div className="Empowering_content text-white servicetype">
                                                 <Link to="/mobile-app-development-chandigarh"><h5>Mobile App Development <MdNavigateNext /></h5></Link>
                                                 <p className="text-white py-1">Leveraging our extensive experience to transform your
                                                     vision into a user-centric mobile application that drives conversions and
@@ -524,7 +524,7 @@ function Home() {
                                 <div className="bg_empowering rounded-4 p-4">
                                     <div className="row align-items-center">
                                         <div className="col-8">
-                                            <div className="Empowering_content text-white">
+                                            <div className="Empowering_content text-white servicetype">
                                                 <Link to="/best-seo-services-in-chandigarh"><h5>Search Engine Optimization<MdNavigateNext /></h5></Link>
                                                 <p className="text-white py-1">A strategic blend of SEO techniques to increase
                                                     website traffic, boost conversions, and solidify brand authority.</p>
@@ -544,7 +544,7 @@ function Home() {
                                 <div className="bg_empowering rounded-4 p-4">
                                     <div className="row align-items-center">
                                         <div className="col-8">
-                                            <div className="Empowering_content text-white">
+                                            <div className="Empowering_content text-white servicetype">
                                                 <Link to="/ecommerce-website-designing-company-chandigarh"><h5>eCommerce Solutions<MdNavigateNext /></h5></Link>
                                                 <p className="text-white py-1">Empower your brand with an intuitive and secure
                                                     eCommerce platform that amplifies sales, ensuring a seamless shopping
@@ -563,7 +563,7 @@ function Home() {
                                 <div className="bg_empowering rounded-4 p-4">
                                     <div className="row align-items-center">
                                         <div className="col-8">
-                                            <div className="Empowering_content text-white">
+                                            <div className="Empowering_content text-white servicetype">
                                                 <Link to="/web-portal-development-chandigarh"><h5>Enterprise Portal Development <MdNavigateNext /></h5></Link>
                                                 <p className="text-white py-1">Asvayuk Technologies offers feature-rich enterprise portal development solutions that integrate seamlessly with existing applications and data sources to streamline workflows and boost productivity.</p>
                                             </div>
@@ -600,45 +600,45 @@ function Home() {
                             <p>Staying attuned to diverse industries, Asvayuk Technologies serves a wide range of sectors, providing customized solutions that set new benchmarks and drive innovation.</p>
                         </div>
                         <div className="row pt-3">
-                            <div className="col-lg-3 col-md-6 col-sm-6 col-6 px-2">
+                            <div className="col-lg-3 col-md-6 col-sm-6 col-6 px-2 mb-3">
                                 <div className="industries_info border border-2 border-dark rounded-3 text-center">
                                     <h3 className="mb-0">eCommerce</h3>
                                 </div>
                             </div>
-                            <div className="col-lg-3 col-md-6 col-sm-6 col-6 px-2">
+                            <div className="col-lg-3 col-md-6 col-sm-6 col-6 px-2 mb-3">
                                 <div className="industries_info border border-2 border-dark rounded-3 text-center">
                                     <h3 className="mb-0">Blockchain</h3>
                                 </div>
                             </div>
-                            <div className="col-lg-3 col-md-6 col-sm-6 col-6 px-2">
+                            <div className="col-lg-3 col-md-6 col-sm-6 col-6 px-2 mb-3">
                                 <div className="industries_info border border-2 border-dark rounded-3 text-center">
                                     <h3 className="mb-0">Healthtech </h3>
                                 </div>
                             </div>
-                            <div className="col-lg-3 col-md-6 col-sm-6 col-6 px-2">
+                            <div className="col-lg-3 col-md-6 col-sm-6 col-6 px-2 mb-3">
                                 <div className="industries_info border border-2 border-dark rounded-3 text-center">
                                     <h3 className="mb-0">AI Bots</h3>
                                 </div>
                             </div>
                         </div>
                         <div className="row pt-0 pt-lg-3 pt-md-3">
-                            <div className="col-lg-3 col-md-6 col-sm-6 col-6 px-2">
-                                <div className="industries_info border border-2 border-dark rounded-3 text-center">
+                            <div className="col-lg-3 col-md-6 col-sm-6 col-6 px-2 mb-3">
+                                <div className="industries_info border border-2 border-dark rounded-3 text-center h-100 align-content-center">
                                     <h3 className="mb-0">Traveltech</h3>
                                 </div>
                             </div>
-                            <div className="col-lg-3 col-md-6 col-sm-6 col-6 px-2">
-                                <div className="industries_info border border-2 border-dark rounded-3 text-center">
+                            <div className="col-lg-3 col-md-6 col-sm-6 col-6 px-2 mb-3">
+                                <div className="industries_info border border-2 border-dark rounded-3 text-center h-100 align-content-center">
                                     <h3 className="mb-0">Realtech</h3>
                                 </div>
                             </div>
-                            <div className="col-lg-3 col-md-6 col-sm-6 col-6 px-2">
-                                <div className="industries_info border border-2 border-dark rounded-3 text-center">
+                            <div className="col-lg-3 col-md-6 col-sm-6 col-6 px-2 mb-3">
+                                <div className="industries_info border border-2 border-dark rounded-3 text-center h-100 align-content-center">
                                     <h3 className="mb-0">tecFintechh</h3>
                                 </div>
                             </div>
-                            <div className="col-lg-3 col-md-6 col-sm-6 col-6 px-2">
-                                <div className="industries_info border border-2 border-dark rounded-3 text-center">
+                            <div className="col-lg-3 col-md-6 col-sm-6 col-6 px-2 mb-3">
+                                <div className="industries_info border border-2 border-dark rounded-3 text-center h-100 align-content-center">
                                     <h3 className="mb-0">Edtech</h3>
                                 </div>
                             </div>

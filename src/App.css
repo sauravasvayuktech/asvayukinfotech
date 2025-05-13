@@ -98,6 +98,7 @@ h1 {
   background-color: var(--maindark);
   font-size: 30px;
   color: var(--light);
+  rotate: 0deg;
 }
 
 .btnText {
@@ -292,9 +293,9 @@ h1 {
     padding-block: 30px;
   }
 
-  .industries_info {
+  /* .industries_info {
     margin-bottom: 13px;
-  }
+  } */
 
   .bg_empowering {
     padding: 10px !important;
@@ -2720,6 +2721,11 @@ footer a {
 
 /* header  */
 
+.langtoggler {
+    position: absolute;
+    right: 25px;
+}
+
 .topbar {
     background-color: var(--dark);
     color: var(--light);
@@ -2944,6 +2950,9 @@ footer a {
     font-weight: 600;
     line-height: 60px;
 }
+.servicetype h5 > svg {
+rotate: 0deg;
+}
 
 
 .bg_empowering {
@@ -3030,6 +3039,9 @@ footer a {
 .fullCaseStudy_url {
     font-size: 18px;
     font-weight: 600;
+}
+.fullCaseStudy_url > svg{
+  rotate: 0deg;
 }
 .fullCaseStudy_img {
     height: 480px;
