@@ -62,24 +62,18 @@ const services = [
 
 const experienceData = [
   {
-    image:
-      "https://d3l9a8mvoa6cl8.cloudfront.net/wp-content/uploads/2024/07/08182801/saudi_solution1.png",
     title: "AI-Powered Recommendations",
     description:
       "Leverage AI to deliver smart product recommendations and personalized shopping experiences in your Shopify mobile app, increasing conversions and loyalty.",
     features: ["Personalized Suggestions", "Behavioral Insights", "Automated Upselling"],
   },
   {
-    image:
-      "https://d3l9a8mvoa6cl8.cloudfront.net/wp-content/uploads/2024/07/08182801/saudi_solution1.png",
     title: "Advanced Shopify Integrations",
     description:
       "Seamlessly integrate with popular Shopify plugins, payment gateways, inventory tools, and CRM systems to streamline operations across your mobile app and storefront.",
     features: ["Secure Payment Integration", "CRM & ERP Sync", "Inventory Management"],
   },
   {
-    image:
-      "https://d3l9a8mvoa6cl8.cloudfront.net/wp-content/uploads/2024/07/08182801/saudi_solution1.png",
     title: "High Performance & Speed",
     description:
       "Our apps are optimized for speed and responsiveness, ensuring smooth navigation, faster loading, and excellent usability on all devices.",
@@ -91,14 +85,14 @@ const ShopifyDevelopments = () => {
   return (
     <>
       <Meta_Component
-        title="shopify-mobile-app-development-company-riyadh-saudi-arabia"
+        title="shopify-development-company-riyadh-saudi-arabia"
         description="Asvayuk Technologies is a top Shopify mobile app development company in Riyadh, Saudi Arabia, building high-performance e-commerce apps tailored to your business."
-        canonical="https://asvayuktech.com/shopify-mobile-app-development-riyadh"
+        canonical="https://asvayuktech.com/shopify-development-company-riyadh-saudi-arabia"
       />
 
       <main>
         {/* Banner */}
-        <section className="riyadhBanner-wrapper">
+        <section className="riyadhBanner-wrapper shopifyDevBg">
           <Container>
             <div className="riyadhBannerContent-wrapper">
               <div className="riyadhBannerContent">

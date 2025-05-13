@@ -89,6 +89,8 @@ import MernStackDevelopments from "./pages/Riyadh-Developement/MernStackDevelopm
 import EcommerceDevelopments from "./pages/Riyadh-Developement/EcommerceDevelopments.jsx";
 import ShopifyDevelopments from "./pages/Riyadh-Developement/ShopifyDevelopments.jsx";
 import DeliveryAppDevelopment from "./pages/Riyadh-Developement/DeliveryAppDevelopment.jsx";
+import CRMDevelopments from "./pages/Riyadh-Developement/CRMDevelopments.jsx";
+import ERPDevelopments from "./pages/Riyadh-Developement/ERPDevelopments.jsx";
 
 const router = createBrowserRouter([
   {
@@ -372,6 +374,14 @@ const router = createBrowserRouter([
       {
         path: "delivery-app-development-company-riyadh-saudi-arabia",
         element: <DeliveryAppDevelopment />,
+      },
+      {
+        path: "crm-development-riyadh-saudi-arabia",
+        element: <CRMDevelopments/>,
+      },
+      {
+        path: "erp-development-riyadh-saudi-arabia",
+        element: <ERPDevelopments/>,
       },
       // 404 Page
       { path: "*", element: <Page404 /> },

@@ -59,7 +59,7 @@ const experienceData = [
   {
     title: "Design and Development",
     description:
-      "Your web application will be designed and developed by our MERN stack developers in accordance with best practices. Our top goal is to deliver a flawless user experience so that your software remains aesthetically pleasing, responsive, and easy to use.",
+      "Your web application will be designed and developed by our MERN stack developers in accordance with best practices. Our top goal is to deliver a flawless user experience so that your software remains aesthetically easy to use.",
     features: [],
   },
   {
@@ -68,26 +68,20 @@ const experienceData = [
       "To make sure your program is error-free and functions properly across all hardware and web browsers, we thoroughly test it. Our quality assurance team would thoroughly test your application to ensure it meets the highest requirements.",
     features: [],
   },
-  {
-    title: "Execution and Upkeep",
-    description:
-      "When your application is finished, we will deploy it in the environment of your choice. We also provide routine maintenance and support to keep your application secure and current.",
-    features: [],
-  },
 ];
 
 const MernStackDevelopments = () => {
   return (
     <>
       <Meta_Component
-        title="mobile-app-development-company-riyadh-saudi-arabia"
-        description="Asvayuk Technologies, a top Website Development Company in Chandigarh & Mohali, offers custom web development, e-commerce solutions, & responsive designs."
-        canonical="https://asvayuktech.com/website-development-company-in-chandigarh-and-mohali"
+        title="mern-stack-development-company-riyadh-saudi-arabia"
+        description="elcome to ASVAYUK Technologies, your go-to haven for the finest MERN stack development in Riyadh. Our full-stack MERN developers specialize in providing unparalleled bespoke web applications precisely suited to your specific requirements."
+        canonical="https://asvayuktech.com/mern-stack-development-company-riyadh-saudi-arabia"
       />
 
       <main>
         {/* Banner */}
-        <section className="riyadhBanner-wrapper">
+        <section className="riyadhBanner-wrapper merndevebg">
           <Container>
             <div className="riyadhBannerContent-wrapper">
               <div className="riyadhBannerContent">

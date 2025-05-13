@@ -7,8 +7,6 @@ import ServicesCard from "../../Components/ServicesPage/ServicesCard";
 import c11 from "../../Images/c11.webp";
 import c12 from "../../Images/c12.webp";
 import c13 from "../../Images/c13.webp";
-import Group_558 from "../../Images/Group-558.webp";
-import Group_168 from "../../Images/Group-168.webp";
 import ExperienceCard from "../../Components/RiyadhDev/ExperienceCard";
 
 const miniCards = [
@@ -20,8 +18,14 @@ const miniCards = [
 const trustedStats = [
   { number: "1", label: "Boost your online store visibility and sales." },
   { number: "2", label: "Streamline inventory and order management." },
-  { number: "3", label: "Deliver a fast, secure, and mobile-friendly experience." },
-  { number: "4", label: "Scale effortlessly with cloud-based e-commerce solutions." },
+  {
+    number: "3",
+    label: "Deliver a fast, secure, and mobile-friendly experience.",
+  },
+  {
+    number: "4",
+    label: "Scale effortlessly with cloud-based e-commerce solutions.",
+  },
 ];
 
 const services = [
@@ -64,12 +68,6 @@ const experienceData = [
       "We conduct extensive testing and integrate essential e-commerce tools like payment gateways, shipping APIs, CRM, and analytics to ensure a flawless shopping experience.",
     features: [],
   },
-  {
-    title: "Launch & Ongoing Maintenance",
-    description:
-      "After launch, we provide continuous support and performance optimization to make sure your e-commerce store stays competitive and up-to-date with customer expectations.",
-    features: [],
-  },
 ];
 
 const EcommerceDevelopments = () => {
@@ -83,7 +81,7 @@ const EcommerceDevelopments = () => {
 
       <main>
         {/* Banner */}
-        <section className="riyadhBanner-wrapper">
+        <section className="riyadhBanner-wrapper ecommeDev">
           <Container>
             <div className="riyadhBannerContent-wrapper">
               <div className="riyadhBannerContent">
@@ -96,7 +94,12 @@ const EcommerceDevelopments = () => {
                 </h1>
                 <h5>Your Avenue to State-of-the-Art Web Solutions</h5>
                 <p className="riyadhBannerContent-desc" data-aos="zoom-in">
-                  Welcome to Asvayuk Technologies, your one-stop partner for cutting-edge e-commerce solutions in Riyadh, Saudi Arabia. In today’s competitive digital market, a powerful and responsive online store is essential for success. Whether you’re launching a new venture or expanding your digital footprint, our expert team is here to turn your vision into reality.
+                  Welcome to Asvayuk Technologies, your one-stop partner for
+                  cutting-edge e-commerce solutions in Riyadh, Saudi Arabia. In
+                  today’s competitive digital market, a powerful and responsive
+                  online store is essential for success. Whether you’re
+                  launching a new venture or expanding your digital footprint,
+                  our expert team is here to turn your vision into reality.
                 </p>
                 <Link to="/contact-us" className="riyadhBtn" data-aos="zoom-in">
                   <div className="riyadhBtn-icons">
@@ -137,7 +140,9 @@ const EcommerceDevelopments = () => {
                 Why Does Your Business Need an E-commerce Platform?
               </h2>
               <p>
-                With the rise of digital shopping, having a robust e-commerce platform isn’t a luxury—it's a necessity. A professionally developed online store helps businesses:
+                With the rise of digital shopping, having a robust e-commerce
+                platform isn’t a luxury—it's a necessity. A professionally
+                developed online store helps businesses:
               </p>
               <Row className="trustedContent-Row">
                 {trustedStats.map((item, idx) => (
@@ -167,25 +172,40 @@ const EcommerceDevelopments = () => {
                     Why Choose Asvayuk Technologies for E-commerce Development?
                   </h3>
                   <p>
-                    At Asvayuk Technologies, we blend creativity, technology, and strategic thinking to build online stores that are both functional and visually compelling. Our solutions are built to boost customer retention, optimize workflows, and maximize ROI.
+                    At Asvayuk Technologies, we blend creativity, technology,
+                    and strategic thinking to build online stores that are both
+                    functional and visually compelling. Our solutions are built
+                    to boost customer retention, optimize workflows, and
+                    maximize ROI.
                   </p>
                   <div>
                     <p>
-                      <strong>Experienced Developers:</strong> Our Riyadh-based e-commerce team specializes in scalable web platforms, custom features, and seamless third-party integrations.
+                      <strong>Experienced Developers:</strong> Our Riyadh-based
+                      e-commerce team specializes in scalable web platforms,
+                      custom features, and seamless third-party integrations.
                     </p>
                   </div>
                 </div>
               </div>
-              <div className="col-lg-6 col-sm-12 text-start" data-aos="zoom-in-right">
+              <div
+                className="col-lg-6 col-sm-12 text-start"
+                data-aos="zoom-in-right"
+              >
                 <ol>
                   <li>
-                    <strong>Tailored Online Stores: </strong> We create solutions that fit your business model, target audience, and future growth goals.
+                    <strong>Tailored Online Stores: </strong> We create
+                    solutions that fit your business model, target audience, and
+                    future growth goals.
                   </li>
                   <li>
-                    <strong>Mobile-First Approach: </strong> Our e-commerce designs are responsive and mobile-ready, ensuring a smooth user experience across all devices.
+                    <strong>Mobile-First Approach: </strong> Our e-commerce
+                    designs are responsive and mobile-ready, ensuring a smooth
+                    user experience across all devices.
                   </li>
                   <li>
-                    <strong>Secure & Scalable: </strong> We use the latest technologies to ensure your platform is protected, fast, and ready to scale.
+                    <strong>Secure & Scalable: </strong> We use the latest
+                    technologies to ensure your platform is protected, fast, and
+                    ready to scale.
                   </li>
                   <div className="heroBtn mt-3">
                     <Link
@@ -237,7 +257,9 @@ const EcommerceDevelopments = () => {
                 Our E-commerce Development Process
               </h2>
               <p className="fs-6" data-aos="zoom-in-up">
-                From consultation to post-launch support, our Riyadh-based development team ensures a smooth, collaborative, and outcome-focused process.
+                From consultation to post-launch support, our Riyadh-based
+                development team ensures a smooth, collaborative, and
+                outcome-focused process.
               </p>
               <Row className="experienceWrapper-Row">
                 {experienceData.map((data, index) => (

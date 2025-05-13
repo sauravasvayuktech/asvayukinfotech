@@ -120,7 +120,7 @@ const MobileAppDevelopments = () => {
 
       <main>
         {/* Banner */}
-        <section className="riyadhBanner-wrapper">
+        <section className="riyadhBanner-wrapper mobileDevbg">
           <Container>
             <div className="riyadhBannerContent-wrapper">
               <div className="riyadhBannerContent">
