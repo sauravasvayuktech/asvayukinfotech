@@ -11,11 +11,23 @@ import c13 from "../../Images/c13.webp";
 import Group_558 from "../../Images/Group-558.webp";
 import Group_168 from "../../Images/Group-168.webp";
 import ExperienceCard from "../../Components/RiyadhDev/ExperienceCard";
+import { MdRocketLaunch } from "react-icons/md";
+import { FaStar } from "react-icons/fa6";
+import { GiArtificialIntelligence } from "react-icons/gi";
 
 const miniCards = [
-  "AI-Powered App Solutions",
-  "Agile Development for Quick Launch",
-  "Top-Rated App Developers Worldwide",
+  {
+    label: "AI-Powered App Solutions",
+    icon: <GiArtificialIntelligence />,
+  },
+  {
+    label: "Agile Development for Quick Launch",
+    icon: <MdRocketLaunch />,
+  },
+  {
+    label: "Top-Rated App Developers Worldwide",
+    icon: <FaStar />,
+  },
 ];
 
 const trustedStats = [
@@ -108,19 +120,18 @@ const MernStackDevelopments = () => {
               </div>
 
               <Row className="riyadhRowMini-wrapper">
-                {miniCards.map((text, index) => (
-                  <Col lg={4} key={index}>
+                {miniCards.map((card, index) => (
+                  <Col className="mb-3" lg={4} key={index}>
                     <div
-                      className={`riyadhMiniTitle-wrapper ${
-                        index === 1 ? "afterBorder" : ""
-                      }`}
+                      className={`riyadhMiniTitle-wrapper ${index === 1 ? "afterBorder" : ""
+                        }`}
                       data-aos="fade-up"
                     >
                       <div className="titleMini-icon">
-                        <TbShoppingCartSearch />
+                        {card.icon}
                       </div>
                       <div className="titleMini-text">
-                        <small>{text}</small>
+                        <small>{card.label}</small>
                       </div>
                     </div>
                   </Col>
@@ -147,7 +158,7 @@ const MernStackDevelopments = () => {
               </p>
               <Row className="trustedContent-Row">
                 {trustedStats.map((item, idx) => (
-                  <Col lg={3} key={idx}>
+                  <Col className="mb-3" lg={3} key={idx}>
                     <div className="trustedDiv-wrapper" data-aos="zoom-in-down">
                       <div className="trustedDiv-first">
                         <span>{item.number}</span>
@@ -167,7 +178,7 @@ const MernStackDevelopments = () => {
         <section className="low-code-sec-tool">
           <div className="container">
             <div className="row align-items-start">
-              <div className="col-lg-6 col-sm-12" data-aos="zoom-in-left">
+              <div className="col-lg-6 col-sm-12 p-3" data-aos="zoom-in-left">
                 <div className="tool-heading">
                   <h3 className="fw-bold">
                     Why Asvayuk Technologies is the Best Choice for MERN Stack
@@ -190,8 +201,7 @@ const MernStackDevelopments = () => {
                   </div>
                 </div>
               </div>
-              <div
-                className="col-lg-6 col-sm-12 text-start"
+              <div className="col-lg-6 col-sm-12 text-start p-3"
                 data-aos="zoom-in-right"
               >
                 <ol>
@@ -215,12 +225,12 @@ const MernStackDevelopments = () => {
                   <div className="heroBtn mt-3">
                     <Link
                       to="/contact-us"
-                      className="d-flex align-items-center justify-content-between"
+                      className="d-flex justify-content-between"
                     >
                       <div className="btnText px-3 py-3 text-light">
                         <span>Free Consultation</span>
                       </div>
-                      <div className="btn_icon px-4 py-2">
+                      <div className="btn_icon px-4 py-2 align-content-center">
                         <FaChevronRight />
                       </div>
                     </Link>

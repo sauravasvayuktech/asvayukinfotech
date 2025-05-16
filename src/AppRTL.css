@@ -14,6 +14,7 @@ body {
   font-size: 14px;
   margin: 0;
   scroll-behavior: smooth;
+  top: 0 !important;
 }
 
 :root {
@@ -493,7 +494,7 @@ body {
   }
 
   .translated-rtl .mobile-navbar {
-    position: fixed;
+    /* position: fixed; */
     background-color: #fff;
     width: 100%;
     z-index: 9999 !important;
@@ -1394,6 +1395,23 @@ body {
 }
 
 @media (width < 768px) {
+
+  .translated-rtl .trustedContent-wrapper h2 {
+    font-size: 20px !important;
+  }
+
+  .translated-rtl .riyadhBanner-wrapper {
+    padding-top: 4rem !important;
+  }
+
+  .translated-rtl .riyadhBannerContent-title {
+    font-size: 2rem !important;
+  }
+
+  .translated-rtl .riyadhUrl {
+    max-width: 100% !important;
+  }
+
   .translated-rtl section.blog_banner_content {
     padding: 1rem 0rem !important;
   }
@@ -1453,7 +1471,7 @@ body {
   right: 0;
   width: 100%;
   height: 100%;
-  background: #000c05d3;
+  background: #000c05a6;
 }
 
 .translated-rtl .riyadhBannerContent {
@@ -1511,6 +1529,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  rotate: 180deg !important;
 }
 
 .translated-rtl .riyadhRowMini-wrapper {
@@ -2741,13 +2760,29 @@ a {
   font-size: 1.8rem;
 }
 
-.translated-rtl
+
 /* header  */
 
-.langtoggler {
-    position: absolute;
-    right: unset !important;
-    left: 25px;
+.translated-rtl .langtoggler {
+  position: absolute;
+  right: unset;
+  left: 25px;
+  top: 38px;
+}
+
+@media screen and (max-width:992px) {
+  .translated-rtl .langtoggler {
+    right: unset;
+    left: 125px;
+    top: 25px;
+  }
+}
+
+@media screen and (max-width:576px) {
+  .translated-rtl .goog-te-gadget-simple {
+    max-width: 75px;
+    overflow-x: hidden;
+  }
 }
 
 .topbar {
@@ -2983,8 +3018,9 @@ a {
   font-weight: 600;
   line-height: 60px;
 }
-.translated-rtl .servicetype h5 > svg {
-rotate: 180deg;
+
+.translated-rtl .servicetype h5>svg {
+  rotate: 180deg;
 }
 
 .translated-rtl .bg_empowering {
@@ -3088,7 +3124,8 @@ rotate: 180deg;
   font-size: 18px;
   font-weight: 600;
 }
-.translated-rtl .fullCaseStudy_url > svg{
+
+.translated-rtl .fullCaseStudy_url>svg {
   rotate: 180deg;
 }
 
@@ -4440,13 +4477,15 @@ rotate: 180deg;
 
 .translated-rtl .woocomerce-imgs-left {
   bottom: -6.9rem;
-  right: 27rem;
+  right: unset;
+  left: 27rem;
   position: fixed;
 }
 
 .translated-rtl .woocomerce-imgs-right {
   bottom: -6.9rem;
-  left: 26rem;
+  left: unset;
+  right: 26rem;
   position: fixed;
 }
 
@@ -4459,7 +4498,7 @@ rotate: 180deg;
   font-size: 22px;
   font-weight: 600;
   line-height: 28px;
-  background-color: #249f81;
+  background-color: #0a0e0d;
   border-style: solid;
   border-width: 1px 1px 1px 1px;
   border-color: #22987b;
@@ -5571,4 +5610,14 @@ rotate: 180deg;
     width: 250px;
     height: 250px;
   }
+}
+
+  .translated-rtl .chevronicon svg{
+    rotate: 180deg;
+  }
+    .translated-rtl  .skiptranslate > iframe {
+    display: none;
+}
+div#root {
+    overflow-x: scroll;
 }

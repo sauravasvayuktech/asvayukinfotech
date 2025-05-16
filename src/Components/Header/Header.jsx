@@ -534,8 +534,7 @@ export default function Header() {
                     Arabic
                   </Dropdown.Item>
                 </DropdownButton> */}
-                <div id="google_translate_element" className="langtoggler " style={{ zIndex: 1000 }} />
-
+                
               </Nav>
             </Navbar.Collapse>
           </Container>
@@ -966,6 +965,8 @@ export default function Header() {
             )}
           </Container>
         </section>
+        <div id="google_translate_element" className="langtoggler " style={{ zIndex: 9999 }} />
+
       </>
     </>
   );

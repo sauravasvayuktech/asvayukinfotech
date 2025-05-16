@@ -13,11 +13,22 @@ import c15 from "../../Images/c15.webp";
 import Group_558 from "../../Images/Group-558.webp";
 import Group_168 from "../../Images/Group-168.webp";
 import ExperienceCard from "../../Components/RiyadhDev/ExperienceCard";
+import { GiArtificialIntelligence } from "react-icons/gi";
+import { FaShopify } from "react-icons/fa6";
 
 const miniCards = [
-  "Shopify App Customization",
-  "Agile E-commerce Development",
-  "Top Shopify Developers in Riyadh",
+  {
+    label: "Shopify App Customization",
+    icon: <GiArtificialIntelligence />,
+  },
+  {
+    label: "Agile E-commerce Development",
+    icon: <TbShoppingCartSearch />,
+  },
+  {
+    label: "Top Shopify Developers in Riyadh",
+    icon: <FaShopify />,
+  },
 ];
 
 const trustedStats = [
@@ -112,17 +123,17 @@ const ShopifyDevelopments = () => {
               </div>
 
               <Row className="riyadhRowMini-wrapper">
-                {miniCards.map((text, index) => (
-                  <Col lg={4} key={index}>
+                {miniCards.map((card, index) => (
+                  <Col className="mb-3" lg={4} key={index}>
                     <div
                       className={`riyadhMiniTitle-wrapper ${index === 1 ? "afterBorder" : ""}`}
                       data-aos="fade-up"
                     >
                       <div className="titleMini-icon">
-                        <TbShoppingCartSearch />
+                        {card.icon}
                       </div>
                       <div className="titleMini-text">
-                        <small>{text}</small>
+                        <small>{card.label}</small>
                       </div>
                     </div>
                   </Col>
@@ -144,7 +155,7 @@ const ShopifyDevelopments = () => {
               </p>
               <Row className="trustedContent-Row">
                 {trustedStats.map((item, idx) => (
-                  <Col lg={3} key={idx}>
+                  <Col className="mb-3" lg={3} key={idx}>
                     <div className="trustedDiv-wrapper" data-aos="zoom-in-down">
                       <div className="trustedDiv-first">
                         <span>{item.number}</span>
@@ -164,7 +175,7 @@ const ShopifyDevelopments = () => {
         <section className="low-code-sec-tool">
           <div className="container">
             <div className="row align-items-start">
-              <div className="col-lg-6 col-sm-12" data-aos="zoom-in-left">
+              <div className="col-lg-6 col-sm-12 p-3" data-aos="zoom-in-left">
                 <div className="tool-heading">
                   <h3 className="fw-bold">
                     Why Choose Asvayuk for Shopify Mobile App Development in Riyadh
@@ -177,7 +188,7 @@ const ShopifyDevelopments = () => {
                   </p>
                 </div>
               </div>
-              <div className="col-lg-6 col-sm-12 text-start" data-aos="zoom-in-right">
+              <div className="col-lg-6 col-sm-12 text-start p-3" data-aos="zoom-in-right">
                 <ol>
                   <li>
                     <strong>Shopify App Customization:</strong> Unique features tailored to your brand.
@@ -189,11 +200,11 @@ const ShopifyDevelopments = () => {
                     <strong>Post-Launch Support:</strong> We offer continuous optimization and support.
                   </li>
                   <div className="heroBtn mt-3">
-                    <Link to="/contact-us" className="d-flex align-items-center justify-content-between">
+                    <Link to="/contact-us" className="d-flex justify-content-between">
                       <div className="btnText px-3 py-3 text-light">
                         <span>Free Consultation</span>
                       </div>
-                      <div className="btn_icon px-4 py-2">
+                      <div className="btn_icon px-4 py-2 align-content-center">
                         <FaChevronRight />
                       </div>
                     </Link>

@@ -1,6 +1,6 @@
 import moonLight from '../../Images/kre.webp';
 import { Link } from 'react-router-dom';
-import { FaArrowRightLong } from 'react-icons/fa6';
+import { FaArrowRightLong, FaChevronRight } from 'react-icons/fa6';
 import cs1 from '../../Images/cs6.png';
 import caseStu2 from '../../Images/caseStu2.webp';
 import optimization from "../../Images/optimization.png"
@@ -271,7 +271,7 @@ const Kreshya = () => {
                                     <h1 className="fw-semibold"> Practical Solutions That Revolutionized Industries!</h1>
                                 </div>
                                 <div className="col-lg-4 text-end fw-bold">
-                                    <Link to="/case-studies">View All Case Studies →</Link>
+                                    <Link to="/case-studies">View All Case Studies <span className='chevronicon'><FaChevronRight /></span></Link>
 
                                 </div>
                             </Row>

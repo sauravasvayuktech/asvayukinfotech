@@ -3,7 +3,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import Meta_Component from "../../Components/Meta_Component/Meta_Component";
 import { Link } from "react-router-dom";
 import { FaArrowRight, FaChevronRight } from "react-icons/fa";
-import { TbShoppingCartSearch } from "react-icons/tb";
+import { TbShoppingCartSearch, TbTruckDelivery } from "react-icons/tb";
 import ServicesCard from "../../Components/ServicesPage/ServicesCard";
 import c11 from "../../Images/c11.webp";
 import c12 from "../../Images/c12.webp";
@@ -13,11 +13,22 @@ import c15 from "../../Images/c15.webp";
 import Group_558 from "../../Images/Group-558.webp";
 import Group_168 from "../../Images/Group-168.webp";
 import ExperienceCard from "../../Components/RiyadhDev/ExperienceCard";
+import { PiEscalatorUpFill } from "react-icons/pi";
+import { FaHandshake } from "react-icons/fa6";
 
 const miniCards = [
-  "Smart Delivery App Solutions for Saudi Businesses",
-  "Fast & Scalable App Development Approach",
-  "Trusted by Leading Brands in Riyadh & Beyond",
+  {
+    label: "Smart Delivery App Solutions for Saudi Businesses",
+    icon: <TbTruckDelivery />,
+  },
+  {
+    label: "Fast & Scalable App Development Approach",
+    icon: <PiEscalatorUpFill />,
+  },
+  {
+    label: "Trusted by Leading Brands in Riyadh & Beyond",
+    icon: <FaHandshake />,
+  },
 ];
 
 const trustedStats = [
@@ -120,19 +131,18 @@ const DeliveryAppDevelopment = () => {
               </div>
 
               <Row className="riyadhRowMini-wrapper">
-                {miniCards.map((text, index) => (
-                  <Col lg={4} key={index}>
+                {miniCards.map((card, index) => (
+                  <Col className="mb-3" lg={4} key={index}>
                     <div
-                      className={`riyadhMiniTitle-wrapper ${
-                        index === 1 ? "afterBorder" : ""
-                      }`}
+                      className={`riyadhMiniTitle-wrapper ${index === 1 ? "afterBorder" : ""
+                        }`}
                       data-aos="fade-up"
                     >
                       <div className="titleMini-icon">
-                        <TbShoppingCartSearch />
+                        {card.icon}
                       </div>
                       <div className="titleMini-text">
-                        <small>{text}</small>
+                        <small>{card.label}</small>
                       </div>
                     </div>
                   </Col>
@@ -159,7 +169,7 @@ const DeliveryAppDevelopment = () => {
               </p>
               <Row className="trustedContent-Row">
                 {trustedStats.map((item, idx) => (
-                  <Col lg={3} key={idx}>
+                  <Col className="mb-3" lg={3} key={idx}>
                     <div className="trustedDiv-wrapper" data-aos="zoom-in-down">
                       <div className="trustedDiv-first">
                         <span>{item.number}</span>
@@ -178,7 +188,7 @@ const DeliveryAppDevelopment = () => {
         <section className="low-code-sec-tool">
           <div className="container">
             <div className="row align-items-start">
-              <div className="col-lg-6 col-sm-12" data-aos="zoom-in-left">
+              <div className="col-lg-6 col-sm-12 mb-3" data-aos="zoom-in-left">
                 <div className="tool-heading">
                   <h3 className="fw-bold">
                     Why ASVAYUK Technologies is Your Trusted Partner for
@@ -205,7 +215,7 @@ const DeliveryAppDevelopment = () => {
                 </div>
               </div>
               <div
-                className="col-lg-6 col-sm-12 text-start"
+                className="col-lg-6 col-sm-12 text-start mb-3"
                 data-aos="zoom-in-right"
               >
                 <ol>
@@ -229,12 +239,12 @@ const DeliveryAppDevelopment = () => {
                 <div className="heroBtn mt-3">
                   <Link
                     to="/contact-us"
-                    className="d-flex align-items-center justify-content-between"
+                    className="d-flex justify-content-between"
                   >
                     <div className="btnText px-3 py-3 text-light">
                       <span>Free Consultation</span>
                     </div>
-                    <div className="btn_icon px-4 py-2">
+                    <div className="btn_icon px-4 py-2 align-content-center">
                       <FaChevronRight />
                     </div>
                   </Link>
@@ -296,22 +306,22 @@ const DeliveryAppDevelopment = () => {
                   />
                 </div>
               </div>
-              <div className="woocomerce-buttons d-flex flex-column flex-md-row justify-content-center gap-3 text-center pt-4">
-                <Link to="#" data-aos="fade-right" className="riyadhUrl">
+              <div className="woocomerce-buttons d-flex flex-column flex-md-row justify-content-center gap-3 text-center pt-5 mt-5 overflow-x-hidden">
+                <Link to="#" data-aos="fade-up" className="riyadhUrl">
                   <h6>Initial Consultation & Business Analysis</h6>
                   <p className="mb-0 fw-semibold text-white">
                     We start by analyzing your delivery business model and
                     defining the app goals that best suit the Riyadh market.
                   </p>
                 </Link>
-                <Link to="#" data-aos="fade-left" className="riyadhUrl">
+                <Link to="#" data-aos="fade-up" className="riyadhUrl">
                   <h6>User-Centric Design & Prototyping</h6>
                   <p className="mb-0 fw-semibold text-white">
                     Our team crafts clean, functional UI/UX prototypes tailored
                     for smooth user journeys, aligned with your brand identity.
                   </p>
                 </Link>
-                <Link to="#" data-aos="fade-right" className="riyadhUrl">
+                <Link to="#" data-aos="fade-up" className="riyadhUrl">
                   <h6>Robust Development & Backend Integration</h6>
                   <p className="mb-0 fw-semibold text-white">
                     We build scalable delivery apps and integrate essential
@@ -319,7 +329,7 @@ const DeliveryAppDevelopment = () => {
                     payment gateways.
                   </p>
                 </Link>
-                <Link to="#" data-aos="fade-left" className="riyadhUrl">
+                <Link to="#" data-aos="fade-up" className="riyadhUrl">
                   <h6>Comprehensive Testing & QA</h6>
                   <p className="mb-0 fw-semibold text-white">
                     Each app undergoes rigorous testing to ensure optimal
@@ -327,7 +337,7 @@ const DeliveryAppDevelopment = () => {
                     devices.
                   </p>
                 </Link>
-                <Link to="#" data-aos="fade-left" className="riyadhUrl">
+                <Link to="#" data-aos="fade-up" className="riyadhUrl">
                   <h6>Launch, Deployment & Ongoing Support</h6>
                   <p className="mb-0 fw-semibold text-white">
                     We launch your app on app stores and provide continuous

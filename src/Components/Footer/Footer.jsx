@@ -5,7 +5,7 @@ import Mumbai from '../../Images/mumbai_footer_img.webp'
 import Dubai from '../../Images/dubai_footer_img.webp'
 import Logo from '../../Images/footer-logo.png'
 import { Link, useLocation } from 'react-router-dom'
-import { FaEnvelope, FaInstagram, FaLinkedin, FaPhoneAlt, FaPinterestP, FaSkype ,FaYoutube} from 'react-icons/fa'
+import { FaEnvelope, FaInstagram, FaLinkedin, FaPhoneAlt, FaPinterestP, FaSkype, FaYoutube } from 'react-icons/fa'
 import { IoCall, IoLocationSharp } from 'react-icons/io5'
 import React, { useState } from 'react';
 import { Modal, Row } from 'react-bootstrap';
@@ -242,7 +242,7 @@ function Footer() {
                                         </li>
                                         <li>
                                             <Link to="https://www.youtube.com/@AsvayukTechnologies">
-                                               <FaYoutube/>
+                                                <FaYoutube />
                                             </Link>
                                         </li>
                                         <li>
@@ -338,7 +338,7 @@ function Footer() {
                                             <li>
                                                 <Link to={"https://maps.app.goo.gl/4HYCGEiryydf54xdA"} className="d-flex gap-3">
                                                     <IoLocationSharp className='fs-3 pt-1' />
-                                                    <p className="text-white mb-0"><b>Our Address :</b><br/>SCO-44, Sector 5-MDC, Panchkula, Haryana</p>
+                                                    <p className="text-white mb-0"><b>Our Address :</b><br />SCO-44, Sector 5-MDC, Panchkula, Haryana</p>
                                                 </Link>
                                             </li>
                                             <li>
@@ -366,6 +366,58 @@ function Footer() {
                                     </div>
                                 </div>
                             </div>
+                            <div className="col-12 text-center py-3 mb-4">
+                                <div className="footer_menu_title py-2 mt-3 mt-md-0" style={{backgroundColor:"#242424"}}>
+                                    <h4 className="fw-semibold mb-0">Our Services in Saudi Arabia</h4>
+                                </div>
+                            </div>
+                            <div className="col-lg-6 col-md-6 col-sm-6 col-6">
+                                <div className="footer_menuinfo">
+
+                                    <div className="footer_menu_title pb-2 mt-3 mt-md-0">
+                                        <h4 className="fw-semibold">Development Solutions</h4>
+                                    </div>
+                                    <div className="footer_menu">
+                                        <ul className="list-unstyled d-flex flex-column gap-2">
+                                            <li>
+                                                <Link to="/mobile-app-development-company-riyadh-saudi-arabia">Mobile app development company riyadh saudi arabia</Link>
+                                            </li>
+                                            <li>
+                                                <Link to="/mern-stack-development-company-riyadh-saudi-arabia">Mern stack development company riyadh saudi arabia</Link>
+                                            </li>
+                                            <li>
+                                                <Link to='/shopify-development-company-riyadh-saudi-arabia'>Shopify development company riyadh saudi arabia</Link>
+                                            </li>
+                                            <li>
+                                                <Link to="/delivery-app-development-company-riyadh-saudi-arabia">Delivery app development company riyadh saudi arabia</Link>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-lg-6 col-md-6 col-sm-6 col-6">
+                                <div className="footer_menuinfo">
+                                    <div className="footer_menu_title pb-2 mt-3 mt-md-0">
+                                        <h4 className="fw-semibold">Custom IT Solutions</h4>
+                                    </div>
+                                    <div className="footer_menu">
+                                        <ul className="list-unstyled d-flex flex-column gap-2">
+
+                                            <li>
+                                                <Link to="/crm-development-riyadh-saudi-arabia">CRM development riyadh saudi arabia</Link>
+                                            </li>
+                                            <li>
+                                                <Link to="/erp-development-riyadh-saudi-arabia">ERP development riyadh saudi arabia</Link>
+                                            </li>
+                                            <li>
+                                                <Link to="/e-commerce-development-company-riyadh-saudi-arabia">E-Commerce development company riyadh saudi arabia</Link>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </footer>

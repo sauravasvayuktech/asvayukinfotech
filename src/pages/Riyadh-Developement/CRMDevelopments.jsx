@@ -13,11 +13,23 @@ import Group_168 from "../../Images/Group-168.webp";
 import ExperienceCard from "../../Components/RiyadhDev/ExperienceCard";
 import work3 from "../../Images/exmp2.webp";
 import work2 from "../../Images/larawk3.jpg";
+import { MdSettingsApplications } from "react-icons/md";
+import { PiEscalatorUpFill } from "react-icons/pi";
+import { FaHandshake } from "react-icons/fa6";
 
 const miniCards = [
-  "Custom CRM Solutions for Saudi Businesses",
-  "Efficient & Scalable CRM Development Approach",
-  "Trusted by Leading Brands in Riyadh & Beyond",
+  {
+    label: "Custom CRM Solutions for Saudi Businesses",
+    icon: <MdSettingsApplications />,
+  },
+  {
+    label: "Efficient & Scalable CRM Development Approach",
+    icon: <PiEscalatorUpFill />,
+  },
+  {
+    label: "Trusted by Leading Brands in Riyadh & Beyond",
+    icon: <FaHandshake />,
+  },
 ];
 
 const trustedStats = [
@@ -131,19 +143,17 @@ const CRMDevelopments = () => {
               </div>
 
               <Row className="riyadhRowMini-wrapper">
-                {miniCards.map((text, index) => (
-                  <Col lg={4} key={index}>
+                {miniCards.map((card, index) => (
+                  <Col className="mb-3" lg={4} key={index}>
                     <div
-                      className={`riyadhMiniTitle-wrapper ${
-                        index === 1 ? "afterBorder" : ""
-                      }`}
+                      className={`riyadhMiniTitle-wrapper ${index === 1 ? "afterBorder" : ""}`}
                       data-aos="fade-up"
                     >
                       <div className="titleMini-icon">
-                        <TbShoppingCartSearch />
+                        {card.icon}
                       </div>
                       <div className="titleMini-text">
-                        <small>{text}</small>
+                        <small>{card.label}</small>
                       </div>
                     </div>
                   </Col>
@@ -171,7 +181,7 @@ const CRMDevelopments = () => {
 
               <Row className="trustedContent-Row">
                 {trustedStats.map((item, idx) => (
-                  <Col lg={3} key={idx}>
+                  <Col className="mb-3" lg={3} key={idx}>
                     <div className="trustedDiv-wrapper" data-aos="zoom-in-down">
                       <div className="trustedDiv-first">
                         <span>{item.number}</span>
@@ -190,7 +200,7 @@ const CRMDevelopments = () => {
         <section className="low-code-sec-tool">
           <div className="container">
             <div className="row align-items-start">
-              <div className="col-lg-6 col-sm-12" data-aos="zoom-in-left">
+              <div className="col-lg-6 col-sm-12 p-3" data-aos="zoom-in-left">
                 <div className="tool-heading">
                   <h3 className="fw-bold">Complete Services</h3>
                   <p>
@@ -204,12 +214,12 @@ const CRMDevelopments = () => {
                   <div className="heroBtn mt-3">
                     <Link
                       to="/contact-us"
-                      className="d-flex align-items-center justify-content-between"
+                      className="d-flex justify-content-between"
                     >
                       <div className="btnText px-3 py-3 text-light">
                         <span>Free Consultation</span>
                       </div>
-                      <div className="btn_icon px-4 py-2">
+                      <div className="btn_icon px-4 py-2 align-content-center">
                         <FaChevronRight />
                       </div>
                     </Link>
@@ -217,7 +227,7 @@ const CRMDevelopments = () => {
                 </div>
               </div>
               <div
-                className="col-lg-6 col-sm-12 text-start"
+                className="col-lg-6 col-sm-12 text-start p-3"
                 data-aos="zoom-in-right"
               >
                 <ol>
@@ -295,8 +305,8 @@ const CRMDevelopments = () => {
                   />
                 </div>
               </div>
-              <div className="woocomerce-buttons d-flex flex-column flex-md-row justify-content-center gap-3 text-center pt-4">
-                <Link to="#" data-aos="fade-right" className="riyadhUrl">
+              <div className="woocomerce-buttons d-flex flex-column flex-md-row justify-content-center gap-3 text-center pt-5 mt-5 overflow-x-hidden">
+                <Link to="#" data-aos="fade-up" className="riyadhUrl">
                   <h6>Discovery and Planning</h6>
                   <p className="mb-0 fw-semibold text-white">
                     Our process starts with a comprehensive discovery process,
@@ -304,7 +314,7 @@ const CRMDevelopments = () => {
                     specific requirements.
                   </p>
                 </Link>
-                <Link to="#" data-aos="fade-left" className="riyadhUrl">
+                <Link to="#" data-aos="fade-up" className="riyadhUrl">
                   <h6>Design and Development</h6>
                   <p className="mb-0 fw-semibold text-white">
                     Our seasoned CRM developers step in next. We design and
@@ -312,14 +322,14 @@ const CRMDevelopments = () => {
                     procedures.
                   </p>
                 </Link>
-                <Link to="#" data-aos="fade-right" className="riyadhUrl">
+                <Link to="#" data-aos="fade-up" className="riyadhUrl">
                   <h6>Quality Assurance</h6>
                   <p className="mb-0 fw-semibold text-white">
                     Once development is complete, we thoroughly test to make
                     sure your CRM system is free of bugs and running smoothly.
                   </p>
                 </Link>
-                <Link to="#" data-aos="fade-left" className="riyadhUrl">
+                <Link to="#" data-aos="fade-up" className="riyadhUrl">
                   <h6>Support and Maintenance</h6>
                   <p className="mb-0 fw-semibold text-white">
                     Regular upgradations and optimizations keep your system in
