@@ -14,11 +14,22 @@ import ExperienceCard from "../../Components/RiyadhDev/ExperienceCard";
 import work3 from "../../Images/exmp2.webp";
 import work2 from "../../Images/larawk3.jpg";
 
+import {
+  TbMobiledata,
+  TbTruckDelivery,
+} from "react-icons/tb";
+
 const miniCards = [
   "Custom CRM Solutions for Saudi Businesses",
   "Efficient & Scalable CRM Development Approach",
   "Trusted by Leading Brands in Riyadh & Beyond",
 ];
+
+const icons = [
+  <TbShoppingCartSearch />,
+  <TbMobiledata />,
+  <TbTruckDelivery />,
+]
 
 const trustedStats = [
   {
@@ -140,7 +151,7 @@ const CRMDevelopments = () => {
                       data-aos="fade-up"
                     >
                       <div className="titleMini-icon">
-                        <TbShoppingCartSearch />
+                        {icons[index % icons.length]}
                       </div>
                       <div className="titleMini-text">
                         <small>{text}</small>
