@@ -20,7 +20,7 @@ import test from '../../Images/test.webp'
 import launch from '../../Images/launch.webp'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay, Navigation } from 'swiper/modules'
-import { FaArrowRightLong } from 'react-icons/fa6'
+import { FaArrowRightLong, FaChevronRight } from 'react-icons/fa6'
 import CoffeeLogo from '../../Images/49thcoffee_logo.webp'
 import caseStu4 from '../../Images/caseStu4.webp'
 import moonLight from '../../Images/moonlight_logo.webp';
@@ -401,7 +401,7 @@ const Software_Dev = () => {
                                 </Col>
                                 <Col lg={4} className="text-end">
                                     <Link to="#" className="">
-                                        View All Case Studies →
+                                        View All Case Studies <span className='chevronicon'><FaChevronRight /></span>
                                     </Link>
                                     <div className="d-flex justify-content-end">
                                         <div className="casestu_button position-relative mt-4 d-flex gap-5">

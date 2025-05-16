@@ -13,11 +13,23 @@ import c15 from "../../Images/c15.webp";
 import Group_558 from "../../Images/Group-558.webp";
 import Group_168 from "../../Images/Group-168.webp";
 import ExperienceCard from "../../Components/RiyadhDev/ExperienceCard";
+import { MdRocketLaunch } from "react-icons/md";
+import { FaStar } from "react-icons/fa6";
+import { GiArtificialIntelligence } from "react-icons/gi";
 
 const miniCards = [
-  "AI-Powered App Solutions",
-  "Agile Development for Quick Launch",
-  "Top-Rated App Developers Worldwide",
+  {
+      label: "AI-Powered App Solutions",
+      icon: <GiArtificialIntelligence />,
+    },
+    {
+      label: "Agile Development for Quick Launch",
+      icon: <MdRocketLaunch />,
+    },
+    {
+      label: "Top-Rated App Developers Worldwide",
+      icon: <FaStar />,
+    },
 ];
 
 const trustedStats = [
@@ -150,8 +162,8 @@ const MobileAppDevelopments = () => {
               </div>
 
               <Row className="riyadhRowMini-wrapper">
-                {miniCards.map((text, index) => (
-                  <Col lg={4} key={index}>
+                {miniCards.map((card, index) => (
+                  <Col className="mb-3" lg={4} key={index}>
                     <div
                       className={`riyadhMiniTitle-wrapper ${
                         index === 1 ? "afterBorder" : ""
@@ -159,10 +171,10 @@ const MobileAppDevelopments = () => {
                       data-aos="fade-up"
                     >
                       <div className="titleMini-icon">
-                        <TbShoppingCartSearch />
+                        {card.icon}
                       </div>
                       <div className="titleMini-text">
-                        <small>{text}</small>
+                        <small>{card.label}</small>
                       </div>
                     </div>
                   </Col>
@@ -189,7 +201,7 @@ const MobileAppDevelopments = () => {
               </p>
               <Row className="trustedContent-Row">
                 {trustedStats.map((item, idx) => (
-                  <Col lg={3} key={idx}>
+                  <Col className="mb-3" lg={3} key={idx}>
                     <div className="trustedDiv-wrapper" data-aos="zoom-in-down">
                       <div className="trustedDiv-first">
                         <span>{item.number}</span>
@@ -208,7 +220,7 @@ const MobileAppDevelopments = () => {
         <section className="low-code-sec-tool">
           <div className="container">
             <div className="row align-items-start">
-              <div className="col-lg-6 col-sm-12" data-aos="zoom-in-left">
+              <div className="col-lg-6 col-sm-12 p-3" data-aos="zoom-in-left">
                 <div className="tool-heading">
                   <h3 className="fw-bold">
                     Why Asvayuk Technologies is the Best Choice for Mobile App
@@ -232,7 +244,7 @@ const MobileAppDevelopments = () => {
                 </div>
               </div>
               <div
-                className="col-lg-6 col-sm-12 text-start"
+                className="col-lg-6 col-sm-12 text-start p-3"
                 data-aos="zoom-in-right"
               >
                 <ol>
@@ -256,12 +268,12 @@ const MobileAppDevelopments = () => {
                   <div className="heroBtn mt-3">
                     <Link
                       to="/contact-us"
-                      className="d-flex align-items-center justify-content-between"
+                      className="d-flex justify-content-between"
                     >
                       <div className="btnText px-3 py-3 text-light">
                         <span>Free Consultation</span>
                       </div>
-                      <div className="btn_icon px-4 py-2">
+                      <div className="btn_icon px-4 py-2 align-content-center">
                         <FaChevronRight />
                       </div>
                     </Link>
@@ -324,36 +336,36 @@ const MobileAppDevelopments = () => {
                   />
                 </div>
               </div>
-              <div className="woocomerce-buttons d-flex flex-column flex-md-row justify-content-center gap-3 text-center pt-4">
-                <Link to="#" data-aos="fade-right" className="riyadhUrl">
+              <div className="woocomerce-buttons d-flex flex-column flex-md-row justify-content-center gap-3 text-center pt-5 mt-5 overflow-x-hidden">
+                <Link to="#" data-aos="fade-up" className="riyadhUrl">
                   <h6>Consultation & Requirement Analysis</h6>
                   <p className="mb-0 fw-semibold text-white">
                     We begin by understanding your business and its specific
                     mobile app needs.
                   </p>
                 </Link>
-                <Link to="#" data-aos="fade-left" className="riyadhUrl">
+                <Link to="#" data-aos="fade-up" className="riyadhUrl">
                   <h6>Design & Prototyping</h6>
                   <p className="mb-0 fw-semibold text-white">
                     We create intuitive, good-looking interfaces that embody
                     your brand.
                   </p>
                 </Link>
-                <Link to="#" data-aos="fade-right" className="riyadhUrl">
+                <Link to="#" data-aos="fade-up" className="riyadhUrl">
                   <h6>Development & Integration</h6>
                   <p className="mb-0 fw-semibold text-white">
                     Our programmers deploy the app, integrating it seamlessly
                     with backend systems and APIs.
                   </p>
                 </Link>
-                <Link to="#" data-aos="fade-left" className="riyadhUrl">
+                <Link to="#" data-aos="fade-up" className="riyadhUrl">
                   <h6>Quality Assurance</h6>
                   <p className="mb-0 fw-semibold text-white">
                     Before releasing the software, we thoroughly test it for
                     usability, security, and functioning.
                   </p>
                 </Link>
-                <Link to="#" data-aos="fade-left" className="riyadhUrl">
+                <Link to="#" data-aos="fade-up" className="riyadhUrl">
                   <h6>Deployment & Support</h6>
                   <p className="mb-0 fw-semibold text-white">
                     Before releasing the software, we thoroughly test it for

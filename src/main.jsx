@@ -355,32 +355,35 @@ const router = createBrowserRouter([
         path: "/best-smart-contract-developer-chandigarh",
         element: <SmartContract />,
       },
+
+      // ROUTES FOR SAUDI ARABIA
+       
       {
-        path: "mobile-app-development-company-riyadh-saudi-arabia",
+        path: "/mobile-app-development-company-riyadh-saudi-arabia",
         element: <MobileAppDevelopments />,
       },
       {
-        path: "mern-stack-development-company-riyadh-saudi-arabia",
+        path: "/mern-stack-development-company-riyadh-saudi-arabia",
         element: <MernStackDevelopments />,
       },
       {
-        path: "e-commerce-development-company-riyadh-saudi-arabia",
+        path: "/e-commerce-development-company-riyadh-saudi-arabia",
         element: <EcommerceDevelopments />,
       },
       {
-        path: "shopify-development-company-riyadh-saudi-arabia",
+        path: "/shopify-development-company-riyadh-saudi-arabia",
         element: <ShopifyDevelopments />,
       },
       {
-        path: "delivery-app-development-company-riyadh-saudi-arabia",
+        path: "/delivery-app-development-company-riyadh-saudi-arabia",
         element: <DeliveryAppDevelopment />,
       },
       {
-        path: "crm-development-riyadh-saudi-arabia",
+        path: "/crm-development-riyadh-saudi-arabia",
         element: <CRMDevelopments/>,
       },
       {
-        path: "erp-development-riyadh-saudi-arabia",
+        path: "/erp-development-riyadh-saudi-arabia",
         element: <ERPDevelopments/>,
       },
       // 404 Page

@@ -1,18 +1,28 @@
 import { Col, Container, Row } from "react-bootstrap";
 import Meta_Component from "../../Components/Meta_Component/Meta_Component";
 import { Link } from "react-router-dom";
-import { FaArrowRight, FaChevronRight } from "react-icons/fa";
+import { FaArrowRight, FaChevronRight, FaUserCog } from "react-icons/fa";
 import { TbShoppingCartSearch } from "react-icons/tb";
 import ServicesCard from "../../Components/ServicesPage/ServicesCard";
 import c11 from "../../Images/c11.webp";
 import c12 from "../../Images/c12.webp";
 import c13 from "../../Images/c13.webp";
 import ExperienceCard from "../../Components/RiyadhDev/ExperienceCard";
+import { MdOnlinePrediction, MdPayment } from "react-icons/md";
 
 const miniCards = [
-  "Custom Online Store Development",
-  "Seamless Payment Integration",
-  "User-Centric Shopping Experience",
+  {
+    label: "Custom Online Store Development",
+    icon: <MdOnlinePrediction />,
+  },
+  {
+    label: "Seamless Payment Integration",
+    icon: <MdPayment />,
+  },
+  {
+    label: "User-Centric Shopping Experience",
+    icon: <FaUserCog />,
+  },
 ];
 
 const trustedStats = [
@@ -110,19 +120,17 @@ const EcommerceDevelopments = () => {
               </div>
 
               <Row className="riyadhRowMini-wrapper">
-                {miniCards.map((text, index) => (
-                  <Col lg={4} key={index}>
+                {miniCards.map((card, index) => (
+                  <Col className="mb-3" lg={4} key={index}>
                     <div
-                      className={`riyadhMiniTitle-wrapper ${
-                        index === 1 ? "afterBorder" : ""
-                      }`}
+                      className={`riyadhMiniTitle-wrapper ${index === 1 ? "afterBorder" : ""}`}
                       data-aos="fade-up"
                     >
                       <div className="titleMini-icon">
-                        <TbShoppingCartSearch />
+                        {card.icon}
                       </div>
                       <div className="titleMini-text">
-                        <small>{text}</small>
+                        <small>{card.label}</small>
                       </div>
                     </div>
                   </Col>
@@ -146,7 +154,7 @@ const EcommerceDevelopments = () => {
               </p>
               <Row className="trustedContent-Row">
                 {trustedStats.map((item, idx) => (
-                  <Col lg={3} key={idx}>
+                  <Col className="mb-3" lg={3} key={idx}>
                     <div className="trustedDiv-wrapper" data-aos="zoom-in-down">
                       <div className="trustedDiv-first">
                         <span>{item.number}</span>
@@ -166,7 +174,7 @@ const EcommerceDevelopments = () => {
         <section className="low-code-sec-tool">
           <div className="container">
             <div className="row align-items-start">
-              <div className="col-lg-6 col-sm-12" data-aos="zoom-in-left">
+              <div className="col-lg-6 col-sm-12 mb-3 p-3" data-aos="zoom-in-left">
                 <div className="tool-heading">
                   <h3 className="fw-bold">
                     Why Choose Asvayuk Technologies for E-commerce Development?
@@ -188,7 +196,7 @@ const EcommerceDevelopments = () => {
                 </div>
               </div>
               <div
-                className="col-lg-6 col-sm-12 text-start"
+                className="col-lg-6 col-sm-12 text-start mb-3 p-3"
                 data-aos="zoom-in-right"
               >
                 <ol>
@@ -210,12 +218,12 @@ const EcommerceDevelopments = () => {
                   <div className="heroBtn mt-3">
                     <Link
                       to="/contact-us"
-                      className="d-flex align-items-center justify-content-between"
+                      className="d-flex justify-content-between"
                     >
                       <div className="btnText px-3 py-3 text-light">
                         <span>Free Consultation</span>
                       </div>
-                      <div className="btn_icon px-4 py-2">
+                      <div className="btn_icon px-4 py-2 align-content-center">
                         <FaChevronRight />
                       </div>
                     </Link>
@@ -236,7 +244,7 @@ const EcommerceDevelopments = () => {
             </div>
             <Row className="performance_card2_inner-sec mt-5 justify-content-center">
               {services.map((service, i) => (
-                <Col lg={4} className="pb-4" data-aos="zoom-in" key={i}>
+                <Col lg={4} className="pb-4 mb-3" data-aos="zoom-in" key={i}>
                   <ServicesCard
                     ServiceCardImg={service.img}
                     altText={service.alt}

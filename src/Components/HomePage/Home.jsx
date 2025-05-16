@@ -69,7 +69,7 @@ import 'swiper/css';
 import { Navigation, Scrollbar, Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Col, Container, Row } from 'react-bootstrap';
-import { FaArrowRightLong } from 'react-icons/fa6';
+import { FaArrowRightLong, FaChevronRight } from 'react-icons/fa6';
 import BannerButton from '../BannerBtn/BannerButton';
 import Experience from './Experience';
 import Meta_Component from '../Meta_Component/Meta_Component';
@@ -330,7 +330,7 @@ function Home() {
                                     <h2 className="fw-semibold fs-1"> Practical Solutions That Revolutionized Industries!</h2>
                                 </div>
                                 <div className="col-lg-4 text-end fw-bold">
-                                    <Link to="/case-studies">View All Case Studies →</Link>
+                                    <Link to="/case-studies" >View All Case Studies <span className='chevronicon'><FaChevronRight /></span> </Link>
                                     {/* <div className="d-flex justify-content-end">
                                         <div className="casestu_button position-relative mt-4 d-flex gap-5">
                                             <div className="swiper-button-prev mt-0"></div>
