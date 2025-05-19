@@ -61,18 +61,21 @@ const services = [
 
 const experienceData = [
   {
+    experienceCardWrapper: 'experienceCardWrapper experienceEcommerce1',
     title: "Requirement Analysis & Planning",
     description:
       "We start with a thorough understanding of your product, market, and competitors. This helps us strategize and document project timelines, technology stacks, and goals clearly.",
     features: [],
   },
   {
+    experienceCardWrapper: 'experienceCardWrapper experienceEcommerce2',
     title: "Design & Storefront Development",
     description:
       "Our UI/UX experts design clean, responsive storefronts, while our developers create scalable and secure shopping functionalities customized for your target audience.",
     features: [],
   },
   {
+    experienceCardWrapper: 'experienceCardWrapper experienceEcommerce3',
     title: "Testing, Payment, and Integration",
     description:
       "We conduct extensive testing and integrate essential e-commerce tools like payment gateways, shipping APIs, CRM, and analytics to ensure a flawless shopping experience.",
@@ -277,6 +280,7 @@ const EcommerceDevelopments = () => {
                     title={data.title}
                     description={data.description}
                     features={data.features}
+                    experienceCardWrapper={data.experienceCardWrapper}
                   />
                 ))}
               </Row>

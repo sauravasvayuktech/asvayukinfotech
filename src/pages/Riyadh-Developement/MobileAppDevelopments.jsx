@@ -3,7 +3,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import Meta_Component from "../../Components/Meta_Component/Meta_Component";
 import { Link } from "react-router-dom";
 import { FaArrowRight, FaChevronRight } from "react-icons/fa";
-import { TbShoppingCartSearch } from "react-icons/tb";
+// import { TbShoppingCartSearch } from "react-icons/tb";
 import ServicesCard from "../../Components/ServicesPage/ServicesCard";
 import c11 from "../../Images/c11.webp";
 import c12 from "../../Images/c12.webp";
@@ -12,7 +12,7 @@ import c14 from "../../Images/c14.webp";
 import c15 from "../../Images/c15.webp";
 import Group_558 from "../../Images/Group-558.webp";
 import Group_168 from "../../Images/Group-168.webp";
-import ExperienceCard from "../../Components/RiyadhDev/ExperienceCard";
+// import ExperienceCard from "../../Components/RiyadhDev/ExperienceCard";
 import { MdRocketLaunch } from "react-icons/md";
 import { FaStar } from "react-icons/fa6";
 import { GiArtificialIntelligence } from "react-icons/gi";
@@ -81,45 +81,48 @@ const services = [
   // },
 ];
 
-const experienceData = [
-  {
-    image:
-      "https://d3l9a8mvoa6cl8.cloudfront.net/wp-content/uploads/2024/07/08182801/saudi_solution1.png",
-    title: "Artificial Intelligence",
-    description:
-      "AI can make your app experience much better by offering personalized content, smart predictions, and automated features. With AI integration, our app developer company ensures your app adapts to your users' changing needs, making it more user-friendly and efficient.",
-    features: [
-      "Predictive Analytics",
-      "Smart Predictions",
-      "Automated Features",
-    ],
-  },
-  // Repeat for other cards
-  {
-    image:
-      "https://d3l9a8mvoa6cl8.cloudfront.net/wp-content/uploads/2024/07/08182801/saudi_solution1.png",
-    title: "Artificial Intelligence",
-    description:
-      "AI can make your app experience much better by offering personalized content, smart predictions, and automated features. With AI integration, our app developer company ensures your app adapts to your users' changing needs, making it more user-friendly and efficient.",
-    features: [
-      "Predictive Analytics",
-      "Smart Predictions",
-      "Automated Features",
-    ],
-  },
-  {
-    image:
-      "https://d3l9a8mvoa6cl8.cloudfront.net/wp-content/uploads/2024/07/08182801/saudi_solution1.png",
-    title: "Artificial Intelligence",
-    description:
-      "AI can make your app experience much better by offering personalized content, smart predictions, and automated features. With AI integration, our app developer company ensures your app adapts to your users' changing needs, making it more user-friendly and efficient.",
-    features: [
-      "Predictive Analytics",
-      "Smart Predictions",
-      "Automated Features",
-    ],
-  },
-];
+// const experienceData = [
+//   {
+//     experienceCardWrapper: "experienceCardWrapper experienceMernStack3",
+//     image:
+//       "https://d3l9a8mvoa6cl8.cloudfront.net/wp-content/uploads/2024/07/08182801/saudi_solution1.png",
+//     title: "Artificial Intelligence",
+//     description:
+//       "AI can make your app experience much better by offering personalized content, smart predictions, and automated features. With AI integration, our app developer company ensures your app adapts to your users' changing needs, making it more user-friendly and efficient.",
+//     features: [
+//       "Predictive Analytics",
+//       "Smart Predictions",
+//       "Automated Features",
+//     ],
+//   },
+//   // Repeat for other cards
+//   {
+//     experienceCardWrapper: "experienceCardWrapper experienceMernStack3",
+//     image:
+//       "https://d3l9a8mvoa6cl8.cloudfront.net/wp-content/uploads/2024/07/08182801/saudi_solution1.png",
+//     title: "Artificial Intelligence",
+//     description:
+//       "AI can make your app experience much better by offering personalized content, smart predictions, and automated features. With AI integration, our app developer company ensures your app adapts to your users' changing needs, making it more user-friendly and efficient.",
+//     features: [
+//       "Predictive Analytics",
+//       "Smart Predictions",
+//       "Automated Features",
+//     ],
+//   },
+//   {
+//     experienceCardWrapper: "experienceCardWrapper experienceMernStack3",
+//     image:
+//       "https://d3l9a8mvoa6cl8.cloudfront.net/wp-content/uploads/2024/07/08182801/saudi_solution1.png",
+//     title: "Artificial Intelligence",
+//     description:
+//       "AI can make your app experience much better by offering personalized content, smart predictions, and automated features. With AI integration, our app developer company ensures your app adapts to your users' changing needs, making it more user-friendly and efficient.",
+//     features: [
+//       "Predictive Analytics",
+//       "Smart Predictions",
+//       "Automated Features",
+//     ],
+//   },
+// ];
 
 const MobileAppDevelopments = () => {
   return (
@@ -378,7 +381,7 @@ const MobileAppDevelopments = () => {
         </section>
 
         {/* Experience Cards */}
-        <section className="experience-wrapper">
+        {/* <section className="experience-wrapper">
           <Container>
             <div className="trustedContent-wrapper pt-5">
               <h2 className="pb-3" data-aos="zoom-in-up">
@@ -399,6 +402,7 @@ const MobileAppDevelopments = () => {
                     title={data.title}
                     description={data.description}
                     features={data.features}
+                    experienceCardWrapper={data.experienceCardWrapper}
                   />
                 ))}
               </Row>
@@ -414,7 +418,7 @@ const MobileAppDevelopments = () => {
               </Link>
             </div>
           </Container>
-        </section>
+        </section> */}
       </main>
     </>
   );

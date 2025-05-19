@@ -10,8 +10,8 @@ import c12 from "../../Images/c12.webp";
 import c13 from "../../Images/c13.webp";
 import c14 from "../../Images/c14.webp";
 import c15 from "../../Images/c15.webp";
-import Group_558 from "../../Images/Group-558.webp";
-import Group_168 from "../../Images/Group-168.webp";
+// import Group_558 from "../../Images/Group-558.webp";
+// import Group_168 from "../../Images/Group-168.webp";
 import ExperienceCard from "../../Components/RiyadhDev/ExperienceCard";
 import { GiArtificialIntelligence } from "react-icons/gi";
 import { FaShopify } from "react-icons/fa6";
@@ -33,7 +33,10 @@ const miniCards = [
 
 const trustedStats = [
   { number: "1", label: "Boost e-commerce sales and customer engagement." },
-  { number: "2", label: "Streamline order fulfillment and inventory management." },
+  {
+    number: "2",
+    label: "Streamline order fulfillment and inventory management.",
+  },
   { number: "3", label: "Offer seamless mobile shopping experiences." },
   { number: "4", label: "Enable faster checkout and personalized offers." },
 ];
@@ -73,22 +76,37 @@ const services = [
 
 const experienceData = [
   {
+    experienceCardWrapper: "experienceCardWrapper experienceShopifyDev1",
     title: "AI-Powered Recommendations",
     description:
       "Leverage AI to deliver smart product recommendations and personalized shopping experiences in your Shopify mobile app, increasing conversions and loyalty.",
-    features: ["Personalized Suggestions", "Behavioral Insights", "Automated Upselling"],
+    features: [
+      "Personalized Suggestions",
+      "Behavioral Insights",
+      "Automated Upselling",
+    ],
   },
   {
+    experienceCardWrapper: "experienceCardWrapper experienceShopifyDev2",
     title: "Advanced Shopify Integrations",
     description:
       "Seamlessly integrate with popular Shopify plugins, payment gateways, inventory tools, and CRM systems to streamline operations across your mobile app and storefront.",
-    features: ["Secure Payment Integration", "CRM & ERP Sync", "Inventory Management"],
+    features: [
+      "Secure Payment Integration",
+      "CRM & ERP Sync",
+      "Inventory Management",
+    ],
   },
   {
+    experienceCardWrapper: "experienceCardWrapper experienceShopifyDev3",
     title: "High Performance & Speed",
     description:
       "Our apps are optimized for speed and responsiveness, ensuring smooth navigation, faster loading, and excellent usability on all devices.",
-    features: ["Optimized Load Times", "Low Bounce Rate", "User-Centric Design"],
+    features: [
+      "Optimized Load Times",
+      "Low Bounce Rate",
+      "User-Centric Design",
+    ],
   },
 ];
 
@@ -107,12 +125,19 @@ const ShopifyDevelopments = () => {
           <Container>
             <div className="riyadhBannerContent-wrapper">
               <div className="riyadhBannerContent">
-                <h1 className="fw-bold riyadhBannerContent-title" data-aos="zoom-in">
+                <h1
+                  className="fw-bold riyadhBannerContent-title"
+                  data-aos="zoom-in"
+                >
                   Expert Shopify Mobile App Development
                   <span> in Riyadh</span>, Saudi Arabia
                 </h1>
                 <p className="riyadhBannerContent-desc" data-aos="zoom-in">
-                  Asvayuk Technologies specializes in creating high-performance Shopify mobile apps tailored for the Saudi market. Our expert developers in Riyadh deliver scalable, feature-rich solutions for e-commerce businesses looking to expand their digital footprint.
+                  Asvayuk Technologies specializes in creating high-performance
+                  Shopify mobile apps tailored for the Saudi market. Our expert
+                  developers in Riyadh deliver scalable, feature-rich solutions
+                  for e-commerce businesses looking to expand their digital
+                  footprint.
                 </p>
                 <Link to="/contact-us" className="riyadhBtn" data-aos="zoom-in">
                   <div className="riyadhBtn-icons">
@@ -126,12 +151,12 @@ const ShopifyDevelopments = () => {
                 {miniCards.map((card, index) => (
                   <Col className="mb-3" lg={4} key={index}>
                     <div
-                      className={`riyadhMiniTitle-wrapper ${index === 1 ? "afterBorder" : ""}`}
+                      className={`riyadhMiniTitle-wrapper ${
+                        index === 1 ? "afterBorder" : ""
+                      }`}
                       data-aos="fade-up"
                     >
-                      <div className="titleMini-icon">
-                        {card.icon}
-                      </div>
+                      <div className="titleMini-icon">{card.icon}</div>
                       <div className="titleMini-text">
                         <small>{card.label}</small>
                       </div>
@@ -151,7 +176,9 @@ const ShopifyDevelopments = () => {
                 Why Your E-commerce Business <br /> Needs a Mobile App
               </h2>
               <p>
-                With the rapid shift to mobile commerce, having a mobile app is essential for any e-commerce business. A custom Shopify mobile app can:
+                With the rapid shift to mobile commerce, having a mobile app is
+                essential for any e-commerce business. A custom Shopify mobile
+                app can:
               </p>
               <Row className="trustedContent-Row">
                 {trustedStats.map((item, idx) => (
@@ -178,29 +205,44 @@ const ShopifyDevelopments = () => {
               <div className="col-lg-6 col-sm-12 p-3" data-aos="zoom-in-left">
                 <div className="tool-heading">
                   <h3 className="fw-bold">
-                    Why Choose Asvayuk for Shopify Mobile App Development in Riyadh
+                    Why Choose Asvayuk for Shopify Mobile App Development in
+                    Riyadh
                   </h3>
                   <p>
-                    At Asvayuk Technologies, we build Shopify mobile apps that help your store drive engagement and increase revenue. Our team works closely with you to craft apps that meet business goals and elevate customer experience.
+                    At Asvayuk Technologies, we build Shopify mobile apps that
+                    help your store drive engagement and increase revenue. Our
+                    team works closely with you to craft apps that meet business
+                    goals and elevate customer experience.
                   </p>
                   <p>
-                    <strong>Certified Shopify Experts:</strong> We have a dedicated team of Shopify developers specializing in mobile commerce and backend integrations.
+                    <strong>Certified Shopify Experts:</strong> We have a
+                    dedicated team of Shopify developers specializing in mobile
+                    commerce and backend integrations.
                   </p>
                 </div>
               </div>
-              <div className="col-lg-6 col-sm-12 text-start p-3" data-aos="zoom-in-right">
+              <div
+                className="col-lg-6 col-sm-12 text-start p-3"
+                data-aos="zoom-in-right"
+              >
                 <ol>
                   <li>
-                    <strong>Shopify App Customization:</strong> Unique features tailored to your brand.
+                    <strong>Shopify App Customization:</strong> Unique features
+                    tailored to your brand.
                   </li>
                   <li>
-                    <strong>Native & Cross-Platform Solutions:</strong> Smooth experiences on Android and iOS.
+                    <strong>Native & Cross-Platform Solutions:</strong> Smooth
+                    experiences on Android and iOS.
                   </li>
                   <li>
-                    <strong>Post-Launch Support:</strong> We offer continuous optimization and support.
+                    <strong>Post-Launch Support:</strong> We offer continuous
+                    optimization and support.
                   </li>
                   <div className="heroBtn mt-3">
-                    <Link to="/contact-us" className="d-flex justify-content-between">
+                    <Link
+                      to="/contact-us"
+                      className="d-flex justify-content-between"
+                    >
                       <div className="btnText px-3 py-3 text-light">
                         <span>Free Consultation</span>
                       </div>
@@ -223,7 +265,9 @@ const ShopifyDevelopments = () => {
                 Our Shopify Development Services
               </h2>
               <p className="mt-3" data-aos="zoom-in-up">
-                Whether you need custom Shopify apps, delivery integrations, or mobile-first experiences, we’ve got the expertise to deliver top-notch solutions.
+                Whether you need custom Shopify apps, delivery integrations, or
+                mobile-first experiences, we’ve got the expertise to deliver
+                top-notch solutions.
               </p>
             </div>
             <Row className="performance_card2_inner-sec mt-5 justify-content-center">
@@ -249,7 +293,8 @@ const ShopifyDevelopments = () => {
                 Technologies Powering Our Shopify Apps
               </h2>
               <p className="fs-6" data-aos="zoom-in-up">
-                We use cutting-edge technologies to build future-ready Shopify mobile applications for your business.
+                We use cutting-edge technologies to build future-ready Shopify
+                mobile applications for your business.
               </p>
               <Row className="experienceWrapper-Row">
                 {experienceData.map((data, index) => (
@@ -259,10 +304,15 @@ const ShopifyDevelopments = () => {
                     title={data.title}
                     description={data.description}
                     features={data.features}
+                    experienceCardWrapper={data.experienceCardWrapper}
                   />
                 ))}
               </Row>
-              <Link to="/contact-us" className="riyadhBtn text-white" data-aos="zoom-in-up">
+              <Link
+                to="/contact-us"
+                className="riyadhBtn text-white"
+                data-aos="zoom-in-up"
+              >
                 <div className="riyadhBtn-icons">
                   <FaArrowRight />
                 </div>

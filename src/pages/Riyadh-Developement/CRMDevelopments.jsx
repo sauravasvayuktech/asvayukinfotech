@@ -3,7 +3,6 @@ import { Col, Container, Row } from "react-bootstrap";
 import Meta_Component from "../../Components/Meta_Component/Meta_Component";
 import { Link } from "react-router-dom";
 import { FaArrowRight, FaChevronRight } from "react-icons/fa";
-import { TbShoppingCartSearch } from "react-icons/tb";
 import ServicesCard from "../../Components/ServicesPage/ServicesCard";
 import c11 from "../../Images/c11.webp";
 import c12 from "../../Images/c12.webp";
@@ -16,11 +15,6 @@ import work2 from "../../Images/larawk3.jpg";
 import { MdSettingsApplications } from "react-icons/md";
 import { PiEscalatorUpFill } from "react-icons/pi";
 import { FaHandshake } from "react-icons/fa6";
-
-import {
-  TbMobiledata,
-  TbTruckDelivery,
-} from "react-icons/tb";
 
 const miniCards = [
   {
@@ -62,18 +56,21 @@ const trustedStats = [
 
 const experienceData = [
   {
+    experienceCardWrapper: 'experienceCardWrapper',
     title: "Local Expertise",
     description:
       "Our Riyadh delivery mobile app developers have deep insight into the Riyadh market. We are experts in managing the Riyadh business challenges and opportunities that are different from elsewhere, thereby enabling us to design solutions uniquely adapted.",
     features: [],
   },
   {
+    experienceCardWrapper: 'experienceCardWrapper experienceCardWrapper1',
     title: "Personalized Solutions",
     description:
       "We believe that each business is one-of-a-kind, and that is the reason we provide fully bespoke delivery application solutions. Whether you require a straightforward application for a small enterprise or a sophisticated system for a corporate firm.",
     features: [],
   },
   {
+    experienceCardWrapper: 'experienceCardWrapper experienceCardWrapper2',
     title: "Advanced Technology",
     description:
       "Our deployment solutions are constructed using the latest technology and industry standards, utilizing the newest features like secure payment processors, real-time monitoring, and AI analytics to not only launch your application but also remain one step ahead.",
@@ -151,12 +148,12 @@ const CRMDevelopments = () => {
                 {miniCards.map((card, index) => (
                   <Col className="mb-3" lg={4} key={index}>
                     <div
-                      className={`riyadhMiniTitle-wrapper ${index === 1 ? "afterBorder" : ""}`}
+                      className={`riyadhMiniTitle-wrapper ${
+                        index === 1 ? "afterBorder" : ""
+                      }`}
                       data-aos="fade-up"
                     >
-                      <div className="titleMini-icon">
-                        {card.icon}
-                      </div>
+                      <div className="titleMini-icon">{card.icon}</div>
                       <div className="titleMini-text">
                         <small>{card.label}</small>
                       </div>
@@ -361,6 +358,7 @@ const CRMDevelopments = () => {
                     title={data.title}
                     description={data.description}
                     features={data.features}
+                    experienceCardWrapper={data.experienceCardWrapper}
                   />
                 ))}
               </Row>

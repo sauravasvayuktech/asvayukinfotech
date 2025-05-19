@@ -1,10 +1,10 @@
 import { Col } from "react-bootstrap";
 
-const ExperienceCard = ({ image, title, description, features }) => {
+const ExperienceCard = ({ image, title, description, features, experienceCardWrapper }) => {
   return (
     <>
       <Col lg={4}>
-        <div className="experienceCard-wrapper" data-aos="zoom-in">
+        <div className={experienceCardWrapper} data-aos="zoom-in">
           <div className="experienceBanner-Area">
             <div className="experienceBanner-Area1">
               <div className="experienceBannerArea1-Content">

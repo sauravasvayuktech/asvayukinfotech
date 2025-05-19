@@ -63,18 +63,21 @@ const services = [
 
 const experienceData = [
   {
+    experienceCardWrapper: "experienceCardWrapper experienceMernStack1",
     title: "Planning and Consultation",
     description:
       "We begin with an in-depth consultation to grasp your business goals, personal needs, and target audience. We will prepare a detailed project schedule that considers budget, timeline, and scope as a whole.",
     features: [],
   },
   {
+    experienceCardWrapper: "experienceCardWrapper experienceMernStack2",
     title: "Design and Development",
     description:
       "Your web application will be designed and developed by our MERN stack developers in accordance with best practices. Our top goal is to deliver a flawless user experience so that your software remains aesthetically easy to use.",
     features: [],
   },
   {
+    experienceCardWrapper: "experienceCardWrapper experienceMernStack3",
     title: "Testing and Quality Assurance",
     description:
       "To make sure your program is error-free and functions properly across all hardware and web browsers, we thoroughly test it. Our quality assurance team would thoroughly test your application to ensure it meets the highest requirements.",
@@ -123,13 +126,12 @@ const MernStackDevelopments = () => {
                 {miniCards.map((card, index) => (
                   <Col className="mb-3" lg={4} key={index}>
                     <div
-                      className={`riyadhMiniTitle-wrapper ${index === 1 ? "afterBorder" : ""
-                        }`}
+                      className={`riyadhMiniTitle-wrapper ${
+                        index === 1 ? "afterBorder" : ""
+                      }`}
                       data-aos="fade-up"
                     >
-                      <div className="titleMini-icon">
-                        {card.icon}
-                      </div>
+                      <div className="titleMini-icon">{card.icon}</div>
                       <div className="titleMini-text">
                         <small>{card.label}</small>
                       </div>
@@ -201,7 +203,8 @@ const MernStackDevelopments = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-6 col-sm-12 text-start p-3"
+              <div
+                className="col-lg-6 col-sm-12 text-start p-3"
                 data-aos="zoom-in-right"
               >
                 <ol>
@@ -285,6 +288,7 @@ const MernStackDevelopments = () => {
                     title={data.title}
                     description={data.description}
                     features={data.features}
+                    experienceCardWrapper={data.experienceCardWrapper}
                   />
                 ))}
               </Row>

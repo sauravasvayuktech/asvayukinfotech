@@ -70,18 +70,21 @@ const services = [
 
 const experienceData = [
   {
+    experienceCardWrapper: 'experienceCardWrapper experienceCardWrapperDelivery1',
     title: "Local Expertise",
     description:
       "Our Riyadh delivery mobile app developers have deep insight into the Riyadh market. We are experts in managing the Riyadh business challenges and opportunities that are different from elsewhere, thereby enabling us to design solutions uniquely adapted.",
     features: [],
   },
   {
+    experienceCardWrapper: 'experienceCardWrapper experienceCardWrapperDelivery21',
     title: "Personalized Solutions",
     description:
       "We believe that each business is one-of-a-kind, and that is the reason we provide fully bespoke delivery application solutions. Whether you require a straightforward application for a small enterprise or a sophisticated system for a corporate firm.",
     features: [],
   },
   {
+    experienceCardWrapper: 'experienceCardWrapper experienceCardWrapperDelivery3',
     title: "Advanced Technology",
     description:
       "Our deployment solutions are constructed using the latest technology and industry standards, utilizing the newest features like secure payment processors, real-time monitoring, and AI analytics to not only launch your application but also remain one step ahead.",
@@ -364,6 +367,7 @@ const DeliveryAppDevelopment = () => {
                     title={data.title}
                     description={data.description}
                     features={data.features}
+                    experienceCardWrapper={data.experienceCardWrapper}
                   />
                 ))}
               </Row>
