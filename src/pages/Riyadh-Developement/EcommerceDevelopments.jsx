@@ -2,7 +2,6 @@ import { Col, Container, Row } from "react-bootstrap";
 import Meta_Component from "../../Components/Meta_Component/Meta_Component";
 import { Link } from "react-router-dom";
 import { FaArrowRight, FaChevronRight, FaUserCog } from "react-icons/fa";
-import { TbShoppingCartSearch } from "react-icons/tb";
 import ServicesCard from "../../Components/ServicesPage/ServicesCard";
 import c11 from "../../Images/c11.webp";
 import c12 from "../../Images/c12.webp";

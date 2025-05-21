@@ -5835,6 +5835,21 @@ a {
     width: 250px;
     height: 250px;
   }
+  .accelerate-bx ul.accelerate-lst {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+  .trustedContent-wrapper {
+    padding-block: 15px;
+  }
+  .accelerate-bx .accelerate-lst li:first-child,
+  .accelerate-bx .accelerate-lst li:nth-child(2),
+  .accelerate-bx .accelerate-lst li:nth-child(3) {
+    transform: rotate(0deg) !important;
+  }
+  .accelerate-bx .accelerate-lst li::before {
+    left: 50% !important;
+    transform: translate(-50%, 0) !important;
+  }
 }
 
 .translated-rtl .chevronicon svg {
@@ -5845,4 +5860,137 @@ a {
 }
 div#root {
   overflow-x: scroll;
+}
+
+app__subhead {
+  line-height: 1.5;
+}
+
+.scroll_list {
+  background: var(--maindark);
+  padding: 2rem;
+  border-radius: 1rem 0 0 1rem;
+}
+
+.tabSoftDev {
+  border: 1px solid var(--maindark) !important;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.navLinkSoftDev > span {
+  font-size: 1.1rem !important;
+  font-weight: 500;
+  color: var(--light);
+}
+
+.navItemsSoftDev {
+  border-bottom: 1px solid var(--main);
+  margin-bottom: 1rem;
+}
+
+.navLinkSoftDev.active {
+  background: var(--main);
+  border-radius: 0.5rem;
+  transition: 0.3s;
+}
+.navItemsSoftDev:has(.navLinkSoftDev.active) {
+  border-bottom: none;
+}
+
+.tab-accordion-headerDev img {
+  background: var(--main);
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+}
+
+.common__btn {
+  background: var(--main) !important;
+  border-color: var(--main) !important;
+}
+
+.accelerate-bx {
+  position: relative;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 100%;
+  background-position: center center;
+}
+
+.bg_new_bx {
+  background-color: rgb(7, 9, 13);
+}
+
+.padding_coman {
+  padding: 55px 0px;
+}
+
+.new_font_content {
+  margin-bottom: 50px;
+}
+
+.accelerate-bx ul.accelerate-lst {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 65px;
+}
+
+.accelerate-bx .accelerate-lst li:first-child,
+.accelerate-bx .accelerate-lst li:nth-child(2),
+.accelerate-bx .accelerate-lst li:nth-child(3) {
+  transform: rotate(-7deg);
+}
+
+.accelerate-bx .accelerate-lst li {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  min-height: 150px;
+  background: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+
+.accelerate-bx .accelerate-lst li::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  left: -10px;
+  top: -10px;
+  background: rgb(255, 255, 255);
+  border-radius: 50%;
+}
+
+.accelerate-bx .accelerate-lst li::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  bottom: 5px;
+  left: -10px;
+  right: 0px;
+  background: var(--maindark);
+  margin: auto;
+  border-radius: 20px;
+}
+
+.accelerate-bx .accelerate-lst li h3 {
+  font-weight: 700;
+  font-size: 22px;
+  color: #fff;
+  text-align: center;
+  line-height: 35px;
+}
+
+.accelerate-bx .accelerate-lst li:hover {
+  transform: translate(0, 0);
+}
+
+.headerDevImage {
+  background-color: var(--maindark);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
 }

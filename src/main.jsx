@@ -91,6 +91,7 @@ import ShopifyDevelopments from "./pages/Riyadh-Developement/ShopifyDevelopments
 import DeliveryAppDevelopment from "./pages/Riyadh-Developement/DeliveryAppDevelopment.jsx";
 import CRMDevelopments from "./pages/Riyadh-Developement/CRMDevelopments.jsx";
 import ERPDevelopments from "./pages/Riyadh-Developement/ERPDevelopments.jsx";
+import SoftwareDevelopments from "./pages/Riyadh-Developement/SoftwareDevelopments.jsx";
 
 const router = createBrowserRouter([
   {
@@ -357,7 +358,7 @@ const router = createBrowserRouter([
       },
 
       // ROUTES FOR SAUDI ARABIA
-       
+
       {
         path: "/mobile-app-development-company-riyadh-saudi-arabia",
         element: <MobileAppDevelopments />,
@@ -380,11 +381,15 @@ const router = createBrowserRouter([
       },
       {
         path: "/crm-development-riyadh-saudi-arabia",
-        element: <CRMDevelopments/>,
+        element: <CRMDevelopments />,
       },
       {
         path: "/erp-development-riyadh-saudi-arabia",
-        element: <ERPDevelopments/>,
+        element: <ERPDevelopments />,
+      },
+      {
+        path: "/software-development-company-in-saudi-arabia",
+        element: <SoftwareDevelopments />,
       },
       // 404 Page
       { path: "*", element: <Page404 /> },
