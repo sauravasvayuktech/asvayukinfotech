@@ -17,13 +17,13 @@ function App() {
   }, []);
   return (
     <>
-    <LanguageProvider>
-      <ScrollToTop />
-      <Header />
-      <AutoPopupModal />
-      <Outlet />
-      <Footer />
-    </LanguageProvider>
+      <LanguageProvider>
+        <ScrollToTop />
+        <Header />
+        <AutoPopupModal />
+        <Outlet />
+        <Footer />
+      </LanguageProvider>
     </>
   );
 }

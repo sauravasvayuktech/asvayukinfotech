@@ -11,7 +11,7 @@ import work1 from '../../Images/shopifyworkImg1.png'
 import work2 from '../../Images/shopifyworkImg2.png'
 import work3 from '../../Images/work3.png'
 import banShopSml from '../../Images/banSY.png'
-import './TopDeveloper.css'
+
 import { MdIntegrationInstructions, MdMiscellaneousServices } from 'react-icons/md';
 import { FaComputer } from 'react-icons/fa6';
 import { GrOptimize } from "react-icons/gr";

@@ -92,6 +92,13 @@ import DeliveryAppDevelopment from "./pages/Riyadh-Developement/DeliveryAppDevel
 import CRMDevelopments from "./pages/Riyadh-Developement/CRMDevelopments.jsx";
 import ERPDevelopments from "./pages/Riyadh-Developement/ERPDevelopments.jsx";
 import SoftwareDevelopments from "./pages/Riyadh-Developement/SoftwareDevelopments.jsx";
+import EnterpriseSolutions from "./pages/Riyadh-Developement/EnterpriseSolutions.jsx";
+import DigitalTransformations from "./pages/Riyadh-Developement/DigitalTransformations.jsx";
+import CloudDevOpsServices from "./pages/Riyadh-Developement/CloudDevOpsServices.jsx";
+import BlockchainFintechServices from "./pages/Riyadh-Developement/BlockchainFintechServices.jsx";
+import MachineLearningSolutions from "./pages/Riyadh-Developement/MachineLearningSolutions.jsx";
+import DesignProducts from "./pages/Riyadh-Developement/DesignProducts.jsx";
+import DataAnalytics from "./pages/Riyadh-Developement/DataAnalytics.jsx";
 
 const router = createBrowserRouter([
   {
@@ -390,6 +397,34 @@ const router = createBrowserRouter([
       {
         path: "/software-development-company-in-saudi-arabia",
         element: <SoftwareDevelopments />,
+      },
+      {
+        path: "/enterprise-solution-company-in-saudi-arabia",
+        element: <EnterpriseSolutions />,
+      },
+      {
+        path: "/digital-transformation-services-in-saudi-arabia",
+        element: <DigitalTransformations />,
+      },
+      {
+        path: "/cloud-devops-services-in-saudi-arabia",
+        element: <CloudDevOpsServices />,
+      },
+      {
+        path: "/blockchain-fintech-development-services-in-saudi-arabia",
+        element: <BlockchainFintechServices />,
+      },
+      {
+        path: "/ai-machine-learning-solutions-in-saudi-arabia",
+        element: <MachineLearningSolutions />,
+      },
+      {
+        path: "/ui-ux-product-design-services-in-saudi-arabia",
+        element: <DesignProducts />,
+      },
+      {
+        path: "/data-analytics-bi-services-in-saudi-arabia",
+        element: <DataAnalytics />,
       },
       // 404 Page
       { path: "*", element: <Page404 /> },

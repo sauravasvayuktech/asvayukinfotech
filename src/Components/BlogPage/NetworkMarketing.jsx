@@ -1,4 +1,4 @@
-import './SingleBlog.css'
+
 import { Col, Container, Row } from 'react-bootstrap'
 import { Link } from 'react-router-dom';
 import network_marketing_image from "../../Images/networkMarketing.png";

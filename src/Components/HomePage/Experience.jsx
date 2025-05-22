@@ -1,4 +1,4 @@
-import './Home.css'
+
 import group1 from '../../Images/Group-1.webp';
 import group2 from '../../Images/Group-2.webp';
 import group3 from '../../Images/Group-3.webp';

@@ -1,10 +1,8 @@
-// import "./Service.css";
-
 function ServicesCard({
   ServiceCardImg,
   cardHeading,
   cardParaGraph,
-  altText = "",
+  altText,
 }) {
   return (
     <>

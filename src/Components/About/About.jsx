@@ -1,6 +1,6 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import './About.css'
+
 import { MdKeyboardArrowRight } from 'react-icons/md';
 import right_logo from '../../Images/right-logo-2.webp'
 import about_bg from '../../Images/abtbg.webp'

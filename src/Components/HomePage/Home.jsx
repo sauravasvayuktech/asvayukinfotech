@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import bannerImg from '../../Images/home2.webp'
-// import './Home.css'
+// 
 import ISO from '../../Images/ISO.webp';
 import Odoo from '../../Images/Odoo.webp';
 import life from '../../Images/life.webp';

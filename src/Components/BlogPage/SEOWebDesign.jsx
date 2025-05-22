@@ -1,4 +1,4 @@
-import './SingleBlog.css'
+
 import { Col, Container, Row } from 'react-bootstrap'
 import { Link } from 'react-router-dom';
 import seo_web_design_image from "../../Images/seoWeb.png";

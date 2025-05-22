@@ -10,7 +10,7 @@ import wshopify from '../../Images/bgcrimg2.png'
 import work1 from '../../Images/crypotoImg1.png'
 import work2 from '../../Images/crypotoImg2.png'
 import work3 from '../../Images/crypotoImg3.png'
-import './TopDeveloper.css'
+
 import { BsFiletypePsd } from 'react-icons/bs';
 import { MdIntegrationInstructions, MdMiscellaneousServices } from 'react-icons/md';
 import { FaComputer } from 'react-icons/fa6';

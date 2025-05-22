@@ -1,4 +1,3 @@
-import './SingleBlog.css'
 import { Col, Container, Row } from 'react-bootstrap'
 import { Link } from 'react-router-dom';
 import mlm_image from "../../Images/HybridMLM.png";

@@ -1,4 +1,3 @@
-import './SingleBlog.css'
 import { Col, Container, Row } from 'react-bootstrap'
 import { Link } from 'react-router-dom';
 import crypto_app_image from "../../Images/CryptocurrencyAppDev.png";

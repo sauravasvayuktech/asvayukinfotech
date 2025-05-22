@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-// import "./Service.css";
+// ;
 import "../../App.css";
 import check from "../../Images/check.webp";
 import { FaChevronRight } from "react-icons/fa";

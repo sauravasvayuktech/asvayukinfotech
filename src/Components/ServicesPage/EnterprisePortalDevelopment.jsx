@@ -1,4 +1,4 @@
-import './Service.css'
+
 import { useState } from 'react'
 import { Breadcrumb, Container, Row ,Col } from 'react-bootstrap'
 import { Link } from 'react-router-dom'

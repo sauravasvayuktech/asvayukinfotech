@@ -1,5 +1,5 @@
 import BannerButton from '../BannerBtn/BannerButton'
-import './Service.css'
+
 import "swiper/css";
 import { Breadcrumb, Col, Container, Row } from 'react-bootstrap'
 import { Link } from 'react-router-dom'

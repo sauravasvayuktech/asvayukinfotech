@@ -1,4 +1,4 @@
-import './SingleBlog.css'
+
 import { Col, Container, Row } from 'react-bootstrap'
 import { Link } from 'react-router-dom';
 import ui_ux_design_image from "../../Images/UIUX_DesignSolutions.png";

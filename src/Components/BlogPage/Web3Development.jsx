@@ -1,4 +1,3 @@
-import "./SingleBlog.css";
 import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import web3_image from "../../Images/web3Dev.png";

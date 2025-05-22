@@ -11,11 +11,10 @@ import {
   FaLinkedin,
   FaPhoneAlt,
   FaPinterestP,
-  FaSkype,
   FaYoutube,
 } from "react-icons/fa";
 import { IoCall, IoLocationSharp } from "react-icons/io5";
-import React, { useState } from "react";
+import { useState } from "react";
 import { Modal, Row } from "react-bootstrap";
 import { FaWhatsapp } from "react-icons/fa6";
 import {
@@ -26,7 +25,6 @@ import {
   FaXTwitter,
 } from "react-icons/fa6";
 import { MdMail } from "react-icons/md";
-import { BiSupport } from "react-icons/bi";
 
 function Footer() {
   const location = useLocation();
