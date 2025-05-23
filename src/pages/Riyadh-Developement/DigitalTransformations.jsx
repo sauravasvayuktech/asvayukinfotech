@@ -158,7 +158,7 @@ const DigitalTransformations = () => {
 
       <main>
         {/* Banner Section */}
-        <section className="banner-en">
+        <section className="banner-en py-5">
           <Container>
             <Row className="align-items-center">
               <div className="col-lg-6">

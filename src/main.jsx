@@ -99,6 +99,7 @@ import BlockchainFintechServices from "./pages/Riyadh-Developement/BlockchainFin
 import MachineLearningSolutions from "./pages/Riyadh-Developement/MachineLearningSolutions.jsx";
 import DesignProducts from "./pages/Riyadh-Developement/DesignProducts.jsx";
 import DataAnalytics from "./pages/Riyadh-Developement/DataAnalytics.jsx";
+import ComplianceServices from "./pages/Riyadh-Developement/ComplianceServices.jsx";
 
 const router = createBrowserRouter([
   {
@@ -425,6 +426,10 @@ const router = createBrowserRouter([
       {
         path: "/data-analytics-bi-services-in-saudi-arabia",
         element: <DataAnalytics />,
+      },
+      {
+        path: "/security-compliance-services-in-saudi-arabia",
+        element: <ComplianceServices />,
       },
       // 404 Page
       { path: "*", element: <Page404 /> },

@@ -468,9 +468,32 @@ function Footer() {
                           Mobile app development company riyadh saudi arabia
                         </Link>
                       </li>
+
+                      <li>
+                        <Link to="/blockchain-fintech-development-services-in-saudi-arabia">
+                          Blockchain & Fintech Development Company in Saudi
+                          Arabia
+                        </Link>
+                      </li>
                       <li>
                         <Link to="/mern-stack-development-company-riyadh-saudi-arabia">
                           Mern stack development company riyadh saudi arabia
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/delivery-app-development-company-riyadh-saudi-arabia">
+                          Delivery app development company riyadh saudi arabia
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/enterprise-solution-company-in-saudi-arabia">
+                          Enterprise Solutions Company in Saudi Arabia
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/digital-transformation-services-in-saudi-arabia">
+                          Digital Transformation Services Company in Saudi
+                          Arabia
                         </Link>
                       </li>
                       <li>
@@ -479,8 +502,8 @@ function Footer() {
                         </Link>
                       </li>
                       <li>
-                        <Link to="/delivery-app-development-company-riyadh-saudi-arabia">
-                          Delivery app development company riyadh saudi arabia
+                        <Link to="/software-development-company-in-saudi-arabia">
+                          Software Development Company In Saudi Arabia
                         </Link>
                       </li>
                     </ul>
@@ -495,11 +518,6 @@ function Footer() {
                   <div className="footer_menu">
                     <ul className="list-unstyled d-flex flex-column gap-2">
                       <li>
-                        <Link to="/crm-development-riyadh-saudi-arabia">
-                          CRM development riyadh saudi arabia
-                        </Link>
-                      </li>
-                      <li>
                         <Link to="/erp-development-riyadh-saudi-arabia">
                           ERP development riyadh saudi arabia
                         </Link>
@@ -510,8 +528,35 @@ function Footer() {
                         </Link>
                       </li>
                       <li>
-                        <Link to="/software-development-company-in-saudi-arabia">
-                          Software Development Company In Saudi Arabia
+                        <Link to="/cloud-devops-services-in-saudi-arabia">
+                          Cloud & DevOps Services Company in Saudi Arabia
+                        </Link>
+                      </li>
+
+                      <li>
+                        <Link to="/ai-machine-learning-solutions-in-saudi-arabia">
+                          AI & Machine Learning Solutions Company in Saudi
+                          Arabia
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/crm-development-riyadh-saudi-arabia">
+                          CRM development riyadh saudi arabia
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/ui-ux-product-design-services-in-saudi-arabia">
+                          UI/UX & Product Design Company in Saudi Arabia
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/data-analytics-bi-services-in-saudi-arabia">
+                          Data Analytics & BI Company in Saudi Arabia
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/security-compliance-services-in-saudi-arabia">
+                          Security & Compliance Services Company in Saudi Arabia
                         </Link>
                       </li>
                     </ul>
