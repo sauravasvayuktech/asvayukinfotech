@@ -6288,7 +6288,7 @@ app__subhead {
   border: 1px solid var(--maindark) !important;
   border-radius: 2rem;
   overflow: hidden;
-  background: url("./Images/tabSoftDev.jpg");
+  /* background: url("./Images/tabSoftDev.jpg"); */
   background-repeat: no-repeat;
   background-size: cover;
 }
