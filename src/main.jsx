@@ -100,6 +100,10 @@ import MachineLearningSolutions from "./pages/Riyadh-Developement/MachineLearnin
 import DesignProducts from "./pages/Riyadh-Developement/DesignProducts.jsx";
 import DataAnalytics from "./pages/Riyadh-Developement/DataAnalytics.jsx";
 import ComplianceServices from "./pages/Riyadh-Developement/ComplianceServices.jsx";
+import ApiIntegration from "./pages/Riyadh-Developement/ApiIntegration.jsx";
+import ChatbotIntegration from "./pages/Riyadh-Developement/ChatbotIntegration.jsx";
+import CloudSolutions from "./pages/Riyadh-Developement/CloudSolutions.jsx";
+import AppointmentSystem from "./pages/Riyadh-Developement/AppointmentSystem.jsx";
 
 const router = createBrowserRouter([
   {
@@ -430,6 +434,22 @@ const router = createBrowserRouter([
       {
         path: "/security-compliance-services-in-saudi-arabia",
         element: <ComplianceServices />,
+      },
+      {
+        path: "/api-development-third-party-integration-saudi-arabia",
+        element: <ApiIntegration />,
+      },
+      {
+        path: "/chatbot-integration-services-in-saudi-arabia",
+        element: <ChatbotIntegration />,
+      },
+      {
+        path: "/cloud-solutions-in-saudi-arabia",
+        element: <CloudSolutions />,
+      },
+      {
+        path: "/booking-appointment-systems-in-riyadh",
+        element: <AppointmentSystem />,
       },
       // 404 Page
       { path: "*", element: <Page404 /> },
