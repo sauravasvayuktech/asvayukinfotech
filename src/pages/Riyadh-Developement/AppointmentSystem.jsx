@@ -155,7 +155,7 @@ const AppointmentSystem = () => {
       <Meta_Component
         title="Booking & Appointment Systems in Riyadh | ASVAYUK Technologies"
         description="Streamline your business operations with custom booking and appointment systems by ASVAYUK Technologies in Riyadh, Saudi Arabia. We offer tailored solutions for healthcare, salons, legal services, and more."
-        canonical="https://asvayuktech.com/booking-appointment-systems-in-riyadh"
+        canonical="https://asvayuktech.com/booking-appointment-systems-in-riyadh-saudi-arabia"
       />
 
       <main>

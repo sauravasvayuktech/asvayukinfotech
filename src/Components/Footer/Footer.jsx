@@ -1,4 +1,3 @@
-// import './Footer.css'
 import CHD from "../../Images/CHD.webp";
 import Canada from "../../Images/canada_footer_img.webp";
 import Mumbai from "../../Images/mumbai_footer_img.webp";
@@ -25,6 +24,138 @@ import {
   FaXTwitter,
 } from "react-icons/fa6";
 import { MdMail } from "react-icons/md";
+
+const socialLinks = [
+  {
+    href: "https://www.facebook.com/asvayuktechnologies/",
+    icon: <FaFacebookF />,
+  },
+  {
+    href: "https://www.linkedin.com/company/asvayuk-technologies/",
+    icon: <FaLinkedin />,
+  },
+  {
+    href: "https://www.instagram.com/asvayuktechnologies/",
+    icon: <FaInstagram />,
+  },
+  { href: "https://x.com/asvayuktech", icon: <FaXTwitter /> },
+  { href: "https://www.youtube.com/@AsvayukTechnologies", icon: <FaYoutube /> },
+  { href: "https://in.pinterest.com/asvayuktech/", icon: <FaPinterestP /> },
+];
+
+const serviceLinks = [
+  { to: "/best-ui-ux-designers-in-chandigarh", label: "UI/UX Design" },
+  {
+    to: "/website-development-company-in-chandigarh-and-mohali",
+    label: "Website Development",
+  },
+  { to: "/mobile-app-development-chandigarh", label: "Mobile App Development" },
+  {
+    to: "/ecommerce-website-designing-company-chandigarh",
+    label: "eCommerce Development",
+  },
+  {
+    to: "/best-seo-services-in-chandigarh",
+    label: "Search Engine Optimization",
+  },
+  {
+    to: "/web-portal-development-chandigarh",
+    label: "Enterpise Portal Development",
+  },
+];
+
+const quickLinks = [
+  { to: "/blog", label: "Blog" },
+  { to: "/about-us", label: "About Us" },
+  { to: "/contact-us", label: "Contact Us" },
+  { to: "/case-studies", label: "Case Studies" },
+  { to: "/privacy-policy", label: "Privacy & Policy" },
+];
+
+const footerLinks = [
+  {
+    title: "Development Solutions",
+    links: [
+      {
+        path: "/mobile-app-development-company-riyadh-saudi-arabia",
+        label: "Mobile app development company riyadh saudi arabia",
+      },
+      {
+        path: "/blockchain-fintech-development-services-in-saudi-arabia",
+        label: "Blockchain & Fintech Development Company in Saudi Arabia",
+      },
+      {
+        path: "/mern-stack-development-company-riyadh-saudi-arabia",
+        label: "Mern stack development company riyadh saudi arabia",
+      },
+      {
+        path: "/delivery-app-development-company-riyadh-saudi-arabia",
+        label: "Delivery app development company riyadh saudi arabia",
+      },
+      {
+        path: "/enterprise-solution-company-in-saudi-arabia",
+        label: "Enterprise Solutions Company in Saudi Arabia",
+      },
+      {
+        path: "/digital-transformation-services-in-saudi-arabia",
+        label: "Digital Transformation Services Company in Saudi Arabia",
+      },
+      {
+        path: "/shopify-development-company-riyadh-saudi-arabia",
+        label: "Shopify development company riyadh saudi arabia",
+      },
+      {
+        path: "/software-development-company-in-saudi-arabia",
+        label: "Software Development Company In Saudi Arabia",
+      },
+      {
+        path: "/api-development-third-party-integration-saudi-arabia",
+        label: "API Development Third Party Integration Saudi Arabia",
+      },
+    ],
+  },
+  {
+    title: "Custom IT Solutions",
+    links: [
+      {
+        path: "/erp-development-riyadh-saudi-arabia",
+        label: "ERP development riyadh saudi arabia",
+      },
+      {
+        path: "/e-commerce-development-company-riyadh-saudi-arabia",
+        label: "E-Commerce development company riyadh saudi arabia",
+      },
+      {
+        path: "/cloud-devops-services-in-saudi-arabia",
+        label: "Cloud & DevOps Services Company in Saudi Arabia",
+      },
+      {
+        path: "/ai-machine-learning-solutions-in-saudi-arabia",
+        label: "AI & Machine Learning Solutions Company in Saudi Arabia",
+      },
+      {
+        path: "/crm-development-riyadh-saudi-arabia",
+        label: "CRM development riyadh saudi arabia",
+      },
+      {
+        path: "/ui-ux-product-design-services-in-saudi-arabia",
+        label: "UI/UX & Product Design Company in Saudi Arabia",
+      },
+      {
+        path: "/booking-appointment-systems-in-riyadh-saudi-arabia",
+        label: "Appointment Booking Systems in Riyadh Saudi Arabia",
+      },
+      {
+        path: "/cloud-solutions-in-riyadh-saudi-arabia",
+        label: "Cloud Solutions company in Riyadh Saudi Arabia",
+      },
+      {
+        path: "/chatbot-integration-services-in-saudi-arabia",
+        label: "Chatbot Integration Services in Saudi Arabia",
+      },
+    ],
+  },
+];
 
 function Footer() {
   const location = useLocation();
@@ -133,6 +264,7 @@ function Footer() {
             </div>
           </Modal.Body>
         </Modal>
+
         <section className="location">
           <div className="container">
             <div className="location_title text-center">
@@ -260,36 +392,17 @@ function Footer() {
               <div className="col-lg-5">
                 <div>
                   <ul className="list-unstyled d-flex gap-3 justify-content-start justify-content-lg-end justify-content-md-end">
-                    <li>
-                      <Link to="https://www.facebook.com/asvayuktechnologies/">
-                        <FaFacebookF />
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="https://www.linkedin.com/company/asvayuk-technologies/">
-                        <FaLinkedin />
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="https://www.instagram.com/asvayuktechnologies/">
-                        <FaInstagram />
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="https://x.com/asvayuktech">
-                        <FaXTwitter />
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="https://www.youtube.com/@AsvayukTechnologies">
-                        <FaYoutube />
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="https://in.pinterest.com/asvayuktech/">
-                        <FaPinterestP />
-                      </Link>
-                    </li>
+                    {socialLinks.map((link, idx) => (
+                      <li key={idx}>
+                        <a
+                          href={link.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          {link.icon}
+                        </a>
+                      </li>
+                    ))}
                   </ul>
                 </div>
               </div>
@@ -320,36 +433,11 @@ function Footer() {
                   </div>
                   <div className="footer_menu">
                     <ul className="list-unstyled d-flex flex-column gap-2">
-                      <li>
-                        <Link to="/best-ui-ux-designers-in-chandigarh">
-                          UI/UX Design
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/website-development-company-in-chandigarh-and-mohali">
-                          Website Development
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/mobile-app-development-chandigarh">
-                          Mobile App Development
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/ecommerce-website-designing-company-chandigarh">
-                          eCommerce Development
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/best-seo-services-in-chandigarh">
-                          Search Engine Optimization
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/web-portal-development-chandigarh">
-                          Enterpise Portal Development
-                        </Link>
-                      </li>
+                      {serviceLinks.map((link, idx) => (
+                        <li key={idx}>
+                          <Link to={link.to}>{link.label}</Link>
+                        </li>
+                      ))}
                     </ul>
                   </div>
                 </div>
@@ -361,24 +449,11 @@ function Footer() {
                   </div>
                   <div className="footer_menu">
                     <ul className="list-unstyled d-flex flex-column gap-2">
-                      <li>
-                        <Link to="/blog">Blog</Link>
-                      </li>
-                      <li>
-                        <Link to="/about-us">About Us</Link>
-                      </li>
-                      <li>
-                        <Link to="/contact-us">Contact Us</Link>
-                      </li>
-                      <li>
-                        <Link to="/case-studies">Case Studies</Link>
-                      </li>
-                      {/* <li>
-                                                <Link to="#">Press Releases</Link>
-                                            </li> */}
-                      <li>
-                        <Link to="/privacy-policy">Privacy & Policy</Link>
-                      </li>
+                      {quickLinks.map((link, idx) => (
+                        <li key={idx}>
+                          <Link to={link.to}>{link.label}</Link>
+                        </li>
+                      ))}
                     </ul>
                   </div>
                 </div>
@@ -456,113 +531,24 @@ function Footer() {
                   </h4>
                 </div>
               </div>
-              <div className="col-lg-6 col-md-6 col-sm-6 col-6">
-                <div className="footer_menuinfo">
-                  <div className="footer_menu_title pb-2 mt-3 mt-md-0">
-                    <h4 className="fw-semibold">Development Solutions</h4>
-                  </div>
-                  <div className="footer_menu">
-                    <ul className="list-unstyled d-flex flex-column gap-2">
-                      <li>
-                        <Link to="/mobile-app-development-company-riyadh-saudi-arabia">
-                          Mobile app development company riyadh saudi arabia
-                        </Link>
-                      </li>
-
-                      <li>
-                        <Link to="/blockchain-fintech-development-services-in-saudi-arabia">
-                          Blockchain & Fintech Development Company in Saudi
-                          Arabia
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/mern-stack-development-company-riyadh-saudi-arabia">
-                          Mern stack development company riyadh saudi arabia
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/delivery-app-development-company-riyadh-saudi-arabia">
-                          Delivery app development company riyadh saudi arabia
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/enterprise-solution-company-in-saudi-arabia">
-                          Enterprise Solutions Company in Saudi Arabia
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/digital-transformation-services-in-saudi-arabia">
-                          Digital Transformation Services Company in Saudi
-                          Arabia
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/shopify-development-company-riyadh-saudi-arabia">
-                          Shopify development company riyadh saudi arabia
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/software-development-company-in-saudi-arabia">
-                          Software Development Company In Saudi Arabia
-                        </Link>
-                      </li>
-                    </ul>
+              {footerLinks.map((section, idx) => (
+                <div key={idx} className="col-lg-6 col-md-6 col-sm-6 col-6">
+                  <div className="footer_menuinfo">
+                    <div className="footer_menu_title pb-2 mt-3 mt-md-0">
+                      <h4 className="fw-semibold">{section.title}</h4>
+                    </div>
+                    <div className="footer_menu">
+                      <ul className="list-unstyled d-flex flex-column gap-2">
+                        {section.links.map(({ path, label }, linkIdx) => (
+                          <li key={linkIdx}>
+                            <Link to={path}>{label}</Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="col-lg-6 col-md-6 col-sm-6 col-6">
-                <div className="footer_menuinfo">
-                  <div className="footer_menu_title pb-2 mt-3 mt-md-0">
-                    <h4 className="fw-semibold">Custom IT Solutions</h4>
-                  </div>
-                  <div className="footer_menu">
-                    <ul className="list-unstyled d-flex flex-column gap-2">
-                      <li>
-                        <Link to="/erp-development-riyadh-saudi-arabia">
-                          ERP development riyadh saudi arabia
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/e-commerce-development-company-riyadh-saudi-arabia">
-                          E-Commerce development company riyadh saudi arabia
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/cloud-devops-services-in-saudi-arabia">
-                          Cloud & DevOps Services Company in Saudi Arabia
-                        </Link>
-                      </li>
-
-                      <li>
-                        <Link to="/ai-machine-learning-solutions-in-saudi-arabia">
-                          AI & Machine Learning Solutions Company in Saudi
-                          Arabia
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/crm-development-riyadh-saudi-arabia">
-                          CRM development riyadh saudi arabia
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/ui-ux-product-design-services-in-saudi-arabia">
-                          UI/UX & Product Design Company in Saudi Arabia
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/data-analytics-bi-services-in-saudi-arabia">
-                          Data Analytics & BI Company in Saudi Arabia
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/security-compliance-services-in-saudi-arabia">
-                          Security & Compliance Services Company in Saudi Arabia
-                        </Link>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </footer>
