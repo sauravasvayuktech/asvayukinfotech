@@ -471,10 +471,10 @@ const EducationalTechnology = () => {
           className="accelerate-bx bg_new_bx padding_coman"
           style={{
             background: `radial-gradient(
-      circle,
-      rgba(72, 133, 237, 1) -300%,
-      rgba(10, 25, 77, 1) 100%
-    )`,
+            circle,
+            rgba(36, 159, 129, 1) -300%,
+            rgba(0, 0, 0, 1) 100%
+          )`,
           }}
         >
           <div className="container">
@@ -518,7 +518,7 @@ const EducationalTechnology = () => {
             <div className="pb-4">
               <h1 className="fw-bold">
                 WHY EDTECH DEVELOPMENT IS CRUCIAL{" "}
-                <span className="text-uppercase" style={{ color: "#487deb" }}>
+                <span className="text-uppercase" style={{ color: "#2cbe9a" }}>
                   FOR EDUCATIONAL INSTITUTIONS IN SAUDI ARABIA
                 </span>
               </h1>

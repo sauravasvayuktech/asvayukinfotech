@@ -112,6 +112,10 @@ const footerLinks = [
         path: "/api-development-third-party-integration-saudi-arabia",
         label: "API Development Third Party Integration Saudi Arabia",
       },
+      {
+        path: "/edtech-development-riyadh-saudi-arabia",
+        label: "EdTech Development Riyadh Saudi Arabia",
+      },
     ],
   },
   {
