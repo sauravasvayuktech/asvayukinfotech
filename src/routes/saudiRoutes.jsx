@@ -1,6 +1,7 @@
 import {
   ApiIntegration,
   AppointmentSystem,
+  BankingInsurance,
   BlockchainFintechServices,
   ChatbotIntegration,
   CloudDevOpsServices,
@@ -15,11 +16,14 @@ import {
   EducationalTechnology,
   EnterpriseSolutions,
   ERPDevelopments,
+  HealthcareSoftware,
   MachineLearningSolutions,
   MernStackDevelopments,
   MobileAppDevelopments,
+  RealEstateTech,
   ShopifyDevelopments,
   SoftwareDevelopments,
+  TravelTourism,
 } from "../pages/Riyadh-Developement";
 
 export const saudiRoutes = [
@@ -106,5 +110,21 @@ export const saudiRoutes = [
   {
     path: "/edtech-development-riyadh-saudi-arabia",
     element: <EducationalTechnology />,
+  },
+  {
+    path: "/travel-tourism-app-development-in-riyadh-saudi-arabia",
+    element: <TravelTourism />,
+  },
+  {
+    path: "/real-estate-tech-solutions-company-in-riyadh-saudi-arabia",
+    element: <RealEstateTech />,
+  },
+  {
+    path: "/banking-insurance-software-solutions-saudi-arabia",
+    element: <BankingInsurance />,
+  },
+  {
+    path: "/healthcare-software-development-in-riyadh-saudi-arabia",
+    element: <HealthcareSoftware />,
   },
 ];

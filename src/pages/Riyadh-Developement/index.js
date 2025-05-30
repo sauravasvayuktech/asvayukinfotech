@@ -19,6 +19,10 @@ import ChatbotIntegration from "./ChatbotIntegration.jsx";
 import CloudSolutions from "./CloudSolutions.jsx";
 import AppointmentSystem from "./AppointmentSystem.jsx";
 import EducationalTechnology from "./EducationalTechnology.jsx";
+import TravelTourism from "./TravelTourism.jsx";
+import RealEstateTech from "./RealEstateTech.jsx"
+import BankingInsurance from "./BankingInsurance.jsx"
+import HealthcareSoftware from "./HealthcareSoftware.jsx"
 
 export {
   DeliveryAppDevelopment,
@@ -42,4 +46,8 @@ export {
   CloudSolutions,
   AppointmentSystem,
   EducationalTechnology,
+  TravelTourism,
+  RealEstateTech,
+  BankingInsurance,
+  HealthcareSoftware,
 };

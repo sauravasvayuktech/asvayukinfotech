@@ -72,94 +72,56 @@ const quickLinks = [
   { to: "/privacy-policy", label: "Privacy & Policy" },
 ];
 
+const allLinks = [
+  { path: "/enterprise-solution-company-in-saudi-arabia", label: "Enterprise Solutions" },
+  { path: "/mobile-app-development-company-riyadh-saudi-arabia", label: "Mobile app development" },
+  { path: "/mern-stack-development-company-riyadh-saudi-arabia", label: "Mern stack development" },
+  { path: "/delivery-app-development-company-riyadh-saudi-arabia", label: "Delivery app development" },
+  { path: "/blockchain-fintech-development-services-in-saudi-arabia", label: "Blockchain & Fintech Development" },
+  
+  { path: "/shopify-development-company-riyadh-saudi-arabia", label: "Shopify development" },
+  { path: "/software-development-company-in-saudi-arabia", label: "Software Development" },
+  { path: "/edtech-development-riyadh-saudi-arabia", label: "EdTech Development" },
+  { path: "/real-estate-tech-solutions-company-in-riyadh-saudi-arabia", label: "Real Estate Tech Solutions" },
+  { path: "/digital-transformation-services-in-saudi-arabia", label: "Digital Transformation Services" },
+  { path: "/api-development-third-party-integration-saudi-arabia", label: "API Development Third Party Integration" },
+  
+  { path: "/erp-development-riyadh-saudi-arabia", label: "ERP development" },
+  { path: "/crm-development-riyadh-saudi-arabia", label: "CRM development" },
+  { path: "/cloud-devops-services-in-saudi-arabia", label: "Cloud & DevOps Services" },
+  { path: "/e-commerce-development-company-riyadh-saudi-arabia", label: "E-Commerce development" },
+  { path: "/ai-machine-learning-solutions-in-saudi-arabia", label: "AI & Machine Learning Solutions" },
+  { path: "/healthcare-software-development-in-riyadh-saudi-arabia", label: "Healthcare Software Solutions" },
+  
+  { path: "/ui-ux-product-design-services-in-saudi-arabia", label: "UI/UX & Product Design" },
+  { path: "/booking-appointment-systems-in-riyadh-saudi-arabia", label: "Appointment Booking Systems" },
+  { path: "/cloud-solutions-in-riyadh-saudi-arabia", label: "Cloud Solutions" },
+  { path: "/chatbot-integration-services-in-saudi-arabia", label: "Chatbot Integration" },
+  { path: "/travel-tourism-app-development-in-riyadh-saudi-arabia", label: "Travel & Tourism App Development" },
+  { path: "/banking-insurance-software-solutions-saudi-arabia", label: "Banking & Insurance Software Solutions" },
+
+  // New URLs added here:
+];
+
 const footerLinks = [
   {
     title: "Development Solutions",
-    links: [
-      {
-        path: "/mobile-app-development-company-riyadh-saudi-arabia",
-        label: "Mobile app development company riyadh saudi arabia",
-      },
-      {
-        path: "/blockchain-fintech-development-services-in-saudi-arabia",
-        label: "Blockchain & Fintech Development Company in Saudi Arabia",
-      },
-      {
-        path: "/mern-stack-development-company-riyadh-saudi-arabia",
-        label: "Mern stack development company riyadh saudi arabia",
-      },
-      {
-        path: "/delivery-app-development-company-riyadh-saudi-arabia",
-        label: "Delivery app development company riyadh saudi arabia",
-      },
-      {
-        path: "/enterprise-solution-company-in-saudi-arabia",
-        label: "Enterprise Solutions Company in Saudi Arabia",
-      },
-      {
-        path: "/digital-transformation-services-in-saudi-arabia",
-        label: "Digital Transformation Services Company in Saudi Arabia",
-      },
-      {
-        path: "/shopify-development-company-riyadh-saudi-arabia",
-        label: "Shopify development company riyadh saudi arabia",
-      },
-      {
-        path: "/software-development-company-in-saudi-arabia",
-        label: "Software Development Company In Saudi Arabia",
-      },
-      {
-        path: "/api-development-third-party-integration-saudi-arabia",
-        label: "API Development Third Party Integration Saudi Arabia",
-      },
-      {
-        path: "/edtech-development-riyadh-saudi-arabia",
-        label: "EdTech Development Riyadh Saudi Arabia",
-      },
-    ],
+    links: allLinks.slice(0, 6),
   },
   {
     title: "Custom IT Solutions",
-    links: [
-      {
-        path: "/erp-development-riyadh-saudi-arabia",
-        label: "ERP development riyadh saudi arabia",
-      },
-      {
-        path: "/e-commerce-development-company-riyadh-saudi-arabia",
-        label: "E-Commerce development company riyadh saudi arabia",
-      },
-      {
-        path: "/cloud-devops-services-in-saudi-arabia",
-        label: "Cloud & DevOps Services Company in Saudi Arabia",
-      },
-      {
-        path: "/ai-machine-learning-solutions-in-saudi-arabia",
-        label: "AI & Machine Learning Solutions Company in Saudi Arabia",
-      },
-      {
-        path: "/crm-development-riyadh-saudi-arabia",
-        label: "CRM development riyadh saudi arabia",
-      },
-      {
-        path: "/ui-ux-product-design-services-in-saudi-arabia",
-        label: "UI/UX & Product Design Company in Saudi Arabia",
-      },
-      {
-        path: "/booking-appointment-systems-in-riyadh-saudi-arabia",
-        label: "Appointment Booking Systems in Riyadh Saudi Arabia",
-      },
-      {
-        path: "/cloud-solutions-in-riyadh-saudi-arabia",
-        label: "Cloud Solutions company in Riyadh Saudi Arabia",
-      },
-      {
-        path: "/chatbot-integration-services-in-saudi-arabia",
-        label: "Chatbot Integration Services in Saudi Arabia",
-      },
-    ],
+    links: allLinks.slice(7, 13),
+  },
+  {
+    title: "Enterprise Solutions",
+    links: allLinks.slice(13, 18),
+  },
+  {
+    title: "Innovative Services",
+    links: allLinks.slice(18, 23),
   },
 ];
+
 
 function Footer() {
   const location = useLocation();
@@ -536,7 +498,7 @@ function Footer() {
                 </div>
               </div>
               {footerLinks.map((section, idx) => (
-                <div key={idx} className="col-lg-6 col-md-6 col-sm-6 col-6">
+                <div key={idx} className="col-lg-3 col-md-6 col-sm-6 col-6">
                   <div className="footer_menuinfo">
                     <div className="footer_menu_title pb-2 mt-3 mt-md-0">
                       <h4 className="fw-semibold">{section.title}</h4>
