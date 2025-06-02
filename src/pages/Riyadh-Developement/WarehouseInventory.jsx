@@ -1,6 +1,6 @@
 import { Col, Container, Nav, Row, Tab, Image, Card } from "react-bootstrap";
 import Meta_Component from "../../Components/Meta_Component/Meta_Component";
-import banners_39 from "../../Images/travelImg.png";
+import banners_39 from "../../Images/WarehouseInventoryImage.png";
 import BannerButton from "../../Components/BannerBtn/BannerButton";
 import { useState } from "react";
 import softdev1 from "../../Images/softdev1.svg";
@@ -21,84 +21,80 @@ import { FaChevronRight } from "react-icons/fa";
 const services = [
   {
     id: "1",
-    title: "Travel App Strategy & Consultation",
+    title: "Warehouse & Inventory Strategy & Consultation",
     image: softdev1,
-    alt: "Travel app development consulting in Saudi Arabia",
+    alt: "Warehouse and inventory management consulting",
     content: (
       <>
-        Our travel tech experts help you define a successful app strategy that
-        aligns with the tourism sector in Saudi Arabia, targeting user
-        engagement and business growth.
+        Our warehouse management experts help you design a strategy aligned with
+        your operational goals, focusing on inventory accuracy, space
+        optimization, and seamless stock control.
       </>
     ),
   },
   {
     id: "2",
-    title: "Custom Booking App Development",
+    title: "Custom Warehouse & Inventory Software Development",
     image: softdev2,
     content: (
       <>
-        Build high-performance travel booking applications tailored for hotels,
-        flights, and tour packages with real-time availability and secure
-        payment integration.
+        Develop scalable, feature-rich warehouse systems tailored for real-time
+        inventory tracking, order fulfillment, and stock replenishment.
       </>
     ),
   },
   {
     id: "3",
-    title: "Multilingual Travel Chatbots",
+    title: "User-Friendly Inventory Management Portals",
     image: softdev3,
     content: (
       <>
-        Enhance traveler experience with AI-driven multilingual chatbots for
-        instant customer support, itinerary planning, and local recommendations.
+        Enhance warehouse staff efficiency with intuitive portals for inventory
+        updates, order management, and shipment tracking.
       </>
     ),
   },
   {
     id: "4",
-    title: "Image Recognition for Landmarks",
+    title: "AI-Powered Stock Monitoring & Analytics",
     image: softdev4,
     content: (
       <>
-        Use AI-based image recognition to identify tourist spots, scan travel
-        documents, and enhance visual discovery within your mobile tourism
-        application.
+        Use AI-driven tools to monitor stock levels, predict demand, and
+        optimize warehouse space and resource allocation.
       </>
     ),
   },
   {
     id: "5",
-    title: "Automation in Tour Management",
+    title: "Automation in Inventory Control & Reporting",
     image: softdev5,
     content: (
       <>
-        Streamline operations with automated booking workflows, itinerary
-        generation, and CRM tools to improve efficiency for travel agencies in
-        Saudi Arabia.
+        Automate stock movements, alerts for low inventory, and generate
+        detailed reports for better decision-making and compliance.
       </>
     ),
   },
   {
     id: "6",
-    title: "API Integration for Travel Services",
+    title: "API Integration for Supply Chain Systems",
     image: softdev6,
     content: (
       <>
-        Seamlessly integrate third-party APIs such as Google Maps, payment
-        gateways, weather forecasts, and airline databases to enhance user
-        experience.
+        Integrate third-party APIs such as shipping carriers, ERP systems, and
+        barcode scanners to streamline warehouse workflows.
       </>
     ),
   },
   {
     id: "7",
-    title: "App Performance Optimization",
+    title: "Warehouse Software Performance Optimization",
     image: softdev7,
     content: (
       <>
-        Ensure high performance and user satisfaction through continuous app
-        testing, speed optimization, bug fixes, and scalability enhancements.
+        Ensure fast processing, data security, and system reliability with
+        continuous monitoring, updates, and scalability improvements.
       </>
     ),
   },
@@ -107,51 +103,51 @@ const services = [
 const serviceData = [
   {
     img: c11,
-    alt: "Travel Strategy & Planning",
-    title: "Travel App Strategy & Planning",
-    desc: "Develop a clear app roadmap that supports tourism business goals and digital transformation in Saudi Arabia's travel sector.",
+    alt: "Warehouse & Inventory Strategy & Planning",
+    title: "Warehouse & Inventory Strategy & Planning",
+    desc: "Create a comprehensive roadmap that supports accurate inventory management and efficient warehouse operations.",
   },
   {
     img: c12,
-    alt: "Booking App Development",
-    title: "Online Booking System Development",
-    desc: "Create robust booking systems for hotels, flights, and tours with real-time updates and user-friendly interfaces.",
+    alt: "Warehouse & Inventory Software Development",
+    title: "Custom Warehouse & Inventory Software Development",
+    desc: "Build a robust platform supporting real-time stock tracking, order management, and warehouse automation.",
   },
   {
     img: c13,
-    alt: "Travel Chatbot Solutions",
-    title: "Conversational Travel Chatbots",
-    desc: "Deploy AI-powered travel assistants to offer instant help, booking support, and local tips to tourists in multiple languages.",
+    alt: "Inventory Management Portals",
+    title: "User-Friendly Inventory Management Portals",
+    desc: "Deploy portals enabling staff to update inventory, manage orders, and track shipments easily and securely.",
   },
   {
     img: c11,
-    alt: "Visual Landmark Detection",
-    title: "Smart Landmark Detection",
-    desc: "Enable users to discover nearby attractions using advanced image recognition features in your mobile travel app.",
+    alt: "Stock Monitoring & Analytics",
+    title: "AI-Powered Stock Monitoring & Analytics",
+    desc: "Leverage AI to optimize stock levels, predict demand, and improve warehouse space utilization.",
   },
   {
     img: c12,
-    alt: "Tour Workflow Automation",
-    title: "Tour Management Automation",
-    desc: "Boost productivity by automating booking processes, client communication, and travel plan organization.",
+    alt: "Inventory Control & Reporting Automation",
+    title: "Automation in Inventory Control & Reporting",
+    desc: "Automate stock movement alerts, generate compliance reports, and improve accuracy in inventory management.",
   },
   {
     img: c13,
-    alt: "App Optimization & Maintenance",
-    title: "Travel App Optimization",
-    desc: "Ensure fast, secure, and bug-free travel apps through performance monitoring, updates, and continuous improvement.",
+    alt: "Warehouse Software Optimization & Maintenance",
+    title: "Warehouse Software Performance Optimization",
+    desc: "Maintain a secure, efficient warehouse system with ongoing updates, monitoring, and performance tuning.",
   },
 ];
 
-const TravelTourism = () => {
+const WarehouseInventory = () => {
   const [activeKey, setActiveKey] = useState("1");
 
   return (
     <>
       <Meta_Component
-        title="Travel & Tourism App Development in Saudi Arabia | ASVAYUK Technologies"
-        description="ASVAYUK Technologies builds custom travel and tourism apps in Saudi Arabia. We offer booking systems, itinerary planning, hotel integration, and travel portal development."
-        canonical="https://asvayuktech.com/travel-tourism-app-development-in-riyadh-saudi-arabia"
+        title="Warehouse & Inventory Management Systems | ASVAYUK Technologies"
+        description="ASVAYUK Technologies provides advanced Warehouse & Inventory Management Systems in Saudi Arabia. We deliver efficient inventory tracking, real-time stock management, and seamless warehouse automation solutions."
+        canonical="https://asvayuktech.com/warehouse-inventory-management-systems-saudi-arabia"
       />
 
       <main>
@@ -166,15 +162,15 @@ const TravelTourism = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      Travel & Tourism App Development Company in Saudi Arabia
+                      Warehouse & Inventory Management Systems Provider in Saudi
+                      Arabia
                     </a>
                   </h1>
                   <p className="py-3">
-                    <strong>ASVAYUK Technologies</strong> specializes in
-                    crafting innovative travel and tourism mobile apps in Saudi
-                    Arabia. We empower businesses with custom solutions to
-                    enhance traveler experiences, boost bookings, and streamline
-                    operations.
+                    <strong>ASVAYUK Technologies</strong> delivers cutting-edge
+                    Warehouse & Inventory Management solutions designed to
+                    optimize stock control and streamline warehouse operations
+                    for businesses in Saudi Arabia.
                   </p>
 
                   <BannerButton
@@ -187,7 +183,7 @@ const TravelTourism = () => {
                 <div className="bannerImg">
                   <img
                     src={banners_39}
-                    alt="Travel and Tourism App Development Company in Saudi Arabia"
+                    alt="Warehouse & Inventory Management Systems Provider in Saudi Arabia"
                     width="100%"
                     height="100%"
                   />
@@ -201,13 +197,14 @@ const TravelTourism = () => {
           <Row className="align-items-center mb-4 text-center">
             <Col lg={10} className="mx-auto">
               <h1 className="fw-bold">
-                Why Choose Our Travel & Tourism App Development Services in
-                Saudi Arabia?
+                Why Choose Our Warehouse & Inventory Management Systems in Saudi
+                Arabia?
               </h1>
               <p>
-                At ASVAYUK Technologies, we deliver bespoke travel app
-                development solutions tailored for Saudi Arabia's dynamic
-                tourism sector. Here’s why leading travel businesses rely on us:
+                At ASVAYUK Technologies, we specialize in delivering tailored
+                warehouse and inventory management software to help Saudi
+                Arabian businesses increase accuracy, reduce costs, and gain
+                real-time visibility into their stock.
               </p>
             </Col>
           </Row>
@@ -222,18 +219,18 @@ const TravelTourism = () => {
                   <Col xs={3} sm={2}>
                     <img
                       src={c11}
-                      alt="Custom Travel App Development Saudi Arabia"
+                      alt="Custom Warehouse Management Solutions Saudi Arabia"
                       className="rounded-circle img-fluid"
                     />
                   </Col>
                   <Col xs={9} sm={10}>
                     <h6 className="fw-bold mb-2">
-                      Custom Travel Apps Designed for Your Business Goals
+                      Tailored Warehouse Solutions for Your Business Needs
                     </h6>
                     <p className="mb-0 text-muted">
-                      We develop feature-rich travel and tourism applications
-                      tailored to your unique needs, enhancing user engagement,
-                      booking efficiency, and destination discovery.
+                      We develop customized inventory and warehouse systems that
+                      fit your operational workflows, improving accuracy in
+                      stock tracking, order fulfillment, and storage management.
                     </p>
                   </Col>
                 </Row>
@@ -261,18 +258,18 @@ const TravelTourism = () => {
                   <Col xs={3} sm={2}>
                     <img
                       src={c12}
-                      alt="End-to-End Travel App Development Saudi Arabia"
+                      alt="Real-Time Inventory Tracking Saudi Arabia"
                       className="rounded-circle img-fluid"
                     />
                   </Col>
                   <Col xs={9} sm={10}>
                     <h6 className="fw-bold mb-2">
-                      End-to-End Travel App Development & Deployment
+                      Real-Time Inventory Tracking & Alerts
                     </h6>
                     <p className="mb-0 text-muted">
-                      From concept to launch, we handle all phases of travel app
-                      development, ensuring seamless user experience, secure
-                      transactions, and reliable performance.
+                      Our systems provide live updates and automated alerts to
+                      prevent stockouts, overstocking, and ensure timely
+                      replenishment aligned with your business demands.
                     </p>
                   </Col>
                 </Row>
@@ -302,18 +299,18 @@ const TravelTourism = () => {
                   <Col xs={3} sm={2}>
                     <img
                       src={c14}
-                      alt="Travel App Strategy Consultancy Saudi Arabia"
+                      alt="Warehouse Automation & Analytics Saudi Arabia"
                       className="rounded-circle img-fluid"
                     />
                   </Col>
                   <Col xs={9} sm={10}>
                     <h6 className="fw-bold mb-2">
-                      Strategic Travel App Solutions for Business Growth
+                      Warehouse Automation & Data-Driven Analytics
                     </h6>
                     <p className="mb-0 text-muted">
-                      We analyze market trends and user behavior to craft travel
-                      app strategies that increase customer retention and
-                      maximize revenue.
+                      We implement automation technologies and analytics
+                      dashboards to optimize warehouse space, labor, and
+                      inventory turnover for smarter decision-making.
                     </p>
                   </Col>
                 </Row>
@@ -338,18 +335,18 @@ const TravelTourism = () => {
                   <Col xs={3} sm={2}>
                     <img
                       src={c13}
-                      alt="Experienced Travel App Developers Saudi Arabia"
+                      alt="Experienced Inventory Management Developers Saudi Arabia"
                       className="rounded-circle img-fluid"
                     />
                   </Col>
                   <Col xs={9} sm={10}>
                     <h6 className="fw-bold mb-2">
-                      Experienced Travel App Developers & Designers
+                      Experienced Developers & UI Experts for Inventory Systems
                     </h6>
                     <p className="mb-0 text-muted">
-                      Our skilled team combines technical expertise and travel
-                      industry knowledge to deliver user-friendly, secure, and
-                      scalable apps.
+                      Our team combines inventory domain expertise with modern
+                      UI/UX design to deliver intuitive, reliable, and efficient
+                      warehouse management software.
                     </p>
                   </Col>
                 </Row>
@@ -371,15 +368,14 @@ const TravelTourism = () => {
 
         <Container className="my-5">
           <h1 className="mb-4 fw-bold">
-            Travel & Tourism App Development Services for Saudi Arabia
+            Warehouse & Inventory Management Systems in Saudi Arabia
           </h1>
           <p className="app__subhead mb-5 fs-5">
-            ASVAYUK Technologies offers comprehensive travel and tourism app
-            development services across Saudi Arabia. Our innovative solutions
-            help travel businesses improve customer engagement, increase
-            bookings, and streamline operations with cutting-edge technology.
-            Partner with us to build powerful mobile apps that transform the
-            tourism experience.
+            ASVAYUK Technologies offers end-to-end warehouse and inventory
+            management software solutions tailored for businesses in Saudi
+            Arabia. Our intelligent platforms help optimize stock levels,
+            automate warehouse workflows, and improve supply chain visibility,
+            driving operational efficiency and growth.
           </p>
 
           <div className="tabSoftDev">
@@ -436,15 +432,15 @@ const TravelTourism = () => {
           <Container>
             <div className="trustedContent-wrapper pb-2 text-center">
               <h2 className="fw-bold">
-                Our Key Travel & Tourism App Development Services
+                Our Core Warehouse & Inventory Management System Solutions
               </h2>
               <p>
-                At ASVAYUK Technologies, we leverage advanced technologies to
-                build smart, user-friendly travel apps tailored for Saudi
-                Arabia’s tourism market. Our solutions focus on enhancing
-                traveler engagement, automating booking processes, and
-                delivering real-time insights. We work closely with clients to
-                deliver apps that drive growth and customer satisfaction.
+                At ASVAYUK Technologies, we excel in crafting robust, efficient
+                warehouse and inventory management systems tailored for
+                businesses in Saudi Arabia. From real-time stock tracking and
+                automated order processing to supply chain optimization and
+                detailed reporting, our solutions help you streamline inventory
+                control and boost operational efficiency.
               </p>
             </div>
 
@@ -467,10 +463,10 @@ const TravelTourism = () => {
           className="accelerate-bx bg_new_bx padding_coman"
           style={{
             background: `radial-gradient(
-                circle,
-                rgba(36, 159, 129, 1) -300%,
-                rgba(0, 0, 0, 1) 100%
-            )`,
+      circle,
+      rgba(36, 159, 129, 1) -300%,
+      rgba(0, 0, 0, 1) 100%
+    )`,
           }}
         >
           <Container>
@@ -481,17 +477,21 @@ const TravelTourism = () => {
                     className="text-uppercase fw-bold"
                     style={{ color: "#2cbe9a" }}
                   >
-                    Ready to Build a Cutting-Edge Travel & Tourism App
+                    Ready to Build an Advanced Warehouse & Inventory System?
                   </h2>
                   <p className="text-white pt-3 fs-6">
-                    Connect with ASVAYUK Technologies today and let our expert
-                    team create a custom travel app that boosts your business
-                    growth and enhances traveler experiences across Saudi
-                    Arabia.
+                    Partner with ASVAYUK Technologies today. Our expert
+                    development team will work closely with you to deliver a
+                    customized warehouse and inventory management solution that
+                    enhances stock accuracy, reduces waste, and scales
+                    seamlessly with your business across Saudi Arabia.
                   </p>
                   <Row>
                     <Col lg={6}>
-                      <BannerButton btnTitle="Consultation" url="/contact-us" />
+                      <BannerButton
+                        btnTitle="Book a Consultation"
+                        url="/contact-us"
+                      />
                     </Col>
                   </Row>
                 </div>
@@ -504,35 +504,37 @@ const TravelTourism = () => {
           <Container>
             <div className="pb-4">
               <h1 className="fw-bold">
-                WHY TRAVEL & TOURISM APP DEVELOPMENT MATTERS{" "}
+                WHY WAREHOUSE & INVENTORY MANAGEMENT SYSTEMS{" "}
                 <span className="text-uppercase" style={{ color: "#2cbe9a" }}>
-                  IN SAUDI ARABIA
+                  MATTER FOR YOUR BUSINESS
                 </span>
               </h1>
               <p className="powered_php pt-3">
-                Digital travel and tourism solutions are transforming how tour
-                operators, agencies, and travelers connect, plan, and explore.
-                With a custom mobile app, your travel business in Saudi Arabia
-                can boost bookings, enhance customer experience, and gain a
-                competitive edge.
+                Warehouse and inventory management systems revolutionize how
+                businesses track stock, manage orders, and optimize supply
+                chains. With tailored solutions, you can improve accuracy,
+                reduce costs, and enhance overall productivity.
               </p>
             </div>
             <div className="row">
               <div className="col-lg-6">
                 <ul className="development_links">
                   <li>
-                    <a href="#" title="Travel App Development Riyadh">
-                      Boosts user engagement with real-time travel assistance
+                    <a href="#" title="Inventory Tracking Features">
+                      Enables real-time inventory tracking and automatic stock
+                      updates
                     </a>
                   </li>
                   <li>
-                    <a href="#" title="Tourism Mobile App Saudi Arabia">
-                      Streamlines booking and itinerary management
+                    <a href="#" title="Order Management Solutions">
+                      Streamlines order processing and reduces fulfillment
+                      errors
                     </a>
                   </li>
                   <li>
-                    <a href="#" title="Custom Travel App Solutions">
-                      Offers personalized experiences based on user preferences
+                    <a href="#" title="Reporting & Analytics">
+                      Provides detailed insights for better inventory
+                      decision-making
                     </a>
                   </li>
                 </ul>
@@ -540,13 +542,15 @@ const TravelTourism = () => {
               <div className="col-lg-6">
                 <ul className="development_links">
                   <li>
-                    <a href="#" title="Tour Operator App Development">
-                      Integrates with maps, guides, payment gateways & more
+                    <a href="#" title="Supply Chain Integration">
+                      Integrates with suppliers and logistics for end-to-end
+                      visibility
                     </a>
                   </li>
                   <li>
-                    <a href="#" title="Saudi Arabia Tourism App">
-                      Drives growth through digital innovation in tourism
+                    <a href="#" title="Scalable Warehouse Solutions">
+                      Grows with your business while ensuring data accuracy and
+                      security
                     </a>
                   </li>
                 </ul>
@@ -561,29 +565,31 @@ const TravelTourism = () => {
               <div className="col-lg-6 col-sm-12 mb-3 p-3">
                 <div className="tool-heading">
                   <h3 className="fw-bold">
-                    Our Travel App Development Process
+                    Our Warehouse & Inventory Management System Development
+                    Process
                   </h3>
                   <p>
                     At ASVAYUK Technologies, we specialize in custom{" "}
-                    <strong>travel and tourism app development</strong> for
-                    agencies, startups, and tourism boards across Saudi Arabia.
-                    Our approach ensures your app aligns with business goals,
-                    enhances customer journeys, and scales with growth.
+                    <strong>
+                      Warehouse & Inventory Management system development
+                    </strong>
+                    for businesses of all sizes. Our approach ensures your
+                    platform is efficient, accurate, and scalable.
                   </p>
                   <p>
-                    From itinerary planning and booking engines to GPS
-                    navigation and multi-language support, we build apps that
-                    elevate the traveler experience and help you stand out in
-                    the tourism industry.
+                    From real-time inventory tracking and automated stock
+                    replenishment to order fulfillment and warehouse
+                    optimization, we build solutions that empower your supply
+                    chain operations.
                   </p>
 
-                  <div className="heroBtn mt-3">
+                  <div className="heroBtn mt-3 w-100">
                     <Link
                       to="/contact-us"
                       className="d-flex justify-content-between"
                     >
                       <div className="btnText px-3 py-3 text-light">
-                        <span>Get a Free Travel App Consultation</span>
+                        <span>Free Warehouse Management Consultation</span>
                       </div>
                       <div className="btn_icon px-4 py-2 align-content-center">
                         <FaChevronRight />
@@ -596,29 +602,29 @@ const TravelTourism = () => {
               <div className="col-lg-6 col-sm-12 text-start mb-3 p-3">
                 <ol>
                   <li>
-                    <strong>Discovery and Planning:</strong> We understand your
-                    business model, target audience, and feature requirements to
-                    outline a development roadmap.
+                    <strong>Needs Assessment:</strong> We analyze your warehouse
+                    workflows, inventory challenges, and integration
+                    requirements to plan a tailored system.
                   </li>
                   <li>
-                    <strong>UI/UX Design:</strong> Our designers craft
-                    intuitive, user-friendly interfaces that deliver seamless
-                    travel experiences.
+                    <strong>UI/UX Design:</strong> Our team designs intuitive
+                    dashboards and mobile-friendly interfaces for warehouse
+                    managers and staff.
                   </li>
                   <li>
-                    <strong>Development and Integration:</strong> We develop
-                    core features like bookings, reviews, geolocation, and
-                    secure payments, integrating APIs as needed.
+                    <strong>Development and Modules:</strong> We build modules
+                    such as stock management, barcode/RFID scanning, order
+                    processing, and reporting.
                   </li>
                   <li>
-                    <strong>Testing and Launch:</strong> Rigorous quality
-                    testing ensures the app runs smoothly across devices before
-                    going live on app stores.
+                    <strong>Testing and Launch:</strong> Rigorous testing
+                    ensures accuracy, reliability, and smooth operation before
+                    deployment.
                   </li>
                   <li>
-                    <strong>Maintenance and Updates:</strong> We provide ongoing
-                    support and updates to keep your app competitive and aligned
-                    with user expectations.
+                    <strong>Ongoing Support:</strong> We provide continuous
+                    updates and maintenance to keep your warehouse system
+                    optimized and scalable.
                   </li>
                 </ol>
               </div>
@@ -629,17 +635,17 @@ const TravelTourism = () => {
         <section className="pt-5">
           <Container>
             <h2 className="fw-bold">
-              Travel Apps Built for Growth and Customer Delight
+              Software Built for Inventory Accuracy and Warehouse Efficiency
             </h2>
             <p
               className="pt-3"
               style={{ fontSize: "20px", lineHeight: "1.8rem" }}
             >
-              We develop <b>scalable, high-performing travel applications</b>{" "}
-              that serve both local and international tourists. With a
-              customer-first approach, we ensure every app is tailored for
-              engagement, retention, and real-time support across the Saudi
-              Arabian tourism ecosystem.
+              We develop{" "}
+              <b>robust, scalable Warehouse & Inventory Management systems</b>
+              designed to streamline inventory control, reduce stockouts, and
+              optimize warehouse space utilization. Our solutions enhance
+              operational visibility and supply chain responsiveness.
             </p>
           </Container>
         </section>
@@ -647,17 +653,17 @@ const TravelTourism = () => {
         <section className="py-5">
           <Container>
             <h2 className="fw-bold">
-              Ready to Launch Your Travel App in Saudi Arabia?
+              Ready to Optimize Your Warehouse & Inventory Management?
             </h2>
             <p
               className="pt-3"
               style={{ fontSize: "20px", lineHeight: "1.8rem" }}
             >
-              Elevate your tourism business with a feature-rich mobile
-              application from ASVAYUK Technologies. Whether you need a city
-              guide app, a booking platform, or an end-to-end travel solution,
-              we’re here to turn your vision into reality. Let's build the
-              future of tourism together.
+              Partner with ASVAYUK Technologies to develop a comprehensive
+              Warehouse & Inventory Management solution. Whether you operate a
+              small warehouse or a large distribution center, we’ll help you
+              improve inventory accuracy, increase throughput, and reduce
+              operational costs.
             </p>
           </Container>
         </section>
@@ -666,4 +672,4 @@ const TravelTourism = () => {
   );
 };
 
-export default TravelTourism;
+export default WarehouseInventory;

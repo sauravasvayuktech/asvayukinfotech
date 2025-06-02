@@ -74,54 +74,56 @@ const quickLinks = [
 
 const allLinks = [
   { path: "/enterprise-solution-company-in-saudi-arabia", label: "Enterprise Solutions" },
-  { path: "/mobile-app-development-company-riyadh-saudi-arabia", label: "Mobile app development" },
+  { path: "/shopify-development-company-riyadh-saudi-arabia", label: "Shopify development" },
   { path: "/mern-stack-development-company-riyadh-saudi-arabia", label: "Mern stack development" },
+  { path: "/mobile-app-development-company-riyadh-saudi-arabia", label: "Mobile app development" },
   { path: "/delivery-app-development-company-riyadh-saudi-arabia", label: "Delivery app development" },
   { path: "/blockchain-fintech-development-services-in-saudi-arabia", label: "Blockchain & Fintech Development" },
-  
-  { path: "/shopify-development-company-riyadh-saudi-arabia", label: "Shopify development" },
-  { path: "/software-development-company-in-saudi-arabia", label: "Software Development" },
+  { path: "/warehouse-inventory-management-systems-saudi-arabia", label: "Warehouse & Inventory Management" },
+
+  { path: "/erp-development-riyadh-saudi-arabia", label: "ERP development" },
+  { path: "/crm-development-riyadh-saudi-arabia", label: "CRM development" },
   { path: "/edtech-development-riyadh-saudi-arabia", label: "EdTech Development" },
+  { path: "/software-development-company-in-saudi-arabia", label: "Software Development" },
   { path: "/real-estate-tech-solutions-company-in-riyadh-saudi-arabia", label: "Real Estate Tech Solutions" },
   { path: "/digital-transformation-services-in-saudi-arabia", label: "Digital Transformation Services" },
   { path: "/api-development-third-party-integration-saudi-arabia", label: "API Development Third Party Integration" },
-  
-  { path: "/erp-development-riyadh-saudi-arabia", label: "ERP development" },
-  { path: "/crm-development-riyadh-saudi-arabia", label: "CRM development" },
+
+  { path: "/cloud-solutions-in-riyadh-saudi-arabia", label: "Cloud Solutions" },
+  { path: "/ui-ux-product-design-services-in-saudi-arabia", label: "UI/UX & Product Design" },
   { path: "/cloud-devops-services-in-saudi-arabia", label: "Cloud & DevOps Services" },
   { path: "/e-commerce-development-company-riyadh-saudi-arabia", label: "E-Commerce development" },
-  { path: "/ai-machine-learning-solutions-in-saudi-arabia", label: "AI & Machine Learning Solutions" },
   { path: "/healthcare-software-development-in-riyadh-saudi-arabia", label: "Healthcare Software Solutions" },
+  { path: "/ai-machine-learning-solutions-in-saudi-arabia", label: "AI & Machine Learning Solutions" },
+  { path: "/online-marketplace-development-in-riyadh-saudi-arabia", label: "Online Marketplace Development" },
   
-  { path: "/ui-ux-product-design-services-in-saudi-arabia", label: "UI/UX & Product Design" },
-  { path: "/booking-appointment-systems-in-riyadh-saudi-arabia", label: "Appointment Booking Systems" },
-  { path: "/cloud-solutions-in-riyadh-saudi-arabia", label: "Cloud Solutions" },
   { path: "/chatbot-integration-services-in-saudi-arabia", label: "Chatbot Integration" },
+  { path: "/hr-payroll-software-development-in-riyadh-saudi-arabia", label: "HR & Payroll Software" },
+  { path: "/booking-appointment-systems-in-riyadh-saudi-arabia", label: "Appointment Booking Systems" },
+  { path: "/document-management-systems-in-riyadh-saudi-arabia", label: "Document Management Systems" },
   { path: "/travel-tourism-app-development-in-riyadh-saudi-arabia", label: "Travel & Tourism App Development" },
   { path: "/banking-insurance-software-solutions-saudi-arabia", label: "Banking & Insurance Software Solutions" },
-
-  // New URLs added here:
+  { path: "/learning-experience-platforms-in-riyadh-saudi-arabia", label: "Learning Experience Platforms Software" },
 ];
 
 const footerLinks = [
   {
     title: "Development Solutions",
-    links: allLinks.slice(0, 6),
+    links: allLinks.slice(0, 7),
   },
   {
     title: "Custom IT Solutions",
-    links: allLinks.slice(7, 13),
+    links: allLinks.slice(7, 14),
   },
   {
     title: "Enterprise Solutions",
-    links: allLinks.slice(13, 18),
+    links: allLinks.slice(14, 21),
   },
   {
     title: "Innovative Services",
-    links: allLinks.slice(18, 23),
+    links: allLinks.slice(21, 30),
   },
 ];
-
 
 function Footer() {
   const location = useLocation();

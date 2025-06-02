@@ -24,6 +24,11 @@ import {
   ShopifyDevelopments,
   SoftwareDevelopments,
   TravelTourism,
+  OnlineMarketplace,
+  HrPayroll,
+  WarehouseInventory,
+  DocumentManagement,
+  LearningExperience,
 } from "../pages/Riyadh-Developement";
 
 export const saudiRoutes = [
@@ -126,5 +131,25 @@ export const saudiRoutes = [
   {
     path: "/healthcare-software-development-in-riyadh-saudi-arabia",
     element: <HealthcareSoftware />,
+  },
+  {
+    path: "/online-marketplace-development-in-riyadh-saudi-arabia",
+    element: <OnlineMarketplace />,
+  },
+  {
+    path: "/hr-payroll-software-development-in-riyadh-saudi-arabia",
+    element: <HrPayroll />,
+  },
+  {
+    path: "/warehouse-inventory-management-systems-saudi-arabia",
+    element: <WarehouseInventory />,
+  },
+  {
+    path: "/document-management-systems-in-riyadh-saudi-arabia",
+    element: <DocumentManagement />,
+  },
+  {
+    path: "/learning-experience-platforms-in-riyadh-saudi-arabia",
+    element: <LearningExperience />,
   },
 ];

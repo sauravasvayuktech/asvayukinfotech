@@ -1,6 +1,6 @@
 import { Col, Container, Nav, Row, Tab, Image, Card } from "react-bootstrap";
 import Meta_Component from "../../Components/Meta_Component/Meta_Component";
-import banners_39 from "../../Images/travelImg.png";
+import banners_39 from "../../Images/DocumentImage.png";
 import BannerButton from "../../Components/BannerBtn/BannerButton";
 import { useState } from "react";
 import softdev1 from "../../Images/softdev1.svg";
@@ -21,84 +21,80 @@ import { FaChevronRight } from "react-icons/fa";
 const services = [
   {
     id: "1",
-    title: "Travel App Strategy & Consultation",
+    title: "LXP Strategy & Consultation",
     image: softdev1,
-    alt: "Travel app development consulting in Saudi Arabia",
+    alt: "Learning experience platform consulting",
     content: (
       <>
-        Our travel tech experts help you define a successful app strategy that
-        aligns with the tourism sector in Saudi Arabia, targeting user
-        engagement and business growth.
+        Our LXP experts design personalized learning strategies that align with
+        your business goals, ensuring effective digital learning adoption and
+        learner engagement.
       </>
     ),
   },
   {
     id: "2",
-    title: "Custom Booking App Development",
+    title: "Custom LXP Development",
     image: softdev2,
     content: (
       <>
-        Build high-performance travel booking applications tailored for hotels,
-        flights, and tour packages with real-time availability and secure
-        payment integration.
+        Build scalable and interactive learning platforms that support content
+        curation, social learning, personalization, and progress tracking.
       </>
     ),
   },
   {
     id: "3",
-    title: "Multilingual Travel Chatbots",
+    title: "Learner-Centric Portals",
     image: softdev3,
     content: (
       <>
-        Enhance traveler experience with AI-driven multilingual chatbots for
-        instant customer support, itinerary planning, and local recommendations.
+        Create intuitive, user-friendly portals where learners can access
+        resources, track progress, and participate in collaborative learning.
       </>
     ),
   },
   {
     id: "4",
-    title: "Image Recognition for Landmarks",
+    title: "AI-Powered Learning Insights",
     image: softdev4,
     content: (
       <>
-        Use AI-based image recognition to identify tourist spots, scan travel
-        documents, and enhance visual discovery within your mobile tourism
-        application.
+        Use AI to recommend learning paths, track user behavior, and deliver
+        actionable insights for continuous learning improvement.
       </>
     ),
   },
   {
     id: "5",
-    title: "Automation in Tour Management",
+    title: "Learning Workflow Automation",
     image: softdev5,
     content: (
       <>
-        Streamline operations with automated booking workflows, itinerary
-        generation, and CRM tools to improve efficiency for travel agencies in
-        Saudi Arabia.
+        Automate onboarding, course assignments, certification tracking, and
+        reporting to streamline the learning experience lifecycle.
       </>
     ),
   },
   {
     id: "6",
-    title: "API Integration for Travel Services",
+    title: "API Integration for LXP Ecosystems",
     image: softdev6,
     content: (
       <>
-        Seamlessly integrate third-party APIs such as Google Maps, payment
-        gateways, weather forecasts, and airline databases to enhance user
-        experience.
+        Seamlessly connect your LXP with HRMS, CRMs, content providers, and
+        communication platforms for an integrated learning ecosystem.
       </>
     ),
   },
   {
     id: "7",
-    title: "App Performance Optimization",
+    title: "LXP Optimization & Scalability",
     image: softdev7,
     content: (
       <>
-        Ensure high performance and user satisfaction through continuous app
-        testing, speed optimization, bug fixes, and scalability enhancements.
+        Enhance system performance, ensure fast content delivery, and scale your
+        LXP to support evolving organizational learning needs.
       </>
     ),
   },
@@ -107,51 +103,51 @@ const services = [
 const serviceData = [
   {
     img: c11,
-    alt: "Travel Strategy & Planning",
-    title: "Travel App Strategy & Planning",
-    desc: "Develop a clear app roadmap that supports tourism business goals and digital transformation in Saudi Arabia's travel sector.",
+    alt: "LXP Strategy & Planning",
+    title: "LXP Strategy & Planning",
+    desc: "Craft a learning roadmap that aligns digital learning initiatives with your organizational objectives and learner needs.",
   },
   {
     img: c12,
-    alt: "Booking App Development",
-    title: "Online Booking System Development",
-    desc: "Create robust booking systems for hotels, flights, and tours with real-time updates and user-friendly interfaces.",
+    alt: "LXP Software Development",
+    title: "Custom LXP Development",
+    desc: "Develop a centralized platform for personalized learning journeys, content curation, and engagement tracking.",
   },
   {
     img: c13,
-    alt: "Travel Chatbot Solutions",
-    title: "Conversational Travel Chatbots",
-    desc: "Deploy AI-powered travel assistants to offer instant help, booking support, and local tips to tourists in multiple languages.",
+    alt: "Learner Portals",
+    title: "Learner-Centric Portals",
+    desc: "Deploy engaging portals where users can access courses, track learning progress, and participate in social learning.",
   },
   {
     img: c11,
-    alt: "Visual Landmark Detection",
-    title: "Smart Landmark Detection",
-    desc: "Enable users to discover nearby attractions using advanced image recognition features in your mobile travel app.",
+    alt: "Learning Analytics & AI",
+    title: "AI-Powered Learning Insights",
+    desc: "Implement AI to generate insights, recommend content, and monitor learner behavior for continuous platform improvement.",
   },
   {
     img: c12,
-    alt: "Tour Workflow Automation",
-    title: "Tour Management Automation",
-    desc: "Boost productivity by automating booking processes, client communication, and travel plan organization.",
+    alt: "Learning Workflow Automation",
+    title: "Learning Workflow Automation",
+    desc: "Automate course enrollments, reminders, reporting, and certification to simplify LXP management processes.",
   },
   {
     img: c13,
-    alt: "App Optimization & Maintenance",
-    title: "Travel App Optimization",
-    desc: "Ensure fast, secure, and bug-free travel apps through performance monitoring, updates, and continuous improvement.",
+    alt: "LXP Optimization & Maintenance",
+    title: "LXP Optimization & Scalability",
+    desc: "Ensure consistent performance and reliability through regular updates, optimization, and scalable architecture.",
   },
 ];
 
-const TravelTourism = () => {
+const LearningExperience = () => {
   const [activeKey, setActiveKey] = useState("1");
 
   return (
     <>
       <Meta_Component
-        title="Travel & Tourism App Development in Saudi Arabia | ASVAYUK Technologies"
-        description="ASVAYUK Technologies builds custom travel and tourism apps in Saudi Arabia. We offer booking systems, itinerary planning, hotel integration, and travel portal development."
-        canonical="https://asvayuktech.com/travel-tourism-app-development-in-riyadh-saudi-arabia"
+        title="Learning Experience Platforms (LXP) | ASVAYUK Technologies"
+        description="ASVAYUK Technologies offers cutting-edge Learning Experience Platforms (LXP) in Saudi Arabia. We deliver personalized learning, AI-driven insights, seamless integrations, and scalable digital training solutions."
+        canonical="https://asvayuktech.com/learning-experience-platforms-in-riyadh-saudi-arabia"
       />
 
       <main>
@@ -166,15 +162,14 @@ const TravelTourism = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      Travel & Tourism App Development Company in Saudi Arabia
+                      Learning Experience Platform Provider in Saudi Arabia
                     </a>
                   </h1>
                   <p className="py-3">
-                    <strong>ASVAYUK Technologies</strong> specializes in
-                    crafting innovative travel and tourism mobile apps in Saudi
-                    Arabia. We empower businesses with custom solutions to
-                    enhance traveler experiences, boost bookings, and streamline
-                    operations.
+                    <strong>ASVAYUK Technologies</strong> delivers advanced
+                    Learning Experience Platforms (LXP) that personalize
+                    education, engage learners, and boost training outcomes
+                    across enterprises and institutions in Saudi Arabia.
                   </p>
 
                   <BannerButton
@@ -187,7 +182,7 @@ const TravelTourism = () => {
                 <div className="bannerImg">
                   <img
                     src={banners_39}
-                    alt="Travel and Tourism App Development Company in Saudi Arabia"
+                    alt="Learning Experience Platform Provider in Saudi Arabia"
                     width="100%"
                     height="100%"
                   />
@@ -201,13 +196,13 @@ const TravelTourism = () => {
           <Row className="align-items-center mb-4 text-center">
             <Col lg={10} className="mx-auto">
               <h1 className="fw-bold">
-                Why Choose Our Travel & Tourism App Development Services in
-                Saudi Arabia?
+                Why Choose Our Learning Experience Platforms in Saudi Arabia?
               </h1>
               <p>
-                At ASVAYUK Technologies, we deliver bespoke travel app
-                development solutions tailored for Saudi Arabia's dynamic
-                tourism sector. Here’s why leading travel businesses rely on us:
+                At ASVAYUK Technologies, we craft scalable LXPs tailored to
+                Saudi organizations, offering intuitive interfaces, AI-powered
+                content delivery, and seamless integration with your learning
+                ecosystem.
               </p>
             </Col>
           </Row>
@@ -222,18 +217,18 @@ const TravelTourism = () => {
                   <Col xs={3} sm={2}>
                     <img
                       src={c11}
-                      alt="Custom Travel App Development Saudi Arabia"
+                      alt="Custom LXP Solutions Saudi Arabia"
                       className="rounded-circle img-fluid"
                     />
                   </Col>
                   <Col xs={9} sm={10}>
                     <h6 className="fw-bold mb-2">
-                      Custom Travel Apps Designed for Your Business Goals
+                      Personalized Learning Journeys
                     </h6>
                     <p className="mb-0 text-muted">
-                      We develop feature-rich travel and tourism applications
-                      tailored to your unique needs, enhancing user engagement,
-                      booking efficiency, and destination discovery.
+                      We design LXP platforms that adapt to each learner's pace,
+                      behavior, and goals—enabling organizations to deliver
+                      impactful, user-centric training experiences.
                     </p>
                   </Col>
                 </Row>
@@ -261,18 +256,18 @@ const TravelTourism = () => {
                   <Col xs={3} sm={2}>
                     <img
                       src={c12}
-                      alt="End-to-End Travel App Development Saudi Arabia"
+                      alt="Real-Time Learning Analytics Saudi Arabia"
                       className="rounded-circle img-fluid"
                     />
                   </Col>
                   <Col xs={9} sm={10}>
                     <h6 className="fw-bold mb-2">
-                      End-to-End Travel App Development & Deployment
+                      Real-Time Insights & Progress Tracking
                     </h6>
                     <p className="mb-0 text-muted">
-                      From concept to launch, we handle all phases of travel app
-                      development, ensuring seamless user experience, secure
-                      transactions, and reliable performance.
+                      Gain actionable analytics on learner performance,
+                      engagement, and course completion to drive continuous
+                      improvement and learning outcomes.
                     </p>
                   </Col>
                 </Row>
@@ -302,18 +297,18 @@ const TravelTourism = () => {
                   <Col xs={3} sm={2}>
                     <img
                       src={c14}
-                      alt="Travel App Strategy Consultancy Saudi Arabia"
+                      alt="AI-Based Learning Platform Saudi Arabia"
                       className="rounded-circle img-fluid"
                     />
                   </Col>
                   <Col xs={9} sm={10}>
                     <h6 className="fw-bold mb-2">
-                      Strategic Travel App Solutions for Business Growth
+                      AI-Powered Content Recommendations
                     </h6>
                     <p className="mb-0 text-muted">
-                      We analyze market trends and user behavior to craft travel
-                      app strategies that increase customer retention and
-                      maximize revenue.
+                      Our LXP uses intelligent algorithms to recommend the right
+                      content at the right time, optimizing learning efficiency
+                      and knowledge retention.
                     </p>
                   </Col>
                 </Row>
@@ -338,18 +333,18 @@ const TravelTourism = () => {
                   <Col xs={3} sm={2}>
                     <img
                       src={c13}
-                      alt="Experienced Travel App Developers Saudi Arabia"
+                      alt="Experienced LXP Developers Saudi Arabia"
                       className="rounded-circle img-fluid"
                     />
                   </Col>
                   <Col xs={9} sm={10}>
                     <h6 className="fw-bold mb-2">
-                      Experienced Travel App Developers & Designers
+                      Expert Developers & UI Designers for LXPs
                     </h6>
                     <p className="mb-0 text-muted">
-                      Our skilled team combines technical expertise and travel
-                      industry knowledge to deliver user-friendly, secure, and
-                      scalable apps.
+                      Our experienced team crafts modern, intuitive learning
+                      interfaces that maximize usability, engagement, and ROI on
+                      your digital training investments.
                     </p>
                   </Col>
                 </Row>
@@ -371,15 +366,14 @@ const TravelTourism = () => {
 
         <Container className="my-5">
           <h1 className="mb-4 fw-bold">
-            Travel & Tourism App Development Services for Saudi Arabia
+            Learning Experience Platforms (LXP) in Saudi Arabia
           </h1>
           <p className="app__subhead mb-5 fs-5">
-            ASVAYUK Technologies offers comprehensive travel and tourism app
-            development services across Saudi Arabia. Our innovative solutions
-            help travel businesses improve customer engagement, increase
-            bookings, and streamline operations with cutting-edge technology.
-            Partner with us to build powerful mobile apps that transform the
-            tourism experience.
+            ASVAYUK Technologies delivers innovative Learning Experience
+            Platforms (LXP) tailored for businesses and educational institutions
+            in Saudi Arabia. Our smart LXP solutions enhance personalized
+            learning journeys, boost engagement, and empower continuous employee
+            development with intelligent content delivery and tracking.
           </p>
 
           <div className="tabSoftDev">
@@ -436,15 +430,15 @@ const TravelTourism = () => {
           <Container>
             <div className="trustedContent-wrapper pb-2 text-center">
               <h2 className="fw-bold">
-                Our Key Travel & Tourism App Development Services
+                Our Core Learning Experience Platform Solutions
               </h2>
               <p>
-                At ASVAYUK Technologies, we leverage advanced technologies to
-                build smart, user-friendly travel apps tailored for Saudi
-                Arabia’s tourism market. Our solutions focus on enhancing
-                traveler engagement, automating booking processes, and
-                delivering real-time insights. We work closely with clients to
-                deliver apps that drive growth and customer satisfaction.
+                At ASVAYUK Technologies, we specialize in developing secure,
+                AI-driven Learning Experience Platforms designed for
+                organizations in Saudi Arabia. Our LXP solutions support
+                microlearning, skill-based content delivery, social learning,
+                and analytics to ensure learners achieve maximum engagement and
+                development.
               </p>
             </div>
 
@@ -467,10 +461,10 @@ const TravelTourism = () => {
           className="accelerate-bx bg_new_bx padding_coman"
           style={{
             background: `radial-gradient(
-                circle,
-                rgba(36, 159, 129, 1) -300%,
-                rgba(0, 0, 0, 1) 100%
-            )`,
+      circle,
+      rgba(36, 159, 129, 1) -300%,
+      rgba(0, 0, 0, 1) 100%
+    )`,
           }}
         >
           <Container>
@@ -481,17 +475,21 @@ const TravelTourism = () => {
                     className="text-uppercase fw-bold"
                     style={{ color: "#2cbe9a" }}
                   >
-                    Ready to Build a Cutting-Edge Travel & Tourism App
+                    Ready to Launch a Smart Learning Experience Platform?
                   </h2>
                   <p className="text-white pt-3 fs-6">
-                    Connect with ASVAYUK Technologies today and let our expert
-                    team create a custom travel app that boosts your business
-                    growth and enhances traveler experiences across Saudi
-                    Arabia.
+                    Collaborate with ASVAYUK Technologies to build a tailored
+                    Learning Experience Platform. Our expert team will design
+                    and develop an intuitive, secure, and scalable LXP that
+                    transforms how your teams learn, grow, and collaborate—right
+                    here in Saudi Arabia.
                   </p>
                   <Row>
                     <Col lg={6}>
-                      <BannerButton btnTitle="Consultation" url="/contact-us" />
+                      <BannerButton
+                        btnTitle="Book a Consultation"
+                        url="/contact-us"
+                      />
                     </Col>
                   </Row>
                 </div>
@@ -504,35 +502,38 @@ const TravelTourism = () => {
           <Container>
             <div className="pb-4">
               <h1 className="fw-bold">
-                WHY TRAVEL & TOURISM APP DEVELOPMENT MATTERS{" "}
+                WHY LEARNING EXPERIENCE PLATFORMS{" "}
                 <span className="text-uppercase" style={{ color: "#2cbe9a" }}>
-                  IN SAUDI ARABIA
+                  MATTER FOR YOUR BUSINESS
                 </span>
               </h1>
               <p className="powered_php pt-3">
-                Digital travel and tourism solutions are transforming how tour
-                operators, agencies, and travelers connect, plan, and explore.
-                With a custom mobile app, your travel business in Saudi Arabia
-                can boost bookings, enhance customer experience, and gain a
-                competitive edge.
+                Learning Experience Platforms (LXPs) revolutionize corporate
+                training by delivering personalized, engaging, and adaptive
+                learning journeys. With modern LXP solutions, you drive employee
+                growth, foster collaboration, and align learning with
+                organizational goals.
               </p>
             </div>
             <div className="row">
               <div className="col-lg-6">
                 <ul className="development_links">
                   <li>
-                    <a href="#" title="Travel App Development Riyadh">
-                      Boosts user engagement with real-time travel assistance
+                    <a href="#" title="Personalized Learning Paths">
+                      Offers personalized learning paths based on individual
+                      roles and goals
                     </a>
                   </li>
                   <li>
-                    <a href="#" title="Tourism Mobile App Saudi Arabia">
-                      Streamlines booking and itinerary management
+                    <a href="#" title="AI-Powered Recommendations">
+                      Leverages AI to recommend relevant courses and content in
+                      real time
                     </a>
                   </li>
                   <li>
-                    <a href="#" title="Custom Travel App Solutions">
-                      Offers personalized experiences based on user preferences
+                    <a href="#" title="Skill Gap Analysis">
+                      Tracks learner progress and identifies skill gaps with
+                      analytics
                     </a>
                   </li>
                 </ul>
@@ -540,13 +541,15 @@ const TravelTourism = () => {
               <div className="col-lg-6">
                 <ul className="development_links">
                   <li>
-                    <a href="#" title="Tour Operator App Development">
-                      Integrates with maps, guides, payment gateways & more
+                    <a href="#" title="Collaborative Learning">
+                      Enables social and peer-to-peer learning through
+                      integrated tools
                     </a>
                   </li>
                   <li>
-                    <a href="#" title="Saudi Arabia Tourism App">
-                      Drives growth through digital innovation in tourism
+                    <a href="#" title="Scalable LXP Architecture">
+                      Scales with your enterprise while adapting to diverse
+                      learning needs
                     </a>
                   </li>
                 </ul>
@@ -561,29 +564,27 @@ const TravelTourism = () => {
               <div className="col-lg-6 col-sm-12 mb-3 p-3">
                 <div className="tool-heading">
                   <h3 className="fw-bold">
-                    Our Travel App Development Process
+                    Our Learning Experience Platform Development Process
                   </h3>
                   <p>
-                    At ASVAYUK Technologies, we specialize in custom{" "}
-                    <strong>travel and tourism app development</strong> for
-                    agencies, startups, and tourism boards across Saudi Arabia.
-                    Our approach ensures your app aligns with business goals,
-                    enhances customer journeys, and scales with growth.
+                    At ASVAYUK Technologies, we build custom{" "}
+                    <strong>Learning Experience Platforms (LXPs)</strong> that
+                    align with your learning strategy. Our approach ensures the
+                    platform is intuitive, scalable, and data-driven.
                   </p>
                   <p>
-                    From itinerary planning and booking engines to GPS
-                    navigation and multi-language support, we build apps that
-                    elevate the traveler experience and help you stand out in
-                    the tourism industry.
+                    From AI-powered recommendations and personalized paths to
+                    gamification and analytics, we design LXPs that maximize
+                    learner engagement and impact.
                   </p>
 
-                  <div className="heroBtn mt-3">
+                  <div className="heroBtn mt-3 w-100">
                     <Link
                       to="/contact-us"
                       className="d-flex justify-content-between"
                     >
                       <div className="btnText px-3 py-3 text-light">
-                        <span>Get a Free Travel App Consultation</span>
+                        <span>Free Learning Platform Consultation</span>
                       </div>
                       <div className="btn_icon px-4 py-2 align-content-center">
                         <FaChevronRight />
@@ -596,29 +597,29 @@ const TravelTourism = () => {
               <div className="col-lg-6 col-sm-12 text-start mb-3 p-3">
                 <ol>
                   <li>
-                    <strong>Discovery and Planning:</strong> We understand your
-                    business model, target audience, and feature requirements to
-                    outline a development roadmap.
+                    <strong>Needs Assessment:</strong> We analyze your learning
+                    goals, audience types, and current infrastructure to define
+                    key LXP features.
                   </li>
                   <li>
-                    <strong>UI/UX Design:</strong> Our designers craft
-                    intuitive, user-friendly interfaces that deliver seamless
-                    travel experiences.
+                    <strong>UI/UX Design:</strong> Our team crafts engaging,
+                    mobile-friendly interfaces to boost user experience and
+                    retention.
                   </li>
                   <li>
-                    <strong>Development and Integration:</strong> We develop
-                    core features like bookings, reviews, geolocation, and
-                    secure payments, integrating APIs as needed.
+                    <strong>Development and Features:</strong> We implement core
+                    modules like content curation, personalized learning paths,
+                    discussion forums, and analytics.
                   </li>
                   <li>
-                    <strong>Testing and Launch:</strong> Rigorous quality
-                    testing ensures the app runs smoothly across devices before
-                    going live on app stores.
+                    <strong>Testing and Launch:</strong> We rigorously test your
+                    LXP to ensure high performance, accessibility, and ease of
+                    use.
                   </li>
                   <li>
-                    <strong>Maintenance and Updates:</strong> We provide ongoing
-                    support and updates to keep your app competitive and aligned
-                    with user expectations.
+                    <strong>Ongoing Support:</strong> We offer continuous
+                    support, updates, and enhancements to keep your platform
+                    effective and innovative.
                   </li>
                 </ol>
               </div>
@@ -629,17 +630,17 @@ const TravelTourism = () => {
         <section className="pt-5">
           <Container>
             <h2 className="fw-bold">
-              Travel Apps Built for Growth and Customer Delight
+              Software Built for Personalized Learning and Engagement
             </h2>
             <p
               className="pt-3"
               style={{ fontSize: "20px", lineHeight: "1.8rem" }}
             >
-              We develop <b>scalable, high-performing travel applications</b>{" "}
-              that serve both local and international tourists. With a
-              customer-first approach, we ensure every app is tailored for
-              engagement, retention, and real-time support across the Saudi
-              Arabian tourism ecosystem.
+              We develop{" "}
+              <b>dynamic, scalable Learning Experience Platforms (LXPs)</b>{" "}
+              tailored to modern learners. Our solutions enhance engagement
+              through personalization, community interaction, and performance
+              insights.
             </p>
           </Container>
         </section>
@@ -647,17 +648,16 @@ const TravelTourism = () => {
         <section className="py-5">
           <Container>
             <h2 className="fw-bold">
-              Ready to Launch Your Travel App in Saudi Arabia?
+              Ready to Transform Your Learning Ecosystem?
             </h2>
             <p
               className="pt-3"
               style={{ fontSize: "20px", lineHeight: "1.8rem" }}
             >
-              Elevate your tourism business with a feature-rich mobile
-              application from ASVAYUK Technologies. Whether you need a city
-              guide app, a booking platform, or an end-to-end travel solution,
-              we’re here to turn your vision into reality. Let's build the
-              future of tourism together.
+              Partner with ASVAYUK Technologies to build an impactful Learning
+              Experience Platform. From employee training to enterprise
+              knowledge sharing, we empower your teams through engaging,
+              intelligent learning experiences.
             </p>
           </Container>
         </section>
@@ -666,4 +666,4 @@ const TravelTourism = () => {
   );
 };
 
-export default TravelTourism;
+export default LearningExperience;

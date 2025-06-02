@@ -1,6 +1,6 @@
 import { Col, Container, Nav, Row, Tab, Image, Card } from "react-bootstrap";
 import Meta_Component from "../../Components/Meta_Component/Meta_Component";
-import banners_39 from "../../Images/travelImg.png";
+import banners_39 from "../../Images/onlinemarketplaceImg.png";
 import BannerButton from "../../Components/BannerBtn/BannerButton";
 import { useState } from "react";
 import softdev1 from "../../Images/softdev1.svg";
@@ -21,84 +21,82 @@ import { FaChevronRight } from "react-icons/fa";
 const services = [
   {
     id: "1",
-    title: "Travel App Strategy & Consultation",
+    title: "Online Marketplace Strategy & Consultation",
     image: softdev1,
-    alt: "Travel app development consulting in Saudi Arabia",
+    alt: "Online marketplace development consulting",
     content: (
       <>
-        Our travel tech experts help you define a successful app strategy that
-        aligns with the tourism sector in Saudi Arabia, targeting user
-        engagement and business growth.
+        Our marketplace experts help you define a winning strategy that
+        aligns with your business goals, focusing on user acquisition and
+        seamless vendor-buyer engagement.
       </>
     ),
   },
   {
     id: "2",
-    title: "Custom Booking App Development",
+    title: "Custom Marketplace Platform Development",
     image: softdev2,
     content: (
       <>
-        Build high-performance travel booking applications tailored for hotels,
-        flights, and tour packages with real-time availability and secure
-        payment integration.
+        Build scalable, feature-rich online marketplaces tailored for multiple
+        product categories with real-time inventory management and secure
+        payment gateways.
       </>
     ),
   },
   {
     id: "3",
-    title: "Multilingual Travel Chatbots",
+    title: "Multilingual Marketplace Chatbots",
     image: softdev3,
     content: (
       <>
-        Enhance traveler experience with AI-driven multilingual chatbots for
-        instant customer support, itinerary planning, and local recommendations.
+        Improve user support and engagement with AI-driven multilingual chatbots
+        handling queries, order tracking, and personalized recommendations.
       </>
     ),
   },
   {
     id: "4",
-    title: "Image Recognition for Landmarks",
+    title: "AI-Powered Product Recognition",
     image: softdev4,
     content: (
       <>
-        Use AI-based image recognition to identify tourist spots, scan travel
-        documents, and enhance visual discovery within your mobile tourism
-        application.
+        Use AI-based image recognition to enable visual search, product tagging,
+        and automated catalog management within your online marketplace.
       </>
     ),
   },
   {
     id: "5",
-    title: "Automation in Tour Management",
+    title: "Automation in Vendor & Order Management",
     image: softdev5,
     content: (
       <>
-        Streamline operations with automated booking workflows, itinerary
-        generation, and CRM tools to improve efficiency for travel agencies in
-        Saudi Arabia.
+        Automate vendor onboarding, order processing, and customer notifications
+        to streamline marketplace operations and improve efficiency.
       </>
     ),
   },
   {
     id: "6",
-    title: "API Integration for Travel Services",
+    title: "API Integration for Payment & Shipping",
     image: softdev6,
     content: (
       <>
-        Seamlessly integrate third-party APIs such as Google Maps, payment
-        gateways, weather forecasts, and airline databases to enhance user
+        Integrate third-party APIs such as payment gateways, shipping providers,
+        and analytics tools to enhance marketplace functionality and user
         experience.
       </>
     ),
   },
   {
     id: "7",
-    title: "App Performance Optimization",
+    title: "Marketplace Performance Optimization",
     image: softdev7,
     content: (
       <>
-        Ensure high performance and user satisfaction through continuous app
-        testing, speed optimization, bug fixes, and scalability enhancements.
+        Ensure fast load times, smooth transactions, and high availability with
+        continuous testing, bug fixes, and scalability improvements.
       </>
     ),
   },
@@ -107,51 +105,51 @@ const services = [
 const serviceData = [
   {
     img: c11,
-    alt: "Travel Strategy & Planning",
-    title: "Travel App Strategy & Planning",
-    desc: "Develop a clear app roadmap that supports tourism business goals and digital transformation in Saudi Arabia's travel sector.",
+    alt: "Marketplace Strategy & Planning",
+    title: "Online Marketplace Strategy & Planning",
+    desc: "Create a strategic roadmap that supports your marketplace's growth and seamless vendor-buyer interactions.",
   },
   {
     img: c12,
-    alt: "Booking App Development",
-    title: "Online Booking System Development",
-    desc: "Create robust booking systems for hotels, flights, and tours with real-time updates and user-friendly interfaces.",
+    alt: "Marketplace Platform Development",
+    title: "Custom Marketplace Platform Development",
+    desc: "Develop a robust marketplace platform supporting multiple vendors, product categories, and secure transactions.",
   },
   {
     img: c13,
-    alt: "Travel Chatbot Solutions",
-    title: "Conversational Travel Chatbots",
-    desc: "Deploy AI-powered travel assistants to offer instant help, booking support, and local tips to tourists in multiple languages.",
+    alt: "Marketplace Chatbot Solutions",
+    title: "AI-Powered Marketplace Chatbots",
+    desc: "Deploy conversational chatbots for customer service, order assistance, and personalized shopping recommendations.",
   },
   {
     img: c11,
-    alt: "Visual Landmark Detection",
-    title: "Smart Landmark Detection",
-    desc: "Enable users to discover nearby attractions using advanced image recognition features in your mobile travel app.",
+    alt: "Product Recognition Technology",
+    title: "AI Product Recognition",
+    desc: "Enable users to search and discover products using image recognition technology within your marketplace.",
   },
   {
     img: c12,
-    alt: "Tour Workflow Automation",
-    title: "Tour Management Automation",
-    desc: "Boost productivity by automating booking processes, client communication, and travel plan organization.",
+    alt: "Order & Vendor Automation",
+    title: "Vendor and Order Management Automation",
+    desc: "Automate vendor onboarding, order tracking, and notifications to streamline marketplace operations.",
   },
   {
     img: c13,
-    alt: "App Optimization & Maintenance",
-    title: "Travel App Optimization",
-    desc: "Ensure fast, secure, and bug-free travel apps through performance monitoring, updates, and continuous improvement.",
+    alt: "Marketplace Optimization & Maintenance",
+    title: "Marketplace Performance Optimization",
+    desc: "Maintain a fast, secure, and reliable marketplace with ongoing performance monitoring and updates.",
   },
 ];
 
-const TravelTourism = () => {
+const OnlineMarketplace = () => {
   const [activeKey, setActiveKey] = useState("1");
 
   return (
     <>
       <Meta_Component
-        title="Travel & Tourism App Development in Saudi Arabia | ASVAYUK Technologies"
-        description="ASVAYUK Technologies builds custom travel and tourism apps in Saudi Arabia. We offer booking systems, itinerary planning, hotel integration, and travel portal development."
-        canonical="https://asvayuktech.com/travel-tourism-app-development-in-riyadh-saudi-arabia"
+        title="Online Marketplace Development in Saudi Arabia | ASVAYUK Technologies"
+        description="ASVAYUK Technologies specializes in custom online marketplace development in Saudi Arabia. We deliver scalable eCommerce platforms, multi-vendor systems, secure payment integration, and tailored marketplace solutions."
+        canonical="https://asvayuktech.com/online-marketplace-development-in-riyadh-saudi-arabia"
       />
 
       <main>
@@ -166,15 +164,15 @@ const TravelTourism = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      Travel & Tourism App Development Company in Saudi Arabia
+                      Online Marketplace Development Company in Saudi Arabia
                     </a>
                   </h1>
                   <p className="py-3">
-                    <strong>ASVAYUK Technologies</strong> specializes in
-                    crafting innovative travel and tourism mobile apps in Saudi
-                    Arabia. We empower businesses with custom solutions to
-                    enhance traveler experiences, boost bookings, and streamline
-                    operations.
+                    <strong>ASVAYUK Technologies</strong> builds scalable online
+                    marketplace platforms tailored for Saudi Arabia’s growing
+                    digital economy. We help businesses connect vendors and
+                    customers with secure, high-performance, and user-centric
+                    multi-vendor marketplace solutions.
                   </p>
 
                   <BannerButton
@@ -187,7 +185,7 @@ const TravelTourism = () => {
                 <div className="bannerImg">
                   <img
                     src={banners_39}
-                    alt="Travel and Tourism App Development Company in Saudi Arabia"
+                    alt="Online Marketplace Development Company in Saudi Arabia"
                     width="100%"
                     height="100%"
                   />
@@ -201,13 +199,14 @@ const TravelTourism = () => {
           <Row className="align-items-center mb-4 text-center">
             <Col lg={10} className="mx-auto">
               <h1 className="fw-bold">
-                Why Choose Our Travel & Tourism App Development Services in
-                Saudi Arabia?
+                Why Choose Our Online Marketplace Development Services in Saudi
+                Arabia?
               </h1>
               <p>
-                At ASVAYUK Technologies, we deliver bespoke travel app
-                development solutions tailored for Saudi Arabia's dynamic
-                tourism sector. Here’s why leading travel businesses rely on us:
+                At ASVAYUK Technologies, we offer tailored marketplace
+                development services designed to support businesses across Saudi
+                Arabia. Here’s why top brands trust us to build their digital
+                commerce ecosystems:
               </p>
             </Col>
           </Row>
@@ -222,18 +221,20 @@ const TravelTourism = () => {
                   <Col xs={3} sm={2}>
                     <img
                       src={c11}
-                      alt="Custom Travel App Development Saudi Arabia"
+                      alt="Custom Online Marketplace Development Saudi Arabia"
                       className="rounded-circle img-fluid"
                     />
                   </Col>
                   <Col xs={9} sm={10}>
                     <h6 className="fw-bold mb-2">
-                      Custom Travel Apps Designed for Your Business Goals
+                      Custom Online Marketplaces Built to Fit Your Business
+                      Model
                     </h6>
                     <p className="mb-0 text-muted">
-                      We develop feature-rich travel and tourism applications
-                      tailored to your unique needs, enhancing user engagement,
-                      booking efficiency, and destination discovery.
+                      We create marketplace platforms tailored to your niche,
+                      business goals, and user experience expectations —
+                      empowering vendors and buyers with efficient tools and
+                      interfaces.
                     </p>
                   </Col>
                 </Row>
@@ -261,18 +262,18 @@ const TravelTourism = () => {
                   <Col xs={3} sm={2}>
                     <img
                       src={c12}
-                      alt="End-to-End Travel App Development Saudi Arabia"
+                      alt="End-to-End Marketplace Development Saudi Arabia"
                       className="rounded-circle img-fluid"
                     />
                   </Col>
                   <Col xs={9} sm={10}>
                     <h6 className="fw-bold mb-2">
-                      End-to-End Travel App Development & Deployment
+                      End-to-End Marketplace Development & Launch Support
                     </h6>
                     <p className="mb-0 text-muted">
-                      From concept to launch, we handle all phases of travel app
-                      development, ensuring seamless user experience, secure
-                      transactions, and reliable performance.
+                      From idea validation to deployment and maintenance, we
+                      manage every stage of your online marketplace development
+                      journey — ensuring smooth performance and scalability.
                     </p>
                   </Col>
                 </Row>
@@ -302,18 +303,19 @@ const TravelTourism = () => {
                   <Col xs={3} sm={2}>
                     <img
                       src={c14}
-                      alt="Travel App Strategy Consultancy Saudi Arabia"
+                      alt="Marketplace Strategy and Consulting Saudi Arabia"
                       className="rounded-circle img-fluid"
                     />
                   </Col>
                   <Col xs={9} sm={10}>
                     <h6 className="fw-bold mb-2">
-                      Strategic Travel App Solutions for Business Growth
+                      Marketplace Strategy & Scalable Architecture
                     </h6>
                     <p className="mb-0 text-muted">
-                      We analyze market trends and user behavior to craft travel
-                      app strategies that increase customer retention and
-                      maximize revenue.
+                      We offer data-driven strategy and a robust backend
+                      architecture to ensure your online marketplace scales
+                      efficiently while delivering a seamless experience for
+                      users.
                     </p>
                   </Col>
                 </Row>
@@ -338,18 +340,18 @@ const TravelTourism = () => {
                   <Col xs={3} sm={2}>
                     <img
                       src={c13}
-                      alt="Experienced Travel App Developers Saudi Arabia"
+                      alt="Experienced Marketplace Developers Saudi Arabia"
                       className="rounded-circle img-fluid"
                     />
                   </Col>
                   <Col xs={9} sm={10}>
                     <h6 className="fw-bold mb-2">
-                      Experienced Travel App Developers & Designers
+                      Skilled Marketplace Developers & UX Designers
                     </h6>
                     <p className="mb-0 text-muted">
-                      Our skilled team combines technical expertise and travel
-                      industry knowledge to deliver user-friendly, secure, and
-                      scalable apps.
+                      Our experienced team combines eCommerce knowledge with
+                      modern UI/UX design to create visually appealing, secure,
+                      and performance-optimized marketplaces.
                     </p>
                   </Col>
                 </Row>
@@ -371,15 +373,15 @@ const TravelTourism = () => {
 
         <Container className="my-5">
           <h1 className="mb-4 fw-bold">
-            Travel & Tourism App Development Services for Saudi Arabia
+            Travel & Tourism App Development Services in Saudi Arabia
           </h1>
           <p className="app__subhead mb-5 fs-5">
-            ASVAYUK Technologies offers comprehensive travel and tourism app
-            development services across Saudi Arabia. Our innovative solutions
-            help travel businesses improve customer engagement, increase
-            bookings, and streamline operations with cutting-edge technology.
-            Partner with us to build powerful mobile apps that transform the
-            tourism experience.
+            ASVAYUK Technologies delivers end-to-end travel and tourism app
+            development services tailored for Saudi Arabia. Our advanced digital
+            solutions empower travel businesses to elevate customer engagement,
+            boost bookings, and streamline operations. Partner with us to build
+            innovative mobile apps that redefine travel experiences and drive
+            measurable growth.
           </p>
 
           <div className="tabSoftDev">
@@ -436,15 +438,16 @@ const TravelTourism = () => {
           <Container>
             <div className="trustedContent-wrapper pb-2 text-center">
               <h2 className="fw-bold">
-                Our Key Travel & Tourism App Development Services
+                Our Core Travel & Tourism App Development Offerings
               </h2>
               <p>
-                At ASVAYUK Technologies, we leverage advanced technologies to
-                build smart, user-friendly travel apps tailored for Saudi
-                Arabia’s tourism market. Our solutions focus on enhancing
-                traveler engagement, automating booking processes, and
-                delivering real-time insights. We work closely with clients to
-                deliver apps that drive growth and customer satisfaction.
+                At ASVAYUK Technologies, we specialize in crafting intelligent,
+                intuitive travel applications for Saudi Arabia’s tourism
+                ecosystem. From seamless booking automation to personalized
+                travel experiences, our apps are designed to engage users, boost
+                conversions, and provide real-time business insights.
+                Collaborate with us to develop travel solutions that set you
+                apart.
               </p>
             </div>
 
@@ -467,10 +470,10 @@ const TravelTourism = () => {
           className="accelerate-bx bg_new_bx padding_coman"
           style={{
             background: `radial-gradient(
-                circle,
-                rgba(36, 159, 129, 1) -300%,
-                rgba(0, 0, 0, 1) 100%
-            )`,
+      circle,
+      rgba(36, 159, 129, 1) -300%,
+      rgba(0, 0, 0, 1) 100%
+    )`,
           }}
         >
           <Container>
@@ -481,17 +484,21 @@ const TravelTourism = () => {
                     className="text-uppercase fw-bold"
                     style={{ color: "#2cbe9a" }}
                   >
-                    Ready to Build a Cutting-Edge Travel & Tourism App
+                    Ready to Launch a Smart Travel & Tourism App?
                   </h2>
                   <p className="text-white pt-3 fs-6">
-                    Connect with ASVAYUK Technologies today and let our expert
-                    team create a custom travel app that boosts your business
-                    growth and enhances traveler experiences across Saudi
+                    Get in touch with ASVAYUK Technologies today. Our expert
+                    development team will work closely with you to design a
+                    travel app that enhances user experiences, streamlines
+                    operations, and accelerates business growth across Saudi
                     Arabia.
                   </p>
                   <Row>
                     <Col lg={6}>
-                      <BannerButton btnTitle="Consultation" url="/contact-us" />
+                      <BannerButton
+                        btnTitle="Book a Consultation"
+                        url="/contact-us"
+                      />
                     </Col>
                   </Row>
                 </div>
@@ -504,35 +511,35 @@ const TravelTourism = () => {
           <Container>
             <div className="pb-4">
               <h1 className="fw-bold">
-                WHY TRAVEL & TOURISM APP DEVELOPMENT MATTERS{" "}
+                WHY ONLINE MARKETPLACE DEVELOPMENT MATTERS{" "}
                 <span className="text-uppercase" style={{ color: "#2cbe9a" }}>
-                  IN SAUDI ARABIA
+                  FOR YOUR BUSINESS
                 </span>
               </h1>
               <p className="powered_php pt-3">
-                Digital travel and tourism solutions are transforming how tour
-                operators, agencies, and travelers connect, plan, and explore.
-                With a custom mobile app, your travel business in Saudi Arabia
-                can boost bookings, enhance customer experience, and gain a
-                competitive edge.
+                Online marketplace solutions are revolutionizing how buyers and
+                sellers connect, trade, and grow. With a custom platform, your
+                business can expand reach, streamline transactions, and foster a
+                loyal community.
               </p>
             </div>
             <div className="row">
               <div className="col-lg-6">
                 <ul className="development_links">
                   <li>
-                    <a href="#" title="Travel App Development Riyadh">
-                      Boosts user engagement with real-time travel assistance
+                    <a href="#" title="Marketplace Development Features">
+                      Enhances user engagement with seamless product discovery
                     </a>
                   </li>
                   <li>
-                    <a href="#" title="Tourism Mobile App Saudi Arabia">
-                      Streamlines booking and itinerary management
+                    <a href="#" title="Multi-vendor Marketplace Solutions">
+                      Simplifies order management and vendor coordination
                     </a>
                   </li>
                   <li>
-                    <a href="#" title="Custom Travel App Solutions">
-                      Offers personalized experiences based on user preferences
+                    <a href="#" title="Custom Marketplace Platforms">
+                      Offers personalized shopping experiences and
+                      recommendations
                     </a>
                   </li>
                 </ul>
@@ -540,13 +547,14 @@ const TravelTourism = () => {
               <div className="col-lg-6">
                 <ul className="development_links">
                   <li>
-                    <a href="#" title="Tour Operator App Development">
-                      Integrates with maps, guides, payment gateways & more
+                    <a href="#" title="Marketplace Payment Integration">
+                      Integrates secure payment gateways, reviews, and shipping
+                      APIs
                     </a>
                   </li>
                   <li>
-                    <a href="#" title="Saudi Arabia Tourism App">
-                      Drives growth through digital innovation in tourism
+                    <a href="#" title="Marketplace Growth Solutions">
+                      Drives business growth through scalable digital innovation
                     </a>
                   </li>
                 </ul>
@@ -561,20 +569,19 @@ const TravelTourism = () => {
               <div className="col-lg-6 col-sm-12 mb-3 p-3">
                 <div className="tool-heading">
                   <h3 className="fw-bold">
-                    Our Travel App Development Process
+                    Our Online Marketplace Development Process
                   </h3>
                   <p>
                     At ASVAYUK Technologies, we specialize in custom{" "}
-                    <strong>travel and tourism app development</strong> for
-                    agencies, startups, and tourism boards across Saudi Arabia.
-                    Our approach ensures your app aligns with business goals,
-                    enhances customer journeys, and scales with growth.
+                    <strong>online marketplace development</strong> for
+                    startups, SMEs, and enterprises. Our approach ensures your
+                    platform meets market needs, delivers a smooth user
+                    experience, and scales seamlessly.
                   </p>
                   <p>
-                    From itinerary planning and booking engines to GPS
-                    navigation and multi-language support, we build apps that
-                    elevate the traveler experience and help you stand out in
-                    the tourism industry.
+                    From multi-vendor onboarding and product catalogs to payment
+                    processing and analytics, we build marketplaces that connect
+                    buyers and sellers efficiently.
                   </p>
 
                   <div className="heroBtn mt-3">
@@ -583,7 +590,9 @@ const TravelTourism = () => {
                       className="d-flex justify-content-between"
                     >
                       <div className="btnText px-3 py-3 text-light">
-                        <span>Get a Free Travel App Consultation</span>
+                        <span>
+                          Get a Free Marketplace Development Consultation
+                        </span>
                       </div>
                       <div className="btn_icon px-4 py-2 align-content-center">
                         <FaChevronRight />
@@ -596,29 +605,30 @@ const TravelTourism = () => {
               <div className="col-lg-6 col-sm-12 text-start mb-3 p-3">
                 <ol>
                   <li>
-                    <strong>Discovery and Planning:</strong> We understand your
-                    business model, target audience, and feature requirements to
-                    outline a development roadmap.
+                    <strong>Discovery and Planning:</strong> We analyze your
+                    business goals, target users, and marketplace features to
+                    create a clear development roadmap.
                   </li>
                   <li>
                     <strong>UI/UX Design:</strong> Our designers craft
-                    intuitive, user-friendly interfaces that deliver seamless
-                    travel experiences.
+                    intuitive, engaging interfaces that encourage browsing and
+                    buying.
                   </li>
                   <li>
-                    <strong>Development and Integration:</strong> We develop
-                    core features like bookings, reviews, geolocation, and
-                    secure payments, integrating APIs as needed.
+                    <strong>Development and Integration:</strong> We build core
+                    marketplace features like product listings, vendor
+                    management, payments, and ratings, integrating APIs where
+                    necessary.
                   </li>
                   <li>
-                    <strong>Testing and Launch:</strong> Rigorous quality
-                    testing ensures the app runs smoothly across devices before
-                    going live on app stores.
+                    <strong>Testing and Launch:</strong> Thorough testing
+                    guarantees smooth operation across devices and secure
+                    transactions before launch.
                   </li>
                   <li>
-                    <strong>Maintenance and Updates:</strong> We provide ongoing
-                    support and updates to keep your app competitive and aligned
-                    with user expectations.
+                    <strong>Maintenance and Updates:</strong> Ongoing support
+                    ensures your marketplace evolves with user needs and market
+                    trends.
                   </li>
                 </ol>
               </div>
@@ -629,17 +639,16 @@ const TravelTourism = () => {
         <section className="pt-5">
           <Container>
             <h2 className="fw-bold">
-              Travel Apps Built for Growth and Customer Delight
+              Marketplaces Built for Scalability and Customer Satisfaction
             </h2>
             <p
               className="pt-3"
               style={{ fontSize: "20px", lineHeight: "1.8rem" }}
             >
-              We develop <b>scalable, high-performing travel applications</b>{" "}
-              that serve both local and international tourists. With a
-              customer-first approach, we ensure every app is tailored for
-              engagement, retention, and real-time support across the Saudi
-              Arabian tourism ecosystem.
+              We develop <b>robust, scalable online marketplaces</b> that cater
+              to diverse industries and audiences. By focusing on user
+              experience, security, and performance, we help businesses build
+              thriving digital marketplaces.
             </p>
           </Container>
         </section>
@@ -647,17 +656,16 @@ const TravelTourism = () => {
         <section className="py-5">
           <Container>
             <h2 className="fw-bold">
-              Ready to Launch Your Travel App in Saudi Arabia?
+              Ready to Launch Your Online Marketplace?
             </h2>
             <p
               className="pt-3"
               style={{ fontSize: "20px", lineHeight: "1.8rem" }}
             >
-              Elevate your tourism business with a feature-rich mobile
-              application from ASVAYUK Technologies. Whether you need a city
-              guide app, a booking platform, or an end-to-end travel solution,
-              we’re here to turn your vision into reality. Let's build the
-              future of tourism together.
+              Partner with ASVAYUK Technologies to create a powerful marketplace
+              platform tailored to your unique business needs. From local to
+              global reach, we help you connect buyers and sellers like never
+              before. Let’s build the future of commerce together.
             </p>
           </Container>
         </section>
@@ -666,4 +674,4 @@ const TravelTourism = () => {
   );
 };
 
-export default TravelTourism;
+export default OnlineMarketplace;

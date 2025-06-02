@@ -23,6 +23,11 @@ import TravelTourism from "./TravelTourism.jsx";
 import RealEstateTech from "./RealEstateTech.jsx"
 import BankingInsurance from "./BankingInsurance.jsx"
 import HealthcareSoftware from "./HealthcareSoftware.jsx"
+import OnlineMarketplace from "./OnlineMarketplace.jsx"
+import HrPayroll from "./HrPayroll.jsx"
+import WarehouseInventory from "./WarehouseInventory.jsx"
+import DocumentManagement from "./DocumentManagement.jsx"
+import LearningExperience from "./LearningExperience.jsx"
 
 export {
   DeliveryAppDevelopment,
@@ -50,4 +55,9 @@ export {
   RealEstateTech,
   BankingInsurance,
   HealthcareSoftware,
+  OnlineMarketplace,
+  HrPayroll,
+  WarehouseInventory,
+  DocumentManagement,
+  LearningExperience,
 };

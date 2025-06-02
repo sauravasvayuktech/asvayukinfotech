@@ -1,6 +1,6 @@
 import { Col, Container, Nav, Row, Tab, Image, Card } from "react-bootstrap";
 import Meta_Component from "../../Components/Meta_Component/Meta_Component";
-import banners_39 from "../../Images/travelImg.png";
+import banners_39 from "../../Images/HrImage.png";
 import BannerButton from "../../Components/BannerBtn/BannerButton";
 import { useState } from "react";
 import softdev1 from "../../Images/softdev1.svg";
@@ -21,84 +21,81 @@ import { FaChevronRight } from "react-icons/fa";
 const services = [
   {
     id: "1",
-    title: "Travel App Strategy & Consultation",
+    title: "HR & Payroll Software Strategy & Consultation",
     image: softdev1,
-    alt: "Travel app development consulting in Saudi Arabia",
+    alt: "HR and payroll software consulting",
     content: (
       <>
-        Our travel tech experts help you define a successful app strategy that
-        aligns with the tourism sector in Saudi Arabia, targeting user
-        engagement and business growth.
+        Our HR & payroll experts help you design a strategy aligned with your
+        business goals, focusing on compliance, employee management, and
+        seamless payroll processing.
       </>
     ),
   },
   {
     id: "2",
-    title: "Custom Booking App Development",
+    title: "Custom HR & Payroll Software Development",
     image: softdev2,
     content: (
       <>
-        Build high-performance travel booking applications tailored for hotels,
-        flights, and tour packages with real-time availability and secure
-        payment integration.
+        Develop scalable, feature-rich HR and payroll systems tailored for
+        employee records, attendance tracking, and automated payroll
+        calculations.
       </>
     ),
   },
   {
     id: "3",
-    title: "Multilingual Travel Chatbots",
+    title: "Multilingual Employee Self-Service Portals",
     image: softdev3,
     content: (
       <>
-        Enhance traveler experience with AI-driven multilingual chatbots for
-        instant customer support, itinerary planning, and local recommendations.
+        Enhance employee engagement with AI-driven multilingual portals for
+        leave requests, payslip access, and real-time payroll queries.
       </>
     ),
   },
   {
     id: "4",
-    title: "Image Recognition for Landmarks",
+    title: "AI-Powered Attendance & Leave Management",
     image: softdev4,
     content: (
       <>
-        Use AI-based image recognition to identify tourist spots, scan travel
-        documents, and enhance visual discovery within your mobile tourism
-        application.
+        Use AI-based tools to automate attendance tracking, leave approvals, and
+        workforce analytics to improve HR efficiency.
       </>
     ),
   },
   {
     id: "5",
-    title: "Automation in Tour Management",
+    title: "Automation in Payroll & Compliance Management",
     image: softdev5,
     content: (
       <>
-        Streamline operations with automated booking workflows, itinerary
-        generation, and CRM tools to improve efficiency for travel agencies in
-        Saudi Arabia.
+        Automate payroll processing, tax calculations, statutory compliance, and
+        employee notifications for error-free and timely salary disbursements.
       </>
     ),
   },
   {
     id: "6",
-    title: "API Integration for Travel Services",
+    title: "API Integration for Benefits & Tax Systems",
     image: softdev6,
     content: (
       <>
-        Seamlessly integrate third-party APIs such as Google Maps, payment
-        gateways, weather forecasts, and airline databases to enhance user
-        experience.
+        Integrate third-party APIs such as tax filing services, benefits
+        providers, and attendance devices to streamline HR & payroll workflows.
       </>
     ),
   },
   {
     id: "7",
-    title: "App Performance Optimization",
+    title: "HR & Payroll Software Performance Optimization",
     image: softdev7,
     content: (
       <>
-        Ensure high performance and user satisfaction through continuous app
-        testing, speed optimization, bug fixes, and scalability enhancements.
+        Ensure fast processing, data security, and system reliability with
+        continuous monitoring, updates, and scalability improvements.
       </>
     ),
   },
@@ -107,55 +104,55 @@ const services = [
 const serviceData = [
   {
     img: c11,
-    alt: "Travel Strategy & Planning",
-    title: "Travel App Strategy & Planning",
-    desc: "Develop a clear app roadmap that supports tourism business goals and digital transformation in Saudi Arabia's travel sector.",
+    alt: "HR & Payroll Strategy & Planning",
+    title: "HR & Payroll Strategy & Planning",
+    desc: "Create a comprehensive roadmap that supports efficient employee management and compliant payroll processing.",
   },
   {
     img: c12,
-    alt: "Booking App Development",
-    title: "Online Booking System Development",
-    desc: "Create robust booking systems for hotels, flights, and tours with real-time updates and user-friendly interfaces.",
+    alt: "HR & Payroll Software Development",
+    title: "Custom HR & Payroll Software Development",
+    desc: "Build a robust platform supporting payroll automation, employee data management, and attendance tracking.",
   },
   {
     img: c13,
-    alt: "Travel Chatbot Solutions",
-    title: "Conversational Travel Chatbots",
-    desc: "Deploy AI-powered travel assistants to offer instant help, booking support, and local tips to tourists in multiple languages.",
+    alt: "Employee Self-Service Portals",
+    title: "Multilingual Employee Self-Service Portals",
+    desc: "Deploy portals enabling employees to manage their profiles, leaves, and payroll info easily and securely.",
   },
   {
     img: c11,
-    alt: "Visual Landmark Detection",
-    title: "Smart Landmark Detection",
-    desc: "Enable users to discover nearby attractions using advanced image recognition features in your mobile travel app.",
+    alt: "Attendance & Leave Management",
+    title: "AI-Powered Attendance & Leave Management",
+    desc: "Leverage AI to automate attendance recording, leave approvals, and workforce analytics for HR teams.",
   },
   {
     img: c12,
-    alt: "Tour Workflow Automation",
-    title: "Tour Management Automation",
-    desc: "Boost productivity by automating booking processes, client communication, and travel plan organization.",
+    alt: "Payroll & Compliance Automation",
+    title: "Payroll & Compliance Automation",
+    desc: "Automate salary calculations, tax filings, and compliance management to reduce errors and save time.",
   },
   {
     img: c13,
-    alt: "App Optimization & Maintenance",
-    title: "Travel App Optimization",
-    desc: "Ensure fast, secure, and bug-free travel apps through performance monitoring, updates, and continuous improvement.",
+    alt: "HR & Payroll Optimization & Maintenance",
+    title: "HR & Payroll Software Performance Optimization",
+    desc: "Maintain a secure, efficient HR and payroll system with ongoing updates and performance tuning.",
   },
 ];
 
-const TravelTourism = () => {
+const HrPayroll = () => {
   const [activeKey, setActiveKey] = useState("1");
 
   return (
     <>
       <Meta_Component
-        title="Travel & Tourism App Development in Saudi Arabia | ASVAYUK Technologies"
-        description="ASVAYUK Technologies builds custom travel and tourism apps in Saudi Arabia. We offer booking systems, itinerary planning, hotel integration, and travel portal development."
-        canonical="https://asvayuktech.com/travel-tourism-app-development-in-riyadh-saudi-arabia"
+        title="HR & Payroll Software Development in Saudi Arabia | ASVAYUK Technologies"
+        description="ASVAYUK Technologies offers robust HR & Payroll software development services in Saudi Arabia. We build scalable HR platforms, automated payroll systems, secure data handling, and custom workforce management solutions."
+        canonical="https://asvayuktech.com/hr-payroll-software-development-in-riyadh-saudi-arabia"
       />
 
       <main>
-        <section className="banner-en">
+        <section className="banner-en py-5">
           <Container>
             <Row className="align-items-center">
               <div className="col-lg-6">
@@ -166,15 +163,15 @@ const TravelTourism = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      Travel & Tourism App Development Company in Saudi Arabia
+                      HR & Payroll Software Development Company in Saudi Arabia
                     </a>
                   </h1>
                   <p className="py-3">
-                    <strong>ASVAYUK Technologies</strong> specializes in
-                    crafting innovative travel and tourism mobile apps in Saudi
-                    Arabia. We empower businesses with custom solutions to
-                    enhance traveler experiences, boost bookings, and streamline
-                    operations.
+                    <strong>ASVAYUK Technologies</strong> delivers modern HR &
+                    Payroll software solutions built to streamline workforce
+                    management for companies in Saudi Arabia. Our platforms are
+                    secure, scalable, and tailored to meet local compliance and
+                    employee needs.
                   </p>
 
                   <BannerButton
@@ -187,7 +184,7 @@ const TravelTourism = () => {
                 <div className="bannerImg">
                   <img
                     src={banners_39}
-                    alt="Travel and Tourism App Development Company in Saudi Arabia"
+                    alt="HR & Payroll Software Development Company in Saudi Arabia"
                     width="100%"
                     height="100%"
                   />
@@ -201,13 +198,13 @@ const TravelTourism = () => {
           <Row className="align-items-center mb-4 text-center">
             <Col lg={10} className="mx-auto">
               <h1 className="fw-bold">
-                Why Choose Our Travel & Tourism App Development Services in
+                Why Choose Our HR & Payroll Software Development Services in
                 Saudi Arabia?
               </h1>
               <p>
-                At ASVAYUK Technologies, we deliver bespoke travel app
-                development solutions tailored for Saudi Arabia's dynamic
-                tourism sector. Here’s why leading travel businesses rely on us:
+                At ASVAYUK Technologies, we specialize in building custom HR and
+                payroll systems for organizations across Saudi Arabia. Here's
+                why businesses trust us to digitize their workforce operations:
               </p>
             </Col>
           </Row>
@@ -222,18 +219,18 @@ const TravelTourism = () => {
                   <Col xs={3} sm={2}>
                     <img
                       src={c11}
-                      alt="Custom Travel App Development Saudi Arabia"
+                      alt="Custom HR Software Development Saudi Arabia"
                       className="rounded-circle img-fluid"
                     />
                   </Col>
                   <Col xs={9} sm={10}>
                     <h6 className="fw-bold mb-2">
-                      Custom Travel Apps Designed for Your Business Goals
+                      Tailored HR Software Built for Your Workforce
                     </h6>
                     <p className="mb-0 text-muted">
-                      We develop feature-rich travel and tourism applications
-                      tailored to your unique needs, enhancing user engagement,
-                      booking efficiency, and destination discovery.
+                      We develop HR platforms that align with your company's
+                      structure, policies, and workflows — enhancing employee
+                      lifecycle management, from onboarding to retirement.
                     </p>
                   </Col>
                 </Row>
@@ -261,18 +258,18 @@ const TravelTourism = () => {
                   <Col xs={3} sm={2}>
                     <img
                       src={c12}
-                      alt="End-to-End Travel App Development Saudi Arabia"
+                      alt="End-to-End Payroll Automation Saudi Arabia"
                       className="rounded-circle img-fluid"
                     />
                   </Col>
                   <Col xs={9} sm={10}>
                     <h6 className="fw-bold mb-2">
-                      End-to-End Travel App Development & Deployment
+                      End-to-End Payroll Automation & Compliance
                     </h6>
                     <p className="mb-0 text-muted">
-                      From concept to launch, we handle all phases of travel app
-                      development, ensuring seamless user experience, secure
-                      transactions, and reliable performance.
+                      From salary calculations to tax deductions and payslip
+                      generation, we automate your payroll operations and ensure
+                      compliance with Saudi labor regulations.
                     </p>
                   </Col>
                 </Row>
@@ -302,18 +299,19 @@ const TravelTourism = () => {
                   <Col xs={3} sm={2}>
                     <img
                       src={c14}
-                      alt="Travel App Strategy Consultancy Saudi Arabia"
+                      alt="HR Strategy & Software Architecture Saudi Arabia"
                       className="rounded-circle img-fluid"
                     />
                   </Col>
                   <Col xs={9} sm={10}>
                     <h6 className="fw-bold mb-2">
-                      Strategic Travel App Solutions for Business Growth
+                      Strategic HR Tech & Scalable Architecture
                     </h6>
                     <p className="mb-0 text-muted">
-                      We analyze market trends and user behavior to craft travel
-                      app strategies that increase customer retention and
-                      maximize revenue.
+                      We implement data-driven HR strategies supported by
+                      secure, scalable system architecture — enabling real-time
+                      insights, workforce analytics, and integrations with ERP
+                      tools.
                     </p>
                   </Col>
                 </Row>
@@ -338,18 +336,18 @@ const TravelTourism = () => {
                   <Col xs={3} sm={2}>
                     <img
                       src={c13}
-                      alt="Experienced Travel App Developers Saudi Arabia"
+                      alt="Experienced HR Software Developers Saudi Arabia"
                       className="rounded-circle img-fluid"
                     />
                   </Col>
                   <Col xs={9} sm={10}>
                     <h6 className="fw-bold mb-2">
-                      Experienced Travel App Developers & Designers
+                      Skilled HR Software Developers & UI Experts
                     </h6>
                     <p className="mb-0 text-muted">
-                      Our skilled team combines technical expertise and travel
-                      industry knowledge to deliver user-friendly, secure, and
-                      scalable apps.
+                      Our expert team blends domain knowledge in HR with modern
+                      UI/UX to deliver intuitive, secure, and efficient employee
+                      management and payroll systems.
                     </p>
                   </Col>
                 </Row>
@@ -371,15 +369,15 @@ const TravelTourism = () => {
 
         <Container className="my-5">
           <h1 className="mb-4 fw-bold">
-            Travel & Tourism App Development Services for Saudi Arabia
+            HR & Payroll Software Development Services in Saudi Arabia
           </h1>
           <p className="app__subhead mb-5 fs-5">
-            ASVAYUK Technologies offers comprehensive travel and tourism app
-            development services across Saudi Arabia. Our innovative solutions
-            help travel businesses improve customer engagement, increase
-            bookings, and streamline operations with cutting-edge technology.
-            Partner with us to build powerful mobile apps that transform the
-            tourism experience.
+            ASVAYUK Technologies offers end-to-end HR and payroll software
+            development services tailored for Saudi Arabian businesses. Our
+            intelligent digital solutions help organizations automate HR
+            operations, ensure compliance, manage payroll seamlessly, and
+            enhance employee satisfaction. Partner with us to build robust HR
+            systems that drive efficiency and foster growth.
           </p>
 
           <div className="tabSoftDev">
@@ -436,15 +434,16 @@ const TravelTourism = () => {
           <Container>
             <div className="trustedContent-wrapper pb-2 text-center">
               <h2 className="fw-bold">
-                Our Key Travel & Tourism App Development Services
+                Our Core HR & Payroll Software Development Offerings
               </h2>
               <p>
-                At ASVAYUK Technologies, we leverage advanced technologies to
-                build smart, user-friendly travel apps tailored for Saudi
-                Arabia’s tourism market. Our solutions focus on enhancing
-                traveler engagement, automating booking processes, and
-                delivering real-time insights. We work closely with clients to
-                deliver apps that drive growth and customer satisfaction.
+                At ASVAYUK Technologies, we specialize in developing powerful,
+                user-centric HR and payroll software solutions tailored for
+                Saudi businesses. From automated payroll processing and employee
+                self-service portals to real-time attendance tracking and
+                compliance management, our solutions empower organizations to
+                optimize HR operations. Partner with us to transform your
+                workforce management.
               </p>
             </div>
 
@@ -467,10 +466,10 @@ const TravelTourism = () => {
           className="accelerate-bx bg_new_bx padding_coman"
           style={{
             background: `radial-gradient(
-                circle,
-                rgba(36, 159, 129, 1) -300%,
-                rgba(0, 0, 0, 1) 100%
-            )`,
+      circle,
+      rgba(36, 159, 129, 1) -300%,
+      rgba(0, 0, 0, 1) 100%
+    )`,
           }}
         >
           <Container>
@@ -481,17 +480,21 @@ const TravelTourism = () => {
                     className="text-uppercase fw-bold"
                     style={{ color: "#2cbe9a" }}
                   >
-                    Ready to Build a Cutting-Edge Travel & Tourism App
+                    Ready to Build a Smart HR & Payroll System?
                   </h2>
                   <p className="text-white pt-3 fs-6">
-                    Connect with ASVAYUK Technologies today and let our expert
-                    team create a custom travel app that boosts your business
-                    growth and enhances traveler experiences across Saudi
-                    Arabia.
+                    Connect with ASVAYUK Technologies today. Our skilled
+                    development team will collaborate with you to deliver an HR
+                    & payroll software solution that simplifies workforce
+                    management, ensures legal compliance, and scales with your
+                    business across Saudi Arabia.
                   </p>
                   <Row>
                     <Col lg={6}>
-                      <BannerButton btnTitle="Consultation" url="/contact-us" />
+                      <BannerButton
+                        btnTitle="Book a Consultation"
+                        url="/contact-us"
+                      />
                     </Col>
                   </Row>
                 </div>
@@ -504,35 +507,37 @@ const TravelTourism = () => {
           <Container>
             <div className="pb-4">
               <h1 className="fw-bold">
-                WHY TRAVEL & TOURISM APP DEVELOPMENT MATTERS{" "}
+                WHY HR & PAYROLL SOFTWARE DEVELOPMENT MATTERS{" "}
                 <span className="text-uppercase" style={{ color: "#2cbe9a" }}>
-                  IN SAUDI ARABIA
+                  FOR YOUR BUSINESS
                 </span>
               </h1>
               <p className="powered_php pt-3">
-                Digital travel and tourism solutions are transforming how tour
-                operators, agencies, and travelers connect, plan, and explore.
-                With a custom mobile app, your travel business in Saudi Arabia
-                can boost bookings, enhance customer experience, and gain a
-                competitive edge.
+                HR & Payroll software solutions are transforming the way
+                organizations manage employees, track attendance, and process
+                salaries. With a tailored platform, your business can ensure
+                compliance, streamline operations, and improve workforce
+                satisfaction.
               </p>
             </div>
             <div className="row">
               <div className="col-lg-6">
                 <ul className="development_links">
                   <li>
-                    <a href="#" title="Travel App Development Riyadh">
-                      Boosts user engagement with real-time travel assistance
+                    <a href="#" title="HR Software Features">
+                      Automates employee onboarding and document management
                     </a>
                   </li>
                   <li>
-                    <a href="#" title="Tourism Mobile App Saudi Arabia">
-                      Streamlines booking and itinerary management
+                    <a href="#" title="Payroll Management Solutions">
+                      Simplifies payroll processing with accurate tax
+                      calculations
                     </a>
                   </li>
                   <li>
-                    <a href="#" title="Custom Travel App Solutions">
-                      Offers personalized experiences based on user preferences
+                    <a href="#" title="Employee Self-Service Portals">
+                      Offers self-service access for pay slips and leave
+                      requests
                     </a>
                   </li>
                 </ul>
@@ -540,13 +545,14 @@ const TravelTourism = () => {
               <div className="col-lg-6">
                 <ul className="development_links">
                   <li>
-                    <a href="#" title="Tour Operator App Development">
-                      Integrates with maps, guides, payment gateways & more
+                    <a href="#" title="HR Integration Tools">
+                      Integrates attendance, biometrics, and performance
+                      tracking systems
                     </a>
                   </li>
                   <li>
-                    <a href="#" title="Saudi Arabia Tourism App">
-                      Drives growth through digital innovation in tourism
+                    <a href="#" title="Scalable HR Tech Solutions">
+                      Scales as your business grows while ensuring data security
                     </a>
                   </li>
                 </ul>
@@ -561,29 +567,27 @@ const TravelTourism = () => {
               <div className="col-lg-6 col-sm-12 mb-3 p-3">
                 <div className="tool-heading">
                   <h3 className="fw-bold">
-                    Our Travel App Development Process
+                    Our HR & Payroll Software Development Process
                   </h3>
                   <p>
                     At ASVAYUK Technologies, we specialize in custom{" "}
-                    <strong>travel and tourism app development</strong> for
-                    agencies, startups, and tourism boards across Saudi Arabia.
-                    Our approach ensures your app aligns with business goals,
-                    enhances customer journeys, and scales with growth.
+                    <strong>HR & Payroll software development</strong> for
+                    businesses of all sizes. Our approach ensures your platform
+                    is compliant, efficient, and user-friendly.
                   </p>
                   <p>
-                    From itinerary planning and booking engines to GPS
-                    navigation and multi-language support, we build apps that
-                    elevate the traveler experience and help you stand out in
-                    the tourism industry.
+                    From employee records and attendance to tax compliance and
+                    payslip generation, we build HR solutions that empower your
+                    organization.
                   </p>
 
-                  <div className="heroBtn mt-3">
+                  <div className="heroBtn mt-3 w-100">
                     <Link
                       to="/contact-us"
                       className="d-flex justify-content-between"
                     >
                       <div className="btnText px-3 py-3 text-light">
-                        <span>Get a Free Travel App Consultation</span>
+                        <span>Free HR Software Development Consultation</span>
                       </div>
                       <div className="btn_icon px-4 py-2 align-content-center">
                         <FaChevronRight />
@@ -596,29 +600,28 @@ const TravelTourism = () => {
               <div className="col-lg-6 col-sm-12 text-start mb-3 p-3">
                 <ol>
                   <li>
-                    <strong>Discovery and Planning:</strong> We understand your
-                    business model, target audience, and feature requirements to
-                    outline a development roadmap.
+                    <strong>Needs Assessment:</strong> We evaluate your HR and
+                    payroll workflows, compliance requirements, and integration
+                    needs to plan a tailored solution.
                   </li>
                   <li>
-                    <strong>UI/UX Design:</strong> Our designers craft
-                    intuitive, user-friendly interfaces that deliver seamless
-                    travel experiences.
+                    <strong>UI/UX Design:</strong> Our team designs clean,
+                    intuitive dashboards for HR managers and employees.
                   </li>
                   <li>
-                    <strong>Development and Integration:</strong> We develop
-                    core features like bookings, reviews, geolocation, and
-                    secure payments, integrating APIs as needed.
+                    <strong>Development and Modules:</strong> We build essential
+                    modules like employee management, payroll engine, tax
+                    computation, and leave tracking.
                   </li>
                   <li>
-                    <strong>Testing and Launch:</strong> Rigorous quality
-                    testing ensures the app runs smoothly across devices before
-                    going live on app stores.
+                    <strong>Testing and Launch:</strong> Comprehensive testing
+                    ensures data accuracy, security, and smooth operations
+                    before rollout.
                   </li>
                   <li>
-                    <strong>Maintenance and Updates:</strong> We provide ongoing
-                    support and updates to keep your app competitive and aligned
-                    with user expectations.
+                    <strong>Ongoing Support:</strong> We provide continuous
+                    updates and maintenance to keep your HR system aligned with
+                    regulations and organizational needs.
                   </li>
                 </ol>
               </div>
@@ -629,17 +632,16 @@ const TravelTourism = () => {
         <section className="pt-5">
           <Container>
             <h2 className="fw-bold">
-              Travel Apps Built for Growth and Customer Delight
+              Software Built for Workforce Efficiency and Compliance
             </h2>
             <p
               className="pt-3"
               style={{ fontSize: "20px", lineHeight: "1.8rem" }}
             >
-              We develop <b>scalable, high-performing travel applications</b>{" "}
-              that serve both local and international tourists. With a
-              customer-first approach, we ensure every app is tailored for
-              engagement, retention, and real-time support across the Saudi
-              Arabian tourism ecosystem.
+              We develop <b>powerful, scalable HR & Payroll systems</b> tailored
+              to various industries. With a focus on automation, legal
+              compliance, and employee engagement, we help you manage your human
+              capital effectively.
             </p>
           </Container>
         </section>
@@ -647,17 +649,16 @@ const TravelTourism = () => {
         <section className="py-5">
           <Container>
             <h2 className="fw-bold">
-              Ready to Launch Your Travel App in Saudi Arabia?
+              Ready to Digitize Your HR & Payroll Operations?
             </h2>
             <p
               className="pt-3"
               style={{ fontSize: "20px", lineHeight: "1.8rem" }}
             >
-              Elevate your tourism business with a feature-rich mobile
-              application from ASVAYUK Technologies. Whether you need a city
-              guide app, a booking platform, or an end-to-end travel solution,
-              we’re here to turn your vision into reality. Let's build the
-              future of tourism together.
+              Partner with ASVAYUK Technologies to build a comprehensive HR &
+              Payroll software solution. Whether you're a growing SME or a large
+              enterprise, we’ll help you streamline workforce management,
+              improve compliance, and boost employee satisfaction.
             </p>
           </Container>
         </section>
@@ -666,4 +667,4 @@ const TravelTourism = () => {
   );
 };
 
-export default TravelTourism;
+export default HrPayroll;
