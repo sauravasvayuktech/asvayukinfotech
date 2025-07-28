@@ -107,7 +107,7 @@ function Home() {
                             </div>
                             <div className="col-lg-6">
                                 <div className="bannerImg">
-                                    <img src={bannerImg} alt="design-development-marketing" loading='lazy' width="100%" height="100%" />
+                                    <img src={bannerImg} alt="design-development-marketing" width="100%" height="100%" />
                                 </div>
                             </div>
                         </div>
