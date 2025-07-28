@@ -252,10 +252,10 @@ export default function Header() {
                                 <Col lg={4}>
                                   <div className="tab-menus tab_menu_top d-flex flex-column gap-4">
                                     <Link
-                                      to="/website-development-company-in-chandigarh-and-mohali"
+                                      to="/website-designing-company-in-chandigarh"
                                       onClick={handleMegaMenuLinkClick}
                                     >
-                                      Website Development
+                                      Website Designing
                                     </Link>
                                     <Link
                                       to="/ecommerce-website-designing-company-chandigarh"

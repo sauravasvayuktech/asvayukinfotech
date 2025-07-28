@@ -42,29 +42,39 @@ import FAQAccordion from "../../accordian/FAQAccordion.jsx";
 
 const faqData = [
   {
-    question: "Why choose Asvayuk Technologies for website development?",
+    question: "Why should I choose your website designing company in Chandigarh?",
     answer:
-      "We provide customized, high-quality, and SEO-friendly web solutions tailored to your business needs. Our team of experienced website designers in Chandigarh and Mohali ensures top performance and user experience.",
+      "We combine creativity, strategy, and local expertise. Our team delivers responsive, fast, and SEO-ready websites tailored for your audience.",
   },
   {
-    question: "What industries do you serve?",
+    question: "Do you offer E-commerce website development in Chandigarh?",
     answer:
-      "We cater to a wide range of industries, including e-commerce, healthcare, education, real estate, finance, and more.",
+      "Yes, we specialize in E-commerce website development Chandigarh, including custom solutions and Shopify store development.",
   },
   {
-    question: "How long does it take to develop a website?",
+    question: "Can you design a static website for my small business?",
     answer:
-      "The development timeline varies based on project complexity. A basic website takes 2-4 weeks, while complex web applications may take longer.",
+      " Absolutely. Our Static website design Chandigarh services are perfect for startups and small businesses looking for a professional web presence.",
   },
   {
-    question: "Do you offer SEO-friendly website development?",
+    question: "Do you provide services in Mohali and Zirakpur as well?",
     answer:
-      "Yes, our websites are SEO-optimized, ensuring higher rankings on search engines and better visibility for your business.",
+      " Yes, we are a top-rated website development company in Mohali and a preferred web development company in Zirakpur, trusted by many local businesses.",
+  },
+  {
+    question: "What makes your team different from other web designing companies in Chandigarh?",
+    answer:
+      "Our team includes certified web designers in Chandigarh with real-world experience. We focus on performance, UX, and business conversion.",
+  },
+  {
+    question: "Are your websites mobile-friendly and SEO-optimized?",
+    answer:
+      "Yes, every project is built to be responsive and optimized for search engines, helping you get better visibility and results.",
   },
   {
     question: "Can you redesign my existing website?",
     answer:
-      "Absolutely! We specialize in website redesigning services to enhance performance, design, and functionality.",
+      "Of course! Whether it's a fresh redesign or a performance upgrade, our website designing agency in Chandigarh is ready to transform your online presence.",
   },
 ];
 
@@ -73,9 +83,9 @@ const Website_Development = () => {
   return (
     <>
       <Meta_Component
-        title="Website Development Company in Chandigarh and Mohali |gbgvbbvxb"
-        description="Asvayuk Technologies, a top Website Development Company in Chandigarh & Mohali, offers custom web development, e-commerce solutions, & responsive designs."
-        canonical="https://asvayuktech.com/website-development-company-in-chandigarh-and-mohali"
+        title="Website Designing Company in Chandigarh"
+        description="Looking for a professional website designing company in Chandigarh? We create SEO-friendly, responsive websites that grow your business."
+        canonical="https://asvayuktech.com/website-designing-company-in-chandigarh-and-mohali"
       />
 
       <main>
@@ -95,15 +105,10 @@ const Website_Development = () => {
                       Website Development
                     </Breadcrumb.Item>
                   </Breadcrumb>
-                  <h1><Link to="https://maps.app.goo.gl/sDkN86Cnw1b1W8iK7">Website Development Company in Chandigarh and Mohali</Link></h1>
+                  <h1><Link to="https://maps.app.goo.gl/sDkN86Cnw1b1W8iK7">Website Designing Company in Chandigarh
+</Link></h1>
                   <p className="py-3">
-                  <b>Asvayuk Technologies</b> Private Ltd. is a trusted{" "}
-                    <b>website development company in Chandigarh and Mohali</b>,
-                    delivering top-notch web solutions to businesses of all
-                    sizes. Whether you need a dynamic website, an e-commerce
-                    platform, or a custom web application, our experienced team
-                    of website designers in Chandigarh and Mohali ensures
-                    cutting-edge, user-friendly, and highly functional websites.
+                  Looking for a trusted and creative website designing company in Chandigarh? Asvayuk Technologies Private Ltd. is here to bring your digital vision to life with precision and style.
                   </p>
 
                   <BannerButton
@@ -128,10 +133,11 @@ const Website_Development = () => {
                 <h2>
                   <span style={{ color: "#249f81" }}>
                     {" "}
-                    Leading Website Development Services
+                    Best Website Designing Services 
+
                   </span>
                   <br />
-                  in Chandigarh and Mohali
+                  in Chandigarh
                 </h2>
                 <div className="woocomerce-imgs d-flex justify-content-center d-none d-md-block">
                   <img
@@ -170,7 +176,7 @@ const Website_Development = () => {
               <div className="col-12">
                 <div className="peformance_card2_heading text-center">
                   <h2>
-                    Our Website Development Services in Chandigarh and Mohali
+                    What We Offer in Website Design & Development
                   </h2>
                   <p className="mt-3">
                   At <b>Asvayuk Technologies</b>, we offer a comprehensive range of website development services in Chandigarh and Mohali,ensuring customized solutions for diverse business needs.
@@ -182,48 +188,48 @@ const Website_Development = () => {
                       <ServicesCard
                         ServiceCardImg={c11}
                         altText="Website development services in chandigarh"
-                        cardHeading="Custom Website Development"
-                        cardParaGraph="Our custom web development services are tailored to meet your specific business requirements. Whether you need a portfolio website, a corporate site, or a custom web app, we deliver top-quality solutions."
+                        cardHeading="Custom Website Design"
+                        cardParaGraph=" We create tailored websites based on your brand identity, industry standards, and business goals, delivering high-performance solutions that reflect your vision and engage your target audience effectively."
                       />
                     </div>
                     <div className="col-lg-4 pb-4">
                       <ServicesCard
                         ServiceCardImg={c12}
                         altText="website designers chandigarh, mohali"
-                        cardHeading="E-Commerce Website Development"
-                        cardParaGraph="Unlock the power of your online store! With our e-commerce solutions, enjoy secure payments, flawless functionality, and a seamless user experience that will elevate your sales and amplify your brand!"
+                        cardHeading="E-commerce Website Development Chandigarh"
+                        cardParaGraph="We develop scalable and secure online stores for Chandigarh businesses, offering powerful features, intuitive layouts, and seamless user experiences that boost conversions and grow online revenue rapidly."
                       />
                     </div>
                     <div className="col-lg-4 pb-4">
                       <ServicesCard
                         ServiceCardImg={c13}
                         altText="website development company mohali"
-                        cardHeading="Responsive Web Design"
-                        cardParaGraph="As a leading web development agency in Chandigarh, we create mobile-friendly, responsive websites with seamless UX/UI, boosting engagement and enhancing your online presence."
+                        cardHeading="Static Website Design Chandigarh"
+                        cardParaGraph="We craft fast, efficient, and lightweight static websites for Chandigarh businesses with limited content, ensuring a professional look, smooth navigation, and responsive design across all devices."
                       />
                     </div>
                     <div className="col-lg-4 pb-4">
                       <ServicesCard
                         ServiceCardImg={c14}
                         altText="web development agency chandigarh"
-                        cardHeading="WordPress Development"
-                        cardParaGraph="We specialize in WordPress website development, offering customized themes, plugins, and scalable solutions for businesses of all sizes."
+                        cardHeading="Shopify Website Development Chandigarh"
+                        cardParaGraph="We build Shopify-powered websites for Chandigarh businesses, offering customized designs, secure payment setups, SEO-ready features, and responsive layouts to boost visibility and online store success.  "
                       />
                     </div>
                     <div className="col-lg-4 pb-4">
                       <ServicesCard
                         ServiceCardImg={c15}
                         altText="website development provider chandigarh"
-                        cardHeading="Website Redesign & Maintenance"
-                        cardParaGraph="Optimize your web presence for voice search to enhance discoverability and user-friendliness in voice interactions, improving accessibility and user experience."
+                        cardHeading="Mobile Responsive Design"
+                        cardParaGraph="We design websites that flawlessly adapt across all screen sizes, ensuring consistent user experience, fast load times, and smooth interactions on mobile, tablet, laptop, and desktop devices."
                       />
                     </div>
                     <div className="col-lg-4 pb-4">
                       <ServicesCard
                         ServiceCardImg={c16}
                         altText="best web developers of chandigarh and mohali"
-                        cardHeading="Blockchain Integration"
-                        cardParaGraph="Unlock blockchain security & efficiency! Asvayuk Technologies offers tailored decentralized solutions—secure, scalable, and future-ready."
+                        cardHeading="SEO-Optimized Web Design"
+                        cardParaGraph="We develop websites that follow Google’s SEO guidelines, incorporating keyword-rich content, fast loading speed, and user-friendly layouts to help your website rank better on search engines."
                       />
                     </div>
                   </div>
@@ -233,16 +239,16 @@ const Website_Development = () => {
           </section>
 
         <Experience
-          expTitle="Why Choose Asvayuk Technologies for Web Development?"
-          ExpPara={<>We stand out as a website development provider in Chandigarh due to our expertise, innovative approach, and customer-centric solutions. Our team of <b>best web developers in Chandigarh and Mohali</b> focuses on creating responsive, SEO-friendly, and high-performing websites that drive business growth.</>}
-          point1="Proven Expertise"
-          pointPara1="With mastery of the latest frameworks, our skilled developers deliver unparalleled solutions."
-          point2="Adaptive Solutions"
-          pointPara2="We specialize in crafting dynamic, future-proof solutions for evolving digital landscapes."
-          point3="Client-centric Approach"
-          pointPara3="Our commitment to a customer-centric approach ensures a smooth and seamless user experience at every step."
-          point4="Robust Support"
-          pointPara4="Count on our dedicated support team to ensure your digital presence is always optimized."
+          expTitle="Web Development Company in Chandigarh & Beyond"
+          ExpPara={<>At Asvayuk Technologies Private Ltd., we also offer end-to-end web development in Chandigarh, Mohali, Panchkula, Zirakpur, and nearby regions—handled efficiently by our expert team of professional website developers Chandigarh, ensuring high-quality, scalable digital solutions.</>}
+          point1="Website Development Company in Mohali"
+          pointPara1="Delivering quality development for growing businesses in Mohali."
+          point2="Website Development Services in Panchkula"
+          pointPara2="From design to deployment, we support all stages of development."
+          point3="Web Development Company Zirakpur"
+          pointPara3="Helping local businesses go online with effective web solutions."
+          point4="Website Developer in Chandigarh"
+          pointPara4=" Experienced developers to handle both static and dynamic needs."
           altTags={{
               group1: "Website Designing in Chandigarh",
               group2: "Website development company in chandigarh",

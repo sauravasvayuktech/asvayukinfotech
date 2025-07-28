@@ -56,6 +56,8 @@ import rel15 from '../../Images/rel15.webp';
 import rel16 from '../../Images/rel16.webp';
 import rel17 from '../../Images/rel17.webp';
 import rel18 from '../../Images/rel18.webp';
+import rel19 from '../../Images/rel19.png';
+import rel20 from '../../Images/rel20.png';
 import w1 from '../../Images/w-5.webp';
 import w3 from '../../Images/w-4.webp';
 import w4 from '../../Images/w4.webp';
@@ -63,6 +65,10 @@ import w5 from '../../Images/w5.webp';
 import w6 from '../../Images/w1.webp';
 import w7 from '../../Images/w-7.webp';
 import w8 from '../../Images/w2.webp';    
+import w9 from '../../Images/w-8.webp';    
+import w10 from '../../Images/w-9.webp';    
+import w11 from '../../Images/w-10.webp';    
+import w12 from '../../Images/w-11.webp';    
 
      
 import 'swiper/css';
@@ -945,6 +951,16 @@ function Home() {
                                     <img src={rel18} alt="Mobile app UI UX development Chandigarh" className="img-fluid" />
                                 </div>
                             </div>
+                            <div className="rel-imgInfo col-lg-2 col-md-4 col-6 p-md-1">
+                                <div className='rel-img'>
+                                    <img src={rel19} alt="Mobile app UI UX development Chandigarh" className="img-fluid" />
+                                </div>
+                            </div>
+                            <div className="rel-imgInfo col-lg-2 col-md-4 col-6 p-md-1">
+                                <div className='rel-img'>
+                                    <img src={rel20} alt="Mobile app UI UX development Chandigarh" className="img-fluid" />
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -1000,11 +1016,11 @@ function Home() {
                             }}
                             className='lifeAtWaveInfo'
                         >
-                            <SwiperSlide>
+                            {/* <SwiperSlide>
                                 <div className="wavelife_img">
                                     <img src={w1} alt="Best UI UX designers in mohali" className='img-fluid w-100' />
                                 </div>
-                            </SwiperSlide>
+                            </SwiperSlide> */}
                             <SwiperSlide>
                                 <div className="wavelife_img">
                                     <img src={w5} alt="professional Software Consultants in Chandigarh" className='img-fluid w-100' />
@@ -1015,24 +1031,44 @@ function Home() {
                                     <img src={w4} alt="search engine optimization Services chandigarh" className='img-fluid w-100' />
                                 </div>
                             </SwiperSlide>
-                            <SwiperSlide>
+                            {/* <SwiperSlide>
                                 <div className="wavelife_img">
                                     <img src={w3} alt="Laravel Development Company Chandigarh" className='img-fluid w-100' />
                                 </div>
-                            </SwiperSlide>
+                            </SwiperSlide> */}
                             <SwiperSlide>
                                 <div className="wavelife_img">
                                     <img src={w6} alt="React Native development agency Chandigarh" className='img-fluid w-100' />
                                 </div>
                             </SwiperSlide>
-                            <SwiperSlide>
+                            {/* <SwiperSlide>
                                 <div className="wavelife_img">
                                     <img src={w7} alt="React Native app development experts Chandigarh" className='img-fluid w-100' />
+                                </div>
+                            </SwiperSlide> */}
+                            {/* <SwiperSlide>
+                                <div className="wavelife_img">
+                                    <img src={w8} alt="blockchain development experts chandigarh" className='img-fluid w-100' />
+                                </div>
+                            </SwiperSlide> */}
+                            <SwiperSlide>
+                                <div className="wavelife_img">
+                                    <img src={w9} alt="blockchain development experts chandigarh" className='img-fluid w-100' />
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div className="wavelife_img">
-                                    <img src={w8} alt="blockchain development experts chandigarh" className='img-fluid w-100' />
+                                    <img src={w10} alt="blockchain development experts chandigarh" className='img-fluid w-100' />
+                                </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <div className="wavelife_img">
+                                    <img src={w11} alt="blockchain development experts chandigarh" className='img-fluid w-100' />
+                                </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <div className="wavelife_img">
+                                    <img src={w12} alt="blockchain development experts chandigarh" className='img-fluid w-100' />
                                 </div>
                             </SwiperSlide>
 

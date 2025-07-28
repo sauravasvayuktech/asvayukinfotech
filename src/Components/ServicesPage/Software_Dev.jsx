@@ -48,24 +48,24 @@ import FAQAccordion from "../../accordian/FAQAccordion"
 
 const faqData = [
     {
-      question: "Why choose Asvayuk Technologies as your Software Development Company in Chandigarh?",
-      answer: "We have a proven track record of delivering high-quality software solutions with expert guidance from our Professional Software Consultants in Chandigarh."
+      question: "Why choose us as your software development company in Chandigarh?",
+      answer: "We offer business-driven, scalable, and secure software tailored to your goals."
     },
     {
-      question: "What types of software development services do you offer?",
-      answer: "We specialize in Custom Software Development in Chandigarh, Enterprise Software Solutions, Software Testing, and Software Outsourcing."
+      question: " Do you provide mobile app development for Android and iOS?",
+      answer: "Yes, we are a full-service android app development agency and iOS partner."
     },
     {
-      question: "Do you provide offshore software development?",
-      answer: "Yes, we are an experienced Offshore Software Development Company in Chandigarh, offering cost-effective solutions for global businesses."
+      question: "Can you create AI-based custom software?",
+      answer: "Absolutely. We build advanced AI software development solutions for all industries."
     },
     {
-      question: "How do you ensure software quality?",
-      answer: "Our Software Testing Company in Chandigarh follows strict testing protocols, including automated and manual testing, to ensure high performance and security."
+      question: "How do your services compare with other software development companies near me?",
+      answer: "Our approach is transparent, fast, and focused on ROI."
     },
     {
-      question: "What industries do you serve?",
-      answer: "We cater to industries such as healthcare, e-commerce, finance, education, and more with our advanced Software Development Services in Chandigarh."
+      question: "Do you handle both small and large projects?",
+      answer: "Yes, from startups to enterprises, we offer complete software development services."
     }
   ];
   
@@ -75,7 +75,7 @@ const Software_Dev = () => {
         <>
             <Meta_Component
                 title="Software Development Company in Chandigarh"
-                description="Asvayuk Technologies Private Ltd. is a top Software Development Company in Chandigarh, offering custom, enterprise, and offshore software solutions."
+                description="Looking for a trusted software development company in Chandigarh? We build custom, scalable, and secure software for all industries."
                 canonical="https://asvayuktech.com/software-development-company-in-chandigarh"
             />
 
@@ -92,30 +92,31 @@ const Software_Dev = () => {
                                         <Breadcrumb.Item active>Software Development</Breadcrumb.Item>
                                     </Breadcrumb>
                                     <h1><Link to="https://maps.app.goo.gl/sDkN86Cnw1b1W8iK7">Software Development Company in Chandigarh</Link></h1>
-                                    <p className="py-3">Asvayuk Technologies Private Ltd. is a premier Software Development Company in Chandigarh, offering cutting-edge solutions for businesses of all sizes. With a team of highly skilled Software Developers in Chandigarh, we specialize in delivering custom software development in Chandigarh, enterprise-grade applications, and robust software testing services. Our goal is to help businesses streamline operations, improve efficiency, and drive digital transformation.</p>
+                                    <p className="py-3">Asvayuk Technologies Private Ltd. is a top-rated software development company in Chandigarh, offering innovative, scalable, and secure digital solutions tailored to businesses of all sizes.</p>
 
                                     <BannerButton btnTitle='Free Consultation' url='/contact-us' />
                                 </div>
                             </div>
                             <div className="col-lg-6">
                                 <div className="bannerImg">
-                                    <img src={banners_39} alt="Software Development Company in Chandigarh" width="100%" height="100%" />
+                                    <img src={banners_39} alt="development of software" width="100%" height="100%" />
                                 </div>
                             </div>
                         </Row>
                     </Container>
                 </section>
 
-                <section className="bg-section mt-5">
+                <section className="bg-section ">
                             <Container>
                                 <div className="main-bg p-3">
                                 <div className="tool-heading py-5">
                                     <h2 className="conclusion_title mb-2">
-                                      Partner with the Leading Software Development Company in Chandigarh
+                                      Why Choose Asvayuk Technologies for Software Development in Chandigarh
+
                                     </h2>
                                     <div>
                                     <p className="text-white lh-lg fs-6 pt-3">
-                                        If you're looking for a trusted Software Development Company in Chandigarh, Asvayuk Technologies Private Ltd. is here to help. Contact us today to discuss your project requirements and take your business to the next level.
+                                       Asvayuk Technologies, a trusted software development company in Chandigarh, delivers secure, scalable, and innovative solutions including AI, mobile, and custom software tailored for startups, enterprises, and growing businesses across industries.
                                     </p>
                                     </div>
                                 </div>
@@ -127,28 +128,30 @@ const Software_Dev = () => {
                     <div className="container">
                         <div className="col-12">
                             <div className="text-center">
-                                <h2 className='fs-1 fw-semibold'>Our Software Development Services in Chandigarh</h2>
-                                <p className="mt-3">Our expert team of software developers crafts tailored software solutions to meet your unique business needs. Our diverse range of software development services includes:</p>
+                                <h2 className='fs-1 fw-semibold'>Powerful Mobile and AI-Driven Development Solutions</h2>
+                                <p className="mt-3">We specialize in mobile app development, AI software solutions, and enterprise applications that help you grow and scale digitally through next-generation technologies and industry-driven solutions.</p>
                             </div>
                             <div className="performance_card2_inner-sec mt-5">
                                 <div className="row">
                                     <div className="col-lg-4 pb-4 d-flex">
-                                        <ServicesCard ServiceCardImg={c11} cardHeading='Custom Software Development in Chandigarh' cardParaGraph='We create highly customized software solutions tailored to business needs. Whether you need CRM, ERP, or SaaS applications, our Software Developers in Chandigarh will deliver high-quality solutions that improve your business efficiency.' />
+                                        <ServicesCard ServiceCardImg={c11} cardHeading='Get Industry-Specific Software' cardParaGraph='
+ We design software solutions tailored to your industry, ensuring your workflows are optimized, processes streamlined, and goals achieved with technology built specifically for your business operations.' />
                                     </div>
                                     <div className="col-lg-4 pb-4 d-flex">
-                                        <ServicesCard ServiceCardImg={c12} cardHeading='Enterprise Software Solutions in Chandigarh' cardParaGraph='Our enterprise solutions are designed to handle large-scale operations. From automation to cloud-based applications, we ensure your business remains ahead in a competitive market.' />
+                                        <ServicesCard ServiceCardImg={c12} cardHeading='Stay in Control with Agile Delivery' cardParaGraph='Our agile development process keeps you fully informed, involved, and in control, providing continuous feedback loops, frequent updates, and real-time collaboration throughout every phase of your project.' />
                                     </div>
                                     <div className="col-lg-4 pb-4 d-flex">
-                                        <ServicesCard ServiceCardImg={c13} cardHeading=' Software Testing Company in Chandigarh' cardParaGraph='Excellence is the foundation of our development approach. Our dedicated software testing company in Chandigarh ensures that your applications are error-free, secure, and optimized for performance.' />
+                                        <ServicesCard ServiceCardImg={c13} cardHeading='Launch Apps Across All Platforms' cardParaGraph='Develop high-performance applications for Android, iOS, and the web, ensuring consistent user experience, responsive design, and full functionality across all modern platforms and devices used by your audience.' />
                                     </div>
                                     <div className="col-lg-4 pb-4 d-flex">
-                                        <ServicesCard ServiceCardImg={c14} cardHeading='Software Outsourcing Company Chandigarh' cardParaGraph='Looking for a reliable Software Outsourcing Company in Chandigarh? We provide offshore software development solutions that help businesses reduce costs while maintaining high quality.' />
+                                        <ServicesCard ServiceCardImg={c14} cardHeading='Use Advanced AI & Cloud Technologies' cardParaGraph=' Leverage artificial intelligence and secure cloud-based systems to automate tasks, enhance decision-making, reduce operational costs, and future-proof your business with cutting-edge software features.
+' />
                                     </div>
                                     <div className="col-lg-4 pb-4 d-flex">
-                                        <ServicesCard ServiceCardImg={c15} cardHeading='Affordable Software Development in Chandigarh' cardParaGraph='We offer cost-effective Software Development Services in Chandigarh without compromising on quality. Whether you are a startup or an enterprise, we have flexible pricing models to suit your budget.' />
+                                        <ServicesCard ServiceCardImg={c15} cardHeading='Experience End-to-End Development' cardParaGraph=' From initial planning and UI/UX design to development, testing, deployment, and maintenance, we handle the full software lifecycle with precision, speed, and client-focused delivery.' />
                                     </div>
                                     <div className="col-lg-4 pb-4 d-flex">
-                                        <ServicesCard ServiceCardImg={c16} cardHeading='Web Application Development in Chandigarh' cardParaGraph='Our expert developers build scalable and secure web applications tailored to your business needs. From interactive dashboards to custom portals, we ensure seamless user experience and performance.' />
+                                        <ServicesCard ServiceCardImg={c16} cardHeading='Receive Continuous Maintenance & Support' cardParaGraph='We offer proactive support, security updates, system monitoring, and ongoing improvements, ensuring your software remains stable, up-to-date, and perfectly aligned with your growing business needs.' />
                                     </div>
                                 </div>
                             </div>
@@ -175,19 +178,19 @@ const Software_Dev = () => {
                                             <h3 className="text-center fw-bold">Programming Languages</h3>
                                             <div className="languages row pt-4">
                                                 <div className="col-lg-3 col-md-6 col-sm-6 col-12 text-center">
-                                                    <img src={java1} alt='Top Software Development Companies in Chandigarh'/>
+                                                    <img src={java1} alt='software development company in chandigarh'/>
                                                     <h2 className="software-names pt-3">Java</h2>
                                                 </div>
                                                 <div className="col-lg-3 col-md-6 col-sm-6 col-12 text-center">
-                                                    <img src={js} alt='Software Developers in Chandigarh'/>
+                                                    <img src={js} alt='software developers near me'/>
                                                     <h2 className="software-names pt-3">JavaScript</h2>
                                                 </div>
                                                 <div className="col-lg-3 col-md-6 col-sm-6 col-12 text-center">
-                                                    <img src={c} alt='ENTERPRISE SOFTWARE SOLUTIONS IN CHANDIGARH'/>
+                                                    <img src={c} alt='custom software development companies'/>
                                                     <h2 className="software-names pt-3">C++</h2>
                                                 </div>
                                                 <div className="col-lg-3 col-md-6 col-sm-6 col-12 text-center">
-                                                    <img src={python} alt='CUSTOM SOFTWARE DEVELOPMENT IN CHANDIGARH'/>
+                                                    <img src={python} alt='software development companies near me'/>
                                                     <h2 className="software-names pt-3">Python</h2>
                                                 </div>
                                             </div>
@@ -198,22 +201,22 @@ const Software_Dev = () => {
                                             <h3 className="text-center fw-bold">Frameworks </h3>
                                             <div className="languages row pt-4">
                                                 <div className="col-lg-3 col-md-6 col-sm-6 col-12 text-center">
-                                                    <img src={react1} alt='SOFTWARE TESTING COMPANY IN CHANDIGARH'/>
+                                                    <img src={react1} alt='ai software development'/>
                                                     <h2 className="software-names pt-3">React</h2>
                                                 </div>
                                                 <div className="col-lg-3 col-md-6 col-sm-6 col-12 text-center">
-                                                    <img src={angular1} alt='professional Software Consultants in Chandigarh'/>
+                                                    <img src={angular1} alt='software development agency'/>
                                                     <h2 className="software-names pt-3">Angular</h2>
                                                 </div>
                                                 <div className="col-lg-3 col-md-6 col-sm-6 col-12 text-center">
-                                                    <img src={rails1} alt='Top 10 Software Development Companies In Chandigarh'/>
+                                                    <img src={rails1} alt='software development services'/>
                                                     <h2 className="software-names pt-3">
                                                         Ruby on
                                                         <br /> Rails
                                                     </h2>
                                                 </div>
                                                 <div className="col-lg-3 col-md-6 col-sm-6 col-12 text-center">
-                                                    <img src={asp} alt='Software Development Services Chandigarh'/>
+                                                    <img src={asp} alt='application development companies'/>
                                                     <h2 className="software-names pt-3">ASP.NET</h2>
                                                 </div>
                                             </div>
@@ -243,7 +246,7 @@ const Software_Dev = () => {
                             </p>
                             </div>
                             <div className="project-image">
-                            <img src={work2} alt="Offshore Software Development Chandigarh" />
+                            <img src={work2} alt="custom software development agency" />
                             </div>
                         </div>
                         </div>
@@ -259,7 +262,7 @@ const Software_Dev = () => {
                             </p>
                             </div>
                             <div className="project-image">
-                            <img src={work3} alt="Software Outsourcing Company Chandigarh" />
+                            <img src={work3} alt="it software development company" />
                             </div>
                         </div>
                         </div>
@@ -269,16 +272,16 @@ const Software_Dev = () => {
 
 
                 <Experience 
-                expTitle='Why Choose Asvayuk Technologies for Software Development Services in Chandigarh?' 
-                ExpPara='When selecting a Software Development Company in Chandigarh, expertise, innovation, and reliability are key factors. At Asvayuk Technologies Private Ltd., we offer :' 
-                point1='Custom Software Solutions' 
-                pointPara1='We design tailored applications that align with your business objectives.' 
-                point2='Enterprise Software Solutions in Chandigarh' 
-                pointPara2='Scalable, secure, and high-performance enterprise applications.' 
-                point3='Software Testing and Quality Assurance' 
-                pointPara3='Ensuring bug-free and optimized software solutions.' 
-                point4='Software Outsourcing & Offshore Development' 
-                pointPara4='Cost-effective development services without compromising quality.' 
+                expTitle='Technologies & Services We Provide' 
+                ExpPara='Asvayuk Technologies builds future-ready software using the latest tools and frameworks across custom and mobile application development platforms.' 
+                point1='AI-Powered Apps' 
+                pointPara1='Smart and automated AI software solutions.' 
+                point2='iOS Development' 
+                pointPara2='Native Apple apps with sleek performance.' 
+                point3='CRM & ERP Systems' 
+                pointPara3='Custom platforms to manage business ops.' 
+                point4='Android Software' 
+                pointPara4=' Scalable apps for Android smartphones.' 
                 />
 
 
@@ -297,35 +300,35 @@ const Software_Dev = () => {
                                     <Row className="curly-img curley-img mt-2">
                                         <Col xs={6} lg={2}>
                                             <div className="work-images">
-                                                <img src={container} alt="Affordable Software Development in Chandigarh" />
+                                                <img src={container} alt="top application development companies" />
                                                 <h6 className="mt-3">Product Design</h6>
                                                 <p className="text-light ">Crafting innovative and user-centric design strategies for a captivating app experience</p>
                                             </div>
                                         </Col>
                                         <Col xs={6} lg={2}>
                                             <div className="work-images">
-                                                <img src={planning} alt="Top Software Development Companies in Chandigarh" />
+                                                <img src={planning} alt="android app development agency" />
                                                 <h6 className="mt-3">Mobile App Consulting</h6>
                                                 <p className="text-light">Tailored guidance and strategies to shape your app concept into a successful product.</p>
                                             </div>
                                         </Col>
                                         <Col xs={6} lg={2}>
                                             <div className="work-images">
-                                                <img src={pen} alt="Software Developers in Chandigarh" />
+                                                <img src={pen} alt="mobile software development company" />
                                                 <h6 className="mt-3">UI/UX Compatibility</h6>
                                                 <p className="text-light">Seamless integration of compelling design and intuitive user experiences for enhanced engagement.</p>
                                             </div>
                                         </Col>
                                         <Col xs={6} lg={2}>
                                             <div className="work-images">
-                                                <img src={development} alt="ENTERPRISE SOFTWARE SOLUTIONS IN CHANDIGARH" />
+                                                <img src={development} alt="custom mobile application development" />
                                                 <h6 className="mt-3">Development</h6>
                                                 <p className="text-light">Utilizing cutting-edge technologies to build robust, scalable, and high-performance mobile applications.</p>
                                             </div>
                                         </Col>
                                         <Col xs={6} lg={2}>
                                             <div className="work-images">
-                                                <img src={test} alt="CUSTOM SOFTWARE DEVELOPMENT IN CHANDIGARH" />
+                                                <img src={test} alt="ios mobile app development company" />
                                                 <h6 className="mt-3">QA & Testing</h6>
                                                 <p className="text-light">Our team of mobile testing experts performs testing and debugging to ensure a reliable and optimal functioning app.</p>
                                             </div>
@@ -432,7 +435,7 @@ const Software_Dev = () => {
                                         <div className="col-lg-6 col-md-6 col-12 col-sm-12">
                                             <div className="fullcase_details">
                                                 <div className="fullCaseStudy_slider_logo">
-                                                    <img src={CoffeeLogo} alt="SOFTWARE TESTING COMPANY IN CHANDIGARH" className='slider_bg3_logo' />
+                                                    <img src={CoffeeLogo} alt="android software development company" className='slider_bg3_logo' />
                                                 </div>
                                                 <div className="fullCaseStudy_textContent py-4">
                                                     <h2 className="fw-semibold lh-base">IT TAKES A CREATIVE MIND TO BE IN THE
@@ -458,7 +461,7 @@ const Software_Dev = () => {
                                         </div>
                                         <div className="col-lg-6 col-md-6 col-12 col-sm-12 d-flex justify-content-center justify-content-lg-end justifyconent align-items-center">
                                             <div className="fullCaseStudy_img">
-                                                <img src={caseStu4} alt="professional Software Consultants in Chandigarh" className="w-100" />
+                                                <img src={caseStu4} alt="computer software development companies" className="w-100" />
                                             </div>
                                         </div>
                                     </div>
@@ -468,7 +471,7 @@ const Software_Dev = () => {
                                         <div className="col-lg-6 col-md-6 col-12 col-sm-12">
                                             <div className="fullcase_details">
                                                 <div className="fullCaseStudy_slider_logo">
-                                                    <img src={moonLight} alt="Top 10 Software Development Companies In Chandigarh" />
+                                                    <img src={moonLight} alt="corporate software development" />
                                                 </div>
                                                 <div className="fullCaseStudy_textContent py-4">
                                                     <h2 className="fw-semibold lh-base">IT TAKES A CREATIVE MIND TO BE IN THE
@@ -494,7 +497,7 @@ const Software_Dev = () => {
                                         </div>
                                         <div className="col-lg-6 col-md-6 col-12 col-sm-12 d-flex justify-content-center justify-content-lg-end justifyconent align-items-center">
                                             <div className="fullCaseStudy_img">
-                                                <img src={caseStu2} alt="Software Development Services Chandigarh" className="w-100" />
+                                                <img src={caseStu2} alt="custom mobile software development" className="w-100" />
                                             </div>
                                         </div>
                                     </div>
@@ -535,7 +538,7 @@ const Software_Dev = () => {
                                         </div>
                                         <div className="col-lg-6 col-md-6 col-12 col-sm-12 d-flex justify-content-center justify-content-lg-end justifyconent align-items-center">
                                             <div className="fullCaseStudy_img">
-                                                <img src={caseStu3} alt="Offshore Software Development Chandigarh" className="w-100" />
+                                                <img src={caseStu3} alt="software company in chandigarh" className="w-100" />
                                             </div>
                                         </div>
                                     </div>
@@ -545,7 +548,7 @@ const Software_Dev = () => {
                                         <div className="col-lg-6 col-md-6 col-12 col-sm-12">
                                             <div className="fullcase_details">
                                                 <div className="fullCaseStudy_slider_logo">
-                                                    <img src={kriLogo} alt="Software Outsourcing Company Chandigarh" className='slider_bg3_logo' />
+                                                    <img src={kriLogo} alt="software development company in chandigarh" className='slider_bg3_logo' />
                                                 </div>
                                                 <div className="fullCaseStudy_textContent py-4">
                                                     <h2 className="fw-semibold lh-base">IT TAKES A CREATIVE MIND TO BE IN THE
@@ -581,7 +584,7 @@ const Software_Dev = () => {
                                         <div className="col-lg-6 col-md-6 col-12 col-sm-12">
                                             <div className="fullcase_details">
                                                 <div className="fullCaseStudy_slider_logo">
-                                                    <img src={kreLogo} alt="Top Software Development Companies in Chandigarh" className='slider_bg3_logo' />
+                                                    <img src={kreLogo} alt="software development company in chandigarh" className='slider_bg3_logo' />
                                                 </div>
                                                 <div className="fullCaseStudy_textContent py-4">
                                                     <h2 className="fw-semibold lh-base">IT TAKES A CREATIVE MIND TO BE IN THE
@@ -607,7 +610,7 @@ const Software_Dev = () => {
                                         </div>
                                         <div className="col-lg-6 col-md-6 col-12 col-sm-12 d-flex justify-content-center justify-content-lg-end justifyconent align-items-center">
                                             <div className="fullCaseStudy_img">
-                                                <img src={caseStu6} alt="CUSTOM SOFTWARE DEVELOPMENT IN CHANDIGARH" className="w-100" />
+                                                <img src={caseStu6} alt="software development company in chandigarh" className="w-100" />
                                             </div>
                                         </div>
                                     </div>

@@ -10,7 +10,7 @@ export const servicesRoutes = [
     element: <MobileAppDevelopment />,
   },
   {
-    path: "/website-development-company-in-chandigarh-and-mohali",
+    path: "/website-designing-company-in-chandigarh",
     element: <Website_Development />,
   },
   {
