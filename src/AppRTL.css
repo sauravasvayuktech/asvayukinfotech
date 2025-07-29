@@ -2481,7 +2481,7 @@ body {
 }
 
 .translated-rtl .caseBanner {
-  background: url("../../Images/12.png");
+  background: url("../../Images/12.webp");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -5088,7 +5088,7 @@ a {
 }
 
 .translated-rtl .peformance_card1_right-sec {
-  background: url("../../Images/12.png");
+  background: url("../../Images/12.webp");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -5212,7 +5212,7 @@ a {
 
 /*  Website Development */
 .bannerImg {
-  background: url("../../Images/12.png");
+  background: url("../../Images/12.webp");
   background-repeat: no-repeat !important;
   background-size: contain;
   background-position: center;
@@ -5252,7 +5252,7 @@ a {
 }
 
 .translated-rtl .peformance_card1_right-sec {
-  background: url("../../Images/12.png");
+  background: url("../../Images/12.webp");
   background-repeat: no-repeat;
   background-size: content;
   background-position: center;

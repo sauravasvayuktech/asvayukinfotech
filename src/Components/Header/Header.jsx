@@ -43,49 +43,53 @@ export default function Header() {
     console.log('Set dir to:', dir);
   };
 
-  useEffect(() => {
-    
-  
-    const addGoogleTranslateScript = () => {
-      if (window.google && window.google.translate) {
-        window.googleTranslateElementInit();
-        return;
-      }
-  
-      const script = document.createElement('script');
-      script.src =
-        '//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
-      script.async = true;
-      document.body.appendChild(script);
-  
-      window.googleTranslateElementInit = () => {
-        new window.google.translate.TranslateElement(
-          {
-            pageLanguage: 'en',
-            includedLanguages: 'en,ar',
-            layout: window.google.translate.TranslateElement.InlineLayout.SIMPLE,
-          },
-          'google_translate_element'
-        );
-      };
+useEffect(() => {
+  const addGoogleTranslateScript = () => {
+    if (window.google && window.google.translate) {
+      window.googleTranslateElementInit();
+      return;
+    }
+
+    window.googleTranslateElementInit = () => {
+      new window.google.translate.TranslateElement(
+        {
+          pageLanguage: 'en',
+          includedLanguages: 'en,ar',
+          layout: window.google.translate.TranslateElement.InlineLayout.SIMPLE,
+        },
+        'google_translate_element'
+      );
     };
-  
-    addGoogleTranslateScript();
-  
-    const observer = new MutationObserver(() => {
-      const htmlLang = document.documentElement.lang;
-      changeLanguage(htmlLang);
-    });
-  
-    observer.observe(document.documentElement, {
-      attributes: true,
-      attributeFilter: ['lang'],
-    });
-  
-    return () => {
-      observer.disconnect();
-    };
-  }, []);
+
+    const script = document.createElement('script');
+    script.src = '//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+    script.async = true;
+    document.body.appendChild(script);
+  };
+
+  // Defer script loading until browser is idle
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(addGoogleTranslateScript);
+  } else {
+    setTimeout(addGoogleTranslateScript, 3000); // Fallback for older browsers
+  }
+
+  // Observe changes to <html lang="...">
+  const observer = new MutationObserver(() => {
+    const htmlLang = document.documentElement.lang;
+    changeLanguage(htmlLang);
+  });
+
+  observer.observe(document.documentElement, {
+    attributes: true,
+    attributeFilter: ['lang'],
+  });
+
+  return () => {
+    observer.disconnect();
+  };
+}, []);
+
 
   const { changeLanguage } = useLanguage(); // use inside the component
   const { direction } = useLanguage();

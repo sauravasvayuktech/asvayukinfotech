@@ -151,7 +151,8 @@
 </script>
 
 
-  <script>
+<script>
+  setTimeout(() => {
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
     n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -162,10 +163,18 @@
     'https://connect.facebook.net/en_US/fbevents.js');
     fbq('init', '1913217919088108');
     fbq('track', 'PageView');
-    </script>
+  }, 2000); // delay by 2 seconds
+</script>
    
 
-  <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"></script>
+<script>
+  requestIdleCallback(() => {
+    const s = document.createElement('script');
+    s.src = "https://images.dmca.com/Badges/DMCABadgeHelper.min.js";
+    s.async = true;
+    document.body.appendChild(s);
+  });
+</script>
 </head>
 
 <body>

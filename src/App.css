@@ -2555,7 +2555,7 @@ html[dir="ltr"] {
 }
 
 .caseBanner {
-  background: url("../../Images/12.png");
+  background: url("../../Images/12.webp");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -5070,7 +5070,7 @@ section.bannerMlm .container {
 }
 
 .peformance_card1_right-sec {
-  background: url("../../Images/12.png");
+  background: url("../../Images/12.webp");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -5192,7 +5192,7 @@ section.bannerMlm .container {
 
 /*  Website Development */
 .bannerImg {
-  background: url("../../Images/12.png");
+  background: url("../../Images/12.webp");
   background-repeat: no-repeat !important;
   background-size: contain;
   background-position: center;
@@ -5231,7 +5231,7 @@ section.bannerMlm .container {
 }
 
 .peformance_card1_right-sec {
-  background: url("../../Images/12.png");
+  background: url("../../Images/12.webp");
   background-repeat: no-repeat;
   background-size: content;
   background-position: center;
@@ -6340,4 +6340,40 @@ div#root {
   background-color: var(--maindark);
   padding: 0.5rem;
   border-radius: 0.5rem;
+}
+
+
+/* HTML: <div class="loader"></div> */
+.loader-wrapper{
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  display: grid;
+  border: 4px solid #0000;
+  border-radius: 50%;
+  border-right-color: #25b09b;
+  animation: l15 1s infinite linear;
+}
+.loader::before,
+.loader::after {    
+  content: "";
+  grid-area: 1/1;
+  margin: 2px;
+  border: inherit;
+  border-radius: 50%;
+  animation: l15 2s infinite;
+}
+.loader::after {
+  margin: 8px;
+  animation-duration: 3s;
+}
+@keyframes l15{ 
+  100%{transform: rotate(1turn)}
 }

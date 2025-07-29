@@ -21,12 +21,11 @@ const AutoPopupModal = () => {
     const [isVisible, setIsVisible] = useState(false);
 
     useEffect(() => {
-        // Show the modal once after 2 seconds
-        const timeout = setTimeout(() => {
-            setIsVisible(true);
-        }, 3000);
+        const idleCallback = requestIdleCallback(() => {
+            setTimeout(() => setIsVisible(true), 3000);
+        });
 
-        return () => clearTimeout(timeout); // Clean up the timeout on component unmount
+        return () => cancelIdleCallback(idleCallback);
     }, []);
 
     const handleClose = () => {
@@ -94,7 +93,7 @@ const AutoPopupModal = () => {
                                     </div>
                                 </div>
                                 <div className='contact-form col-lg-6 '>
-                                    <iframe id='iframeForm' width="100%" height="480px" src="https://crm.asvayuktech.com/forms/wtl/a5631df056d39b1643e1dbdad5c65bca" className=' rounded-3' style={{background: 'transparent'}} allowfullscreen></iframe>
+                                    <iframe id='iframeForm' width="100%" height="480px" src="https://crm.asvayuktech.com/forms/wtl/a5631df056d39b1643e1dbdad5c65bca" className=' rounded-3' style={{ background: 'transparent' }} loading="lazy" allowfullscreen></iframe>
                                 </div>
                             </Row>
                         </div>
